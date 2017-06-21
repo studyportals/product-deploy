@@ -4,7 +4,9 @@
   "description": "Toolset to deploy our products",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "pretest": "npm prune",
+    "test": "mocha **/*.test.js",
+    "posttest": "node bin/jsdoc-to-markdown"
   },
   "repository": {
     "type": "git",
@@ -26,6 +28,7 @@
   "devDependencies": {
     "chai": "^4.0.2",
     "chai-files": "^1.4.0",
+    "jsdoc-to-markdown": "^3.0.0",
     "mocha": "^3.4.2"
   }
 }
