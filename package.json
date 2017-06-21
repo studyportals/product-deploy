@@ -1,0 +1,32 @@
+{
+  "name": "product-deploy",
+  "version": "1.0.0",
+  "description": "Toolset to deploy our products",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "preversion": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/studyportals/product-deploy.git"
+  },
+  "author": "StudyPortals B.V.",
+  "contributors": [
+    {
+      "name": "Danko Adamczyk",
+      "email": "danko@studyportals.com",
+      "url": "https://github.com/CZYK"
+    }
+  ],
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/studyportals/product-deploy/issues"
+  },
+  "homepage": "https://github.com/studyportals/product-deploy#readme",
+  "devDependencies": {
+    "chai": "^4.0.2",
+    "chai-files": "^1.4.0",
+    "mocha": "^3.4.2"
+  }
+}
