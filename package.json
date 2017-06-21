@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "pretest": "npm prune",
-    "test": "mocha **/*.test.js",
+    "test": "mocha **/*.test.js && git add . && git commit -am 'Test completed'",
     "posttest": "node bin/jsdoc-to-markdown"
   },
   "repository": {

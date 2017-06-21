@@ -1,4 +1,4 @@
-# product-deploy@1.0.0
+# product-deploy@1.1.0
 
 Toolset to deploy our products
 
@@ -16,4 +16,4 @@ Can be executed by calling `node ./bin/jsdoc-to-markdown`
 
 **Kind**: Exported function  
 
-_Package published at: Wed Jun 21 2017 11:16:10 GMT+0800 (China Standard Time)_
+_Package published at: Wed Jun 21 2017 11:35:53 GMT+0800 (China Standard Time)_
