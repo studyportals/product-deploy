@@ -4,8 +4,8 @@
   "description": "Toolset to deploy our products",
   "main": "index.js",
   "scripts": {
-    "pretest": "npm prune",
-    "test": "mocha **/*.test.js && git add . && git commit -am 'Test completed'",
+    "pretest": "npm prune && npm install",
+    "test": "mocha **/*.test.js",
     "posttest": "node bin/jsdoc-to-markdown"
   },
   "repository": {
