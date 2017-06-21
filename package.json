@@ -1,10 +1,10 @@
 {
   "name": "product-deploy",
-  "version": "1.0.1-9",
+  "version": "1.0.1-10",
   "description": "Toolset to deploy our products",
   "main": "index.js",
   "scripts": {
-    "build": "npm --no-git-tag-version version -f prerelease",
+    "build": "npm --no-git-tag-version version prerelease",
     "pretest": "npm prune && npm install",
     "test": "mocha **/*.test.js",
     "preversion": "npm test",
