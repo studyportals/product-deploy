@@ -1,13 +1,13 @@
 {
-  "name": "product-deploy",
-  "version": "1.0.1-12",
+  "name": "@studyportalss/product-deploy",
+  "version": "1.0.1-1",
   "description": "Toolset to deploy our products",
   "main": "index.js",
   "scripts": {
     "build": "npm --no-git-tag-version version prerelease",
     "test": "mocha **/*.test.js",
     "preversion": "npm prune && npm install && npm test",
-    "version": "node bin/jsdoc-to-markdown && git add -A && git commit -m 'prerelease'"
+    "version": "node bin/jsdoc-to-markdown && git add -A && git commit -m prerelease"
   },
   "repository": {
     "type": "git",
