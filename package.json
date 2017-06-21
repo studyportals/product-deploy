@@ -7,7 +7,7 @@
     "build": "npm --no-git-tag-version version prerelease",
     "test": "mocha **/*.test.js",
     "preversion": "npm prune && npm install && npm test",
-    "version": "node bin/jsdoc-to-markdown && git add -A && git commit -m \"draft new version\""
+    "version": "node bin/jsdoc-to-markdown && git add -A"
   },
   "repository": {
     "type": "git",
