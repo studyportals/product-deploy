@@ -1,4 +1,4 @@
-# @studyportals/product-deploy@1.0.1-3
+# @studyportals/product-deploy@1.0.1-4
 
 [![NPM version](https://img.shields.io/npm/v/@studyportals/product-deploy.svg?style=flat)](https://www.npmjs.com/package/@studyportals/product-deploy "View this project on NPM")
 [![NPM downloads](https://img.shields.io/npm/dm/@studyportals/product-deploy.svg?style=flat)](https://www.npmjs.com/package/@studyportals/product-deploy "View this project on NPM")
@@ -22,4 +22,4 @@ Can be executed by calling `node ./bin/jsdoc-to-markdown`
 
 **Kind**: Exported function  
 
-_Package published at: Wed Jun 21 2017 18:20:59 GMT+0800 (China Standard Time)_
+_Package published at: Wed Jun 21 2017 18:21:15 GMT+0800 (China Standard Time)_
