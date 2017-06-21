@@ -1,6 +1,6 @@
 {
-  "name": "product-deploy",
-  "version": "1.0.1-12",
+  "name": "@studyportalss/product-deploy",
+  "version": "1.0.0",
   "description": "Toolset to deploy our products",
   "main": "index.js",
   "scripts": {
