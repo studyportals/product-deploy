@@ -16,4 +16,4 @@ Can be executed by calling `node ./bin/jsdoc-to-markdown`
 
 **Kind**: Exported function  
 
-_Package published at: Wed Jun 21 2017 12:21:57 GMT+0800 (China Standard Time)_
+_Package published at: Wed Jun 21 2017 15:46:41 GMT+0800 (China Standard Time)_
