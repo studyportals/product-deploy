@@ -1,11 +1,13 @@
 {
   "name": "product-deploy",
-  "version": "1.0.3-0",
+  "version": "1.0.0",
   "description": "Toolset to deploy our products",
   "main": "index.js",
   "scripts": {
     "test": "mocha",
-    "preversion": "npm test"
+    "preversion": "npm test",
+    "version": "",
+    "postversion": "git push && git push --tags"
   },
   "repository": {
     "type": "git",
