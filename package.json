@@ -1,14 +1,14 @@
 {
   "name": "product-deploy",
-  "version": "1.0.1-7",
+  "version": "1.0.1-9",
   "description": "Toolset to deploy our products",
   "main": "index.js",
   "scripts": {
-    "build": "npm version -f prerelease",
+    "build": "npm --no-git-tag-version version -f prerelease",
     "pretest": "npm prune && npm install",
     "test": "mocha **/*.test.js",
     "preversion": "npm test",
-    "version": "node bin/jsdoc-to-markdown && git add -A"
+    "version": "node bin/jsdoc-to-markdown && git add -A && git commit -m 'prerelease'"
   },
   "repository": {
     "type": "git",
