@@ -2,10 +2,7 @@
 
 const chai = require('chai');
 const expect = chai.expect;
-
-const path = require('path');
 const fs = require('fs');
-
 const globby = require('globby');
 
 describe('Structurally', function(){
