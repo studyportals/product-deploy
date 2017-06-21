@@ -6,7 +6,8 @@
   "scripts": {
     "pretest": "npm prune && npm install",
     "test": "mocha **/*.test.js",
-    "posttest": "node bin/jsdoc-to-markdown"
+    "posttest": "node bin/jsdoc-to-markdown",
+    "preversion": "npm test"
   },
   "repository": {
     "type": "git",
