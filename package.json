@@ -1,5 +1,5 @@
 {
-  "name": "@studyportalss/product-deploy",
+  "name": "@studyportals/product-deploy",
   "version": "0.0.0",
   "description": "Toolset to deploy our products",
   "main": "index.js",
