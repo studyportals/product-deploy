@@ -1,6 +1,6 @@
 {
   "name": "@studyportals/product-deploy",
-  "version": "1.1.2-0",
+  "version": "1.1.2-3",
   "description": "Toolset to deploy StudyPortals products",
   "main": "index.js",
   "directories": {
@@ -9,9 +9,9 @@
   },
   "scripts": {
     "build": "npm --no-git-tag-version version prerelease",
-    "test": "mocha **/*.test.js",
+    "test": "mocha",
     "preversion": "npm prune && npm install && npm test",
-    "version": "node bin/jsdoc-to-markdown && git add -A"
+    "version": "sh node_modules/.bin/jsdoc2md && git add -A"
   },
   "repository": {
     "type": "git",
@@ -31,12 +31,10 @@
   },
   "homepage": "https://github.com/studyportals/product-deploy#readme",
   "devDependencies": {
+    "@studyportals/jsdoc-to-markdown": "^1.0.0",
     "chai": "^4.0.2",
     "chai-files": "^1.4.0",
     "globby": "^6.1.0",
     "mocha": "^3.4.2"
-  },
-  "dependencies": {
-    "jsdoc-to-markdown": "^3.0.0"
   }
 }
