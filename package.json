@@ -1,8 +1,12 @@
 {
   "name": "@studyportals/product-deploy",
-  "version": "1.1.1",
+  "version": "1.1.2-0",
   "description": "Toolset to deploy StudyPortals products",
   "main": "index.js",
+  "directories": {
+    "bin": "./bin",
+    "lib": "./lib"
+  },
   "scripts": {
     "build": "npm --no-git-tag-version version prerelease",
     "test": "mocha **/*.test.js",
