@@ -31,6 +31,11 @@
     "chai-files": "^1.4.0",
     "globby": "^6.1.0",
     "jsdoc-to-markdown": "^3.0.0",
-    "mocha": "^3.4.2"
+    "mocha": "^3.4.2",
+    "should": "^11.2.1"
+  },
+  "dependencies": {
+    "gulp-git": "^2.4.1",
+    "rimraf": "^2.6.1"
   }
 }
