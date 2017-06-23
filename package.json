@@ -1,6 +1,6 @@
 {
   "name": "@studyportals/product-deploy",
-  "version": "1.1.2-3",
+  "version": "1.1.2-4",
   "description": "Toolset to deploy StudyPortals products",
   "main": "index.js",
   "directories": {
@@ -33,7 +33,6 @@
   "devDependencies": {
     "@studyportals/jsdoc-to-markdown": "^1.0.0",
     "chai": "^4.0.2",
-    "chai-files": "^1.4.0",
     "globby": "^6.1.0",
     "mocha": "^3.4.2"
   }

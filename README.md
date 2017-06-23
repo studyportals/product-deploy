@@ -1,4 +1,4 @@
-# @studyportals/product-deploy@1.1.2-3
+# @studyportals/product-deploy@1.1.2-4
 
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/v/@studyportals/product-deploy.svg?style=flat" alt="NPM version" /></a>
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/dm/@studyportals/product-deploy.svg?style=flat" alt="NPM downloads" /></a>
@@ -9,4 +9,4 @@
 Toolset to deploy StudyPortals products
 
 
-_README.md generated at: Thu Jun 22 2017 22:26:56 GMT+0800 (China Standard Time)_
+_README.md generated at: Fri Jun 23 2017 12:44:25 GMT+0800 (China Standard Time)_
