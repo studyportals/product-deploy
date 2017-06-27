@@ -1,4 +1,4 @@
-# @studyportals/product-deploy@v1.1.3-0
+# @studyportals/product-deploy@v1.1.3-1
 
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/v/@studyportals/product-deploy.svg?style=flat" alt="NPM version" /></a>
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/l/@studyportals/product-deploy.svg?style=flat" alt="NPM license" /></a>
@@ -51,9 +51,9 @@ Verbosity levels:- 0: No output- 1: Error output- 2: Warning output- 3: Info
 **Kind**: inner method of [<code>log</code>](#module_log)  
 **Returns**: void  
 
-| Param | Description |
-| --- | --- |
-| x | Verbosity level |
+| Param | Type | Description |
+| --- | --- | --- |
+| x | <code>integer</code> | Verbosity level |
 
 <a name="module_log..debug"></a>
 
@@ -104,4 +104,4 @@ Error message (red)
 | s | <code>string</code> | 
 
 
-_README.md generated at: Tue Jun 27 2017 14:42:41 GMT+0800 (China Standard Time)_
+_README.md generated at: Tue Jun 27 2017 14:46:31 GMT+0800 (China Standard Time)_
