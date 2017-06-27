@@ -22,4 +22,4 @@ it('It should install bower dependencies', () =>{
 	});
 }).timeout(10000);
 
-// after(deleteBowerComponents);
+after(deleteBowerComponents);
