@@ -31,7 +31,7 @@
   },
   "homepage": "https://github.com/studyportals/product-deploy#readme",
   "devDependencies": {
-    "@studyportals/jsdoc-to-markdown": "^1.0.0",
+    "@studyportals/jsdoc-to-markdown": "^1.0.1",
     "chai": "^4.0.2",
     "globby": "^6.1.0",
     "mocha": "^3.4.2"
