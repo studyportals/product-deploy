@@ -10,7 +10,9 @@ describe('Structurally', function(){
 	it('all js files should "use strict"', () =>{
 
 		const nonStrictFiles = [];
-		const allFiles = globby.sync(["**/*.js", '!node_modules/**']);
+		const allFiles = globby.sync([
+			"index.js",
+			"lib/**/*.js"]);
 
 		allFiles.forEach(file =>{
 			if(fs.readFileSync(file).indexOf('use strict') === -1){

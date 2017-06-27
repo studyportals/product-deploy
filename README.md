@@ -1,4 +1,4 @@
-# @studyportals/product-deploy@v1.1.2
+# @studyportals/product-deploy@v1.1.3-0
 
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/v/@studyportals/product-deploy.svg?style=flat" alt="NPM version" /></a>
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/l/@studyportals/product-deploy.svg?style=flat" alt="NPM license" /></a>
@@ -8,5 +8,100 @@
 
 Toolset to deploy StudyPortals products
 
+## Modules
 
-_README.md generated at: Tue Jun 27 2017 09:59:04 GMT+0800 (China Standard Time)_
+<dl>
+<dt><a href="#module_bower">bower</a></dt>
+<dd></dd>
+<dt><a href="#module_log">log</a></dt>
+<dd></dd>
+</dl>
+
+<a name="module_bower"></a>
+
+## bower
+<a name="module_bower..install"></a>
+
+### bower~install([opts]) ⇒ <code>Promise</code>
+Install bower dependencies.
+
+**Kind**: inner method of [<code>bower</code>](#module_bower)  
+
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| [opts] | <code>Object</code> |  |  |
+| [opts.cwd] | <code>string</code> | <code>&quot;process.cwd()&quot;</code> | current working directory |
+
+<a name="module_log"></a>
+
+## log
+
+* [log](#module_log)
+    * [~setVerbosity(x)](#module_log..setVerbosity) ⇒
+    * [~debug(s)](#module_log..debug) ⇒
+    * [~info(s)](#module_log..info) ⇒
+    * [~warning(s)](#module_log..warning) ⇒
+    * [~error(s)](#module_log..error) ⇒
+
+<a name="module_log..setVerbosity"></a>
+
+### log~setVerbosity(x) ⇒
+Verbosity levels:- 0: No output- 1: Error output- 2: Warning output- 3: Info output- 4: Debug outputDefault verbosity level can be overridden by setting the env var `VERBOSITY`
+
+**Kind**: inner method of [<code>log</code>](#module_log)  
+**Returns**: void  
+
+| Param | Description |
+| --- | --- |
+| x | Verbosity level |
+
+<a name="module_log..debug"></a>
+
+### log~debug(s) ⇒
+Debug message (gray)
+
+**Kind**: inner method of [<code>log</code>](#module_log)  
+**Returns**: void  
+
+| Param | Type |
+| --- | --- |
+| s | <code>string</code> | 
+
+<a name="module_log..info"></a>
+
+### log~info(s) ⇒
+Info message (white)
+
+**Kind**: inner method of [<code>log</code>](#module_log)  
+**Returns**: void  
+
+| Param | Type |
+| --- | --- |
+| s | <code>string</code> | 
+
+<a name="module_log..warning"></a>
+
+### log~warning(s) ⇒
+Warning message (yellow)
+
+**Kind**: inner method of [<code>log</code>](#module_log)  
+**Returns**: void  
+
+| Param | Type |
+| --- | --- |
+| s | <code>string</code> | 
+
+<a name="module_log..error"></a>
+
+### log~error(s) ⇒
+Error message (red)
+
+**Kind**: inner method of [<code>log</code>](#module_log)  
+**Returns**: void  
+
+| Param | Type |
+| --- | --- |
+| s | <code>string</code> | 
+
+
+_README.md generated at: Tue Jun 27 2017 14:42:41 GMT+0800 (China Standard Time)_
