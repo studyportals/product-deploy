@@ -1,4 +1,4 @@
-# @studyportals/product-deploy@v1.1.3-7
+# @studyportals/product-deploy@v1.1.3-10
 
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/v/@studyportals/product-deploy.svg?style=flat" alt="NPM version" /></a>
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/l/@studyportals/product-deploy.svg?style=flat" alt="NPM license" /></a>
@@ -22,12 +22,12 @@ Toolset to deploy StudyPortals products
 <a name="module_bower"></a>
 
 ## bower
-<a name="module_bower..install"></a>
+<a name="exp_module_bower--install"></a>
 
-### bower~install([opts]) ⇒ <code>Promise</code>
+### install([opts]) ⇒ <code>Promise</code> ⏏
 Install bower dependencies.
 
-**Kind**: inner method of [<code>bower</code>](#module_bower)  
+**Kind**: Exported function  
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
@@ -37,12 +37,12 @@ Install bower dependencies.
 <a name="module_composer"></a>
 
 ## composer
-<a name="module_composer..install"></a>
+<a name="exp_module_composer--install"></a>
 
-### composer~install([opts]) ⇒ <code>Promise</code>
+### install([opts]) ⇒ <code>Promise</code> ⏏
 Install composer dependencies.
 
-**Kind**: inner method of [<code>composer</code>](#module_composer)  
+**Kind**: Exported function  
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
@@ -54,66 +54,53 @@ Install composer dependencies.
 ## log
 
 * [log](#module_log)
-    * [~setVerbosity(x)](#module_log..setVerbosity) ⇒
-    * [~debug(message)](#module_log..debug) ⇒
-    * [~info(message)](#module_log..info) ⇒
-    * [~warning(message)](#module_log..warning) ⇒
-    * [~error(message)](#module_log..error) ⇒
+    * [setVerbosity(x)](#exp_module_log--setVerbosity) ⇒ ⏏
+    * [debug(message)](#exp_module_log--debug) ⇒ ⏏
+    * [info(message)](#exp_module_log--info) ⇒ ⏏
+    * [warning(message)](#exp_module_log--warning) ⇒ ⏏
 
-<a name="module_log..setVerbosity"></a>
+<a name="exp_module_log--setVerbosity"></a>
 
-### log~setVerbosity(x) ⇒
+### setVerbosity(x) ⇒ ⏏
 Set the verbosity level- 0: No output- 1: Error output- 2: Warning output- 3: Info output- 4: Debug outputDefault verbosity level can be overridden by setting the env var `VERBOSITY`
 
-**Kind**: inner method of [<code>log</code>](#module_log)  
+**Kind**: Exported function  
 **Returns**: void  
 
 | Param | Type | Description |
 | --- | --- | --- |
 | x | <code>number</code> | Verbosity level |
 
-<a name="module_log..debug"></a>
+<a name="exp_module_log--debug"></a>
 
-### log~debug(message) ⇒
+### debug(message) ⇒ ⏏
 Debug message (gray)
 
-**Kind**: inner method of [<code>log</code>](#module_log)  
+**Kind**: Exported function  
 **Returns**: void  
 
 | Param | Type |
 | --- | --- |
 | message | <code>string</code> | 
 
-<a name="module_log..info"></a>
+<a name="exp_module_log--info"></a>
 
-### log~info(message) ⇒
+### info(message) ⇒ ⏏
 Info message (white)
 
-**Kind**: inner method of [<code>log</code>](#module_log)  
+**Kind**: Exported function  
 **Returns**: void  
 
 | Param | Type |
 | --- | --- |
 | message | <code>string</code> | 
 
-<a name="module_log..warning"></a>
+<a name="exp_module_log--warning"></a>
 
-### log~warning(message) ⇒
+### warning(message) ⇒ ⏏
 Warning message (yellow)
 
-**Kind**: inner method of [<code>log</code>](#module_log)  
-**Returns**: void  
-
-| Param | Type |
-| --- | --- |
-| message | <code>string</code> | 
-
-<a name="module_log..error"></a>
-
-### log~error(message) ⇒
-Error message (red)
-
-**Kind**: inner method of [<code>log</code>](#module_log)  
+**Kind**: Exported function  
 **Returns**: void  
 
 | Param | Type |
@@ -121,4 +108,4 @@ Error message (red)
 | message | <code>string</code> | 
 
 
-_README.md generated at: Wed Jun 28 2017 10:40:18 GMT+0800 (China Standard Time)_
+_README.md generated at: Wed Jun 28 2017 13:15:37 GMT+0800 (China Standard Time)_
