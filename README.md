@@ -1,4 +1,4 @@
-# @studyportals/product-deploy@v1.1.3-5
+# @studyportals/product-deploy@v1.1.3-7
 
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/v/@studyportals/product-deploy.svg?style=flat" alt="NPM version" /></a>
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/l/@studyportals/product-deploy.svg?style=flat" alt="NPM license" /></a>
@@ -12,6 +12,8 @@ Toolset to deploy StudyPortals products
 
 <dl>
 <dt><a href="#module_bower">bower</a></dt>
+<dd></dd>
+<dt><a href="#module_composer">composer</a></dt>
 <dd></dd>
 <dt><a href="#module_log">log</a></dt>
 <dd></dd>
@@ -32,6 +34,21 @@ Install bower dependencies.
 | [opts] | <code>Object</code> |  |  |
 | [opts.cwd] | <code>string</code> | <code>&quot;process.cwd()&quot;</code> | current working directory |
 
+<a name="module_composer"></a>
+
+## composer
+<a name="module_composer..install"></a>
+
+### composer~install([opts]) ⇒ <code>Promise</code>
+Install composer dependencies.
+
+**Kind**: inner method of [<code>composer</code>](#module_composer)  
+
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| [opts] | <code>Object</code> |  |  |
+| [opts.cwd] | <code>string</code> | <code>&quot;process.cwd()&quot;</code> | current working directory |
+
 <a name="module_log"></a>
 
 ## log
@@ -46,14 +63,14 @@ Install bower dependencies.
 <a name="module_log..setVerbosity"></a>
 
 ### log~setVerbosity(x) ⇒
-Verbosity levels:- 0: No output- 1: Error output- 2: Warning output- 3: Info output- 4: Debug outputDefault verbosity level can be overridden by setting the env var `VERBOSITY`
+Set the verbosity level- 0: No output- 1: Error output- 2: Warning output- 3: Info output- 4: Debug outputDefault verbosity level can be overridden by setting the env var `VERBOSITY`
 
 **Kind**: inner method of [<code>log</code>](#module_log)  
 **Returns**: void  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| x | <code>integer</code> | Verbosity level |
+| x | <code>number</code> | Verbosity level |
 
 <a name="module_log..debug"></a>
 
@@ -104,4 +121,4 @@ Error message (red)
 | message | <code>string</code> | 
 
 
-_README.md generated at: Tue Jun 27 2017 15:00:54 GMT+0800 (China Standard Time)_
+_README.md generated at: Wed Jun 28 2017 10:40:18 GMT+0800 (China Standard Time)_
