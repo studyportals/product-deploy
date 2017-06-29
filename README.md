@@ -1,4 +1,4 @@
-# @studyportals/product-deploy@v1.2.0-alpha.1
+# @studyportals/product-deploy@v1.2.0-RC.1
 
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/v/@studyportals/product-deploy.svg?style=flat" alt="NPM version" /></a>
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/l/@studyportals/product-deploy.svg?style=flat" alt="NPM license" /></a>
@@ -16,7 +16,9 @@ Toolset to deploy StudyPortals products
 <dt><a href="#module_composer">composer</a></dt>
 <dd></dd>
 <dt><a href="#module_log">log</a></dt>
-<dd></dd>
+<dd><p>Handles console logs
+The default verbosity level is: <code>process.env[&#39;VERBOSITY&#39;] || VERBOSITY.WARNING;</code></p>
+</dd>
 </dl>
 
 <a name="module_bower"></a>
@@ -25,14 +27,14 @@ Toolset to deploy StudyPortals products
 <a name="exp_module_bower--install"></a>
 
 ### install([opts]) ⇒ <code>Promise</code> ⏏
-Install bower dependencies.
+Bower dependencies will be installed only if a bower.json exists.The installation will complete, without applying any changes, when no`bower.json` file is found.
 
 **Kind**: Exported function  
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
 | [opts] | <code>Object</code> |  |  |
-| [opts.cwd] | <code>string</code> | <code>&quot;process.cwd()&quot;</code> | current working directory |
+| [opts.cwd] | <code>string</code> | <code>&quot;process.cwd()&quot;</code> | Directory in which to execute bower install. |
 
 <a name="module_composer"></a>
 
@@ -40,36 +42,57 @@ Install bower dependencies.
 <a name="exp_module_composer--install"></a>
 
 ### install([opts]) ⇒ <code>Promise</code> ⏏
-Install composer dependencies.
+Composer dependencies will be installed only if a composer.json exists.The installation will complete, without applying any changes, when no`composer.json` file is found.
 
 **Kind**: Exported function  
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
 | [opts] | <code>Object</code> |  |  |
-| [opts.cwd] | <code>string</code> | <code>&quot;process.cwd()&quot;</code> | current working directory |
+| [opts.cwd] | <code>string</code> | <code>&quot;process.cwd()&quot;</code> | Directory in which to execute composer install. |
 
 <a name="module_log"></a>
 
 ## log
+Handles console logsThe default verbosity level is: `process.env['VERBOSITY'] || VERBOSITY.WARNING;`
+
 
 * [log](#module_log)
+    * [VERBOSITY](#exp_module_log--VERBOSITY) : <code>enum</code> ⏏
     * [setVerbosity(x)](#exp_module_log--setVerbosity) ⇒ ⏏
     * [debug(message)](#exp_module_log--debug) ⇒ ⏏
     * [info(message)](#exp_module_log--info) ⇒ ⏏
     * [warning(message)](#exp_module_log--warning) ⇒ ⏏
+    * [error(message)](#exp_module_log--error) ⇒ ⏏
+
+<a name="exp_module_log--VERBOSITY"></a>
+
+### VERBOSITY : <code>enum</code> ⏏
+Default options for verbosity
+
+**Kind**: Exported enum  
+**Properties**
+
+| Name | Type | Default |
+| --- | --- | --- |
+| NONE | <code>number</code> | <code>0</code> | 
+| ERROR | <code>number</code> | <code>1</code> | 
+| WARNING | <code>number</code> | <code>2</code> | 
+| INFO | <code>number</code> | <code>3</code> | 
+| DEBUG | <code>number</code> | <code>4</code> | 
+| ALL | <code>number</code> | <code>this.DEBUG</code> | 
 
 <a name="exp_module_log--setVerbosity"></a>
 
 ### setVerbosity(x) ⇒ ⏏
-Set the verbosity level- 0: No output- 1: Error output- 2: Warning output- 3: Info output- 4: Debug outputDefault verbosity level can be overridden by setting the env var `VERBOSITY`
+Set the verbosity level
 
 **Kind**: Exported function  
 **Returns**: void  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| x | <code>number</code> | Verbosity level |
+| x | <code>VERBOSITY</code> \| <code>number</code> | Verbosity level |
 
 <a name="exp_module_log--debug"></a>
 
@@ -107,5 +130,17 @@ Warning message (yellow)
 | --- | --- |
 | message | <code>string</code> | 
 
+<a name="exp_module_log--error"></a>
 
-_README.md generated at: Wed Jun 28 2017 23:13:23 GMT+0800 (China Standard Time)_
+### error(message) ⇒ ⏏
+Error message (red)
+
+**Kind**: Exported function  
+**Returns**: void  
+
+| Param | Type |
+| --- | --- |
+| message | <code>string</code> | 
+
+
+_README.md generated at: Thu Jun 29 2017 10:58:35 GMT+0800 (China Standard Time)_

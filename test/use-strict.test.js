@@ -12,7 +12,8 @@ describe('Structurally', function(){
 		const nonStrictFiles = [];
 		const allFiles = globby.sync([
 			"index.js",
-			"lib/**/*.js"]);
+			"lib/**/*.js",
+			"test/**/*.js"]);
 
 		allFiles.forEach(file =>{
 			if(fs.readFileSync(file).indexOf('use strict') === -1){
