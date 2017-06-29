@@ -1,0 +1,10 @@
+{
+  "name": "product-deploy",
+  "authors": [
+    "StudyPortals B.V."
+  ],
+  "homepage": "https://github.com/studyportals/product-deploy",
+  "dependencies": {
+    "imgix.js": "^2.1.0"
+  }
+}

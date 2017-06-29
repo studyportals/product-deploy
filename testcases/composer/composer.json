@@ -1,0 +1,6 @@
+{
+  "name": "studyportals/product-deploy",
+  "require": {
+    "aws/aws-sdk-php": "^3"
+  }
+}
