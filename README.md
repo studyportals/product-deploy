@@ -1,4 +1,4 @@
-# @studyportals/product-deploy@v1.2.0-RC.1
+# @studyportals/product-deploy@v1.2.0-RC.2
 
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/v/@studyportals/product-deploy.svg?style=flat" alt="NPM version" /></a>
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/l/@studyportals/product-deploy.svg?style=flat" alt="NPM license" /></a>
@@ -80,7 +80,7 @@ Default options for verbosity
 | WARNING | <code>number</code> | <code>2</code> | 
 | INFO | <code>number</code> | <code>3</code> | 
 | DEBUG | <code>number</code> | <code>4</code> | 
-| ALL | <code>number</code> | <code>this.DEBUG</code> | 
+| ALL | <code>number</code> | <code>4</code> | 
 
 <a name="exp_module_log--setVerbosity"></a>
 
@@ -143,4 +143,4 @@ Error message (red)
 | message | <code>string</code> | 
 
 
-_README.md generated at: Thu Jun 29 2017 10:58:35 GMT+0800 (China Standard Time)_
+_README.md generated at: Thu Jun 29 2017 11:06:52 GMT+0800 (China Standard Time)_

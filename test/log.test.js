@@ -2,7 +2,7 @@
 
 const log = require('./../lib/log');
 
-it('It should show all log messages', () =>{
+it('It should show 4 messages without throwing an exception.', () =>{
 
 	log.setVerbosity(log.VERBOSITY.ALL);
 
