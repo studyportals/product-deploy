@@ -1,6 +1,6 @@
 {
   "name": "@studyportals/product-deploy",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Toolset to deploy StudyPortals products",
   "main": "index.js",
   "directories": {
