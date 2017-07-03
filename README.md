@@ -1,4 +1,4 @@
-# @studyportals/product-deploy@v1.2.0
+# @studyportals/product-deploy@v1.2.1
 
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/v/@studyportals/product-deploy.svg?style=flat" alt="NPM version" /></a>
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/l/@studyportals/product-deploy.svg?style=flat" alt="NPM license" /></a>
@@ -27,7 +27,10 @@ The default verbosity level is: <code>process.env[&#39;VERBOSITY&#39;] || VERBOS
 <a name="exp_module_bower--install"></a>
 
 ### install([opts]) ⇒ <code>Promise</code> ⏏
-Bower dependencies will be installed only if a bower.json exists.The installation will complete, without applying any changes, when no`bower.json` file is found.
+Bower dependencies will be installed only if a bower.json exists.
+
+The installation will complete, without applying any changes, when no
+`bower.json` file is found.
 
 **Kind**: Exported function  
 
@@ -42,7 +45,10 @@ Bower dependencies will be installed only if a bower.json exists.The installat
 <a name="exp_module_composer--install"></a>
 
 ### install([opts]) ⇒ <code>Promise</code> ⏏
-Composer dependencies will be installed only if a composer.json exists.The installation will complete, without applying any changes, when no`composer.json` file is found.
+Composer dependencies will be installed only if a composer.json exists.
+
+The installation will complete, without applying any changes, when no
+`composer.json` file is found.
 
 **Kind**: Exported function  
 
@@ -54,7 +60,8 @@ Composer dependencies will be installed only if a composer.json exists.The ins
 <a name="module_log"></a>
 
 ## log
-Handles console logsThe default verbosity level is: `process.env['VERBOSITY'] || VERBOSITY.WARNING;`
+Handles console logs
+The default verbosity level is: `process.env['VERBOSITY'] || VERBOSITY.WARNING;`
 
 
 * [log](#module_log)
@@ -143,4 +150,4 @@ Error message (red)
 | message | <code>string</code> | 
 
 
-_README.md generated at: Thu Jun 29 2017 17:24:56 GMT+0800 (China Standard Time)_
+_README.md generated at: Mon Jul 03 2017 19:02:02 GMT+0800 (China Standard Time)_
