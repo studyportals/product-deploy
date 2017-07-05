@@ -1,4 +1,4 @@
-# @studyportals/product-deploy@v1.2.1
+# @studyportals/product-deploy@v1.3.0-alpha.1
 
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/v/@studyportals/product-deploy.svg?style=flat" alt="NPM version" /></a>
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/l/@studyportals/product-deploy.svg?style=flat" alt="NPM license" /></a>
@@ -16,9 +16,9 @@ Toolset to deploy StudyPortals products
 <dt><a href="#module_composer">composer</a></dt>
 <dd></dd>
 <dt><a href="#module_log">log</a></dt>
-<dd><p>Handles console logs
-The default verbosity level is: <code>process.env[&#39;VERBOSITY&#39;] || VERBOSITY.WARNING;</code></p>
-</dd>
+<dd></dd>
+<dt><a href="#module_prepare">prepare</a></dt>
+<dd></dd>
 </dl>
 
 <a name="module_bower"></a>
@@ -60,9 +60,6 @@ The installation will complete, without applying any changes, when no
 <a name="module_log"></a>
 
 ## log
-Handles console logs
-The default verbosity level is: `process.env['VERBOSITY'] || VERBOSITY.WARNING;`
-
 
 * [log](#module_log)
     * [VERBOSITY](#exp_module_log--VERBOSITY) : <code>enum</code> ⏏
@@ -92,7 +89,9 @@ Default options for verbosity
 <a name="exp_module_log--setVerbosity"></a>
 
 ### setVerbosity(x) ⇒ ⏏
-Set the verbosity level
+Set the verbosity level.
+
+The default verbosity level is: `process.env['VERBOSITY'] || VERBOSITY.WARNING;`
 
 **Kind**: Exported function  
 **Returns**: void  
@@ -149,5 +148,21 @@ Error message (red)
 | --- | --- |
 | message | <code>string</code> | 
 
+<a name="module_prepare"></a>
 
-_README.md generated at: Mon Jul 03 2017 19:02:02 GMT+0800 (China Standard Time)_
+## prepare
+<a name="exp_module_prepare--emptyDir"></a>
+
+### emptyDir(dir) ⇒ <code>Promise</code> ⏏
+Empties this directory.
+
+Essentially it removed and re-created the directory.
+
+**Kind**: Exported function  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| dir | <code>string</code> | The directory |
+
+
+_README.md generated at: Wed Jul 05 2017 18:12:19 GMT+0800 (China Standard Time)_
