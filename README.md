@@ -1,4 +1,4 @@
-# @studyportals/product-deploy@v1.3.0-alpha.1
+# @studyportals/product-deploy@v1.3.0-alpha.2
 
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/v/@studyportals/product-deploy.svg?style=flat" alt="NPM version" /></a>
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/l/@studyportals/product-deploy.svg?style=flat" alt="NPM license" /></a>
@@ -165,4 +165,4 @@ Essentially it removed and re-created the directory.
 | dir | <code>string</code> | The directory |
 
 
-_README.md generated at: Wed Jul 05 2017 18:12:19 GMT+0800 (China Standard Time)_
+_README.md generated at: Wed Jul 05 2017 18:23:35 GMT+0800 (China Standard Time)_

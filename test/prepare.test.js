@@ -19,7 +19,7 @@ it('The folder should exist and be empty', () =>{
 });
 
 after(function(done){
-	rimraf(dst, function(err){
+	return rimraf(dst, function(err){
 		if(err) return done(err);
 		done();
 	});
