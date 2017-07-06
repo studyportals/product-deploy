@@ -2,15 +2,12 @@
 
 const chai = require('chai');
 const bower = require('./../lib/bower');
-const rimraf = require('rimraf');
+const rimraf = require('./../lib/rimraf');
 
-const CWD = `${path.resolve(__dirname)}/../testcases/bower/`;
+const CWD = `./testcases/bower/`;
 
-const deleteBowerComponents = function(done){
-	rimraf(`${CWD}/bower_components`, function(err){
-		if(err) return done(err);
-		done();
-	});
+const deleteBowerComponents = function(){
+	return rimraf(`${CWD}/bower_components`);
 };
 
 before(deleteBowerComponents);

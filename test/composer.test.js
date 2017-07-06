@@ -2,15 +2,12 @@
 
 const chai = require('chai');
 const composer = require('./../lib/composer');
-const rimraf = require('rimraf');
+const rimraf = require('./../lib/rimraf');
 
-const CWD = `${path.resolve(__dirname)}/../testcases/composer`;
+const CWD = `./testcases/composer`;
 
-const deleteVendorFolder = function(done){
-	rimraf(`${CWD}/vendor`, function(err){
-		if(err) return done(err);
-		done();
-	});
+const deleteVendorFolder = function(){
+	return rimraf(`${CWD}/vendor`);
 };
 
 before(deleteVendorFolder);

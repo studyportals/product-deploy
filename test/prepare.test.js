@@ -5,7 +5,7 @@ chai.use(require('chai-fs'));
 const expect = chai.expect;
 const path = require('path');
 const prepare = require('./../lib/prepare');
-const rimraf = require('rimraf');
+const rimraf = require('./../lib/rimraf');
 
 const dst = `${path.resolve(__dirname)}/../testcases/prepare`;
 
@@ -20,9 +20,6 @@ it('The folder should exist and be empty', () =>{
 		});
 });
 
-after(function(done){
-	return rimraf(dst, function(err){
-		if(err) return done(err);
-		done();
-	});
+after(function(){
+	return rimraf(dst);
 });
