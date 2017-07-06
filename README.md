@@ -1,4 +1,4 @@
-# @studyportals/product-deploy@v1.3.0-alpha.3
+# @studyportals/product-deploy@v1.3.0-alpha.4
 
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/v/@studyportals/product-deploy.svg?style=flat" alt="NPM version" /></a>
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/l/@studyportals/product-deploy.svg?style=flat" alt="NPM license" /></a>
@@ -41,19 +41,22 @@ Toolset to deploy StudyPortals products
 
 ### @studyportals/product-deploy.bower
 **Kind**: static constant of [<code>@studyportals/product-deploy</code>](#module_@studyportals/product-deploy)  
-**See**: <a href="#lib/bower">  
+**See**: [lib/bower](#lib/bower)  
 <a name="module_@studyportals/product-deploy.composer"></a>
 
 ### @studyportals/product-deploy.composer
 **Kind**: static constant of [<code>@studyportals/product-deploy</code>](#module_@studyportals/product-deploy)  
+**See**: [lib/composer](#lib/composer)  
 <a name="module_@studyportals/product-deploy.log"></a>
 
 ### @studyportals/product-deploy.log
 **Kind**: static constant of [<code>@studyportals/product-deploy</code>](#module_@studyportals/product-deploy)  
+**See**: [lib/log](#lib/log)  
 <a name="module_@studyportals/product-deploy.prepare"></a>
 
 ### @studyportals/product-deploy.prepare
 **Kind**: static constant of [<code>@studyportals/product-deploy</code>](#module_@studyportals/product-deploy)  
+**See**: [lib/prepare](#lib/prepare)  
 <a name="module_lib/bower"></a>
 
 ## lib/bower
@@ -216,4 +219,4 @@ Essentially it removed and re-created the directory.
 | dir | <code>string</code> | The directory |
 
 
-_README.md generated at: Thu Jul 06 2017 13:57:34 GMT+0800 (China Standard Time)_
+_README.md generated at: Thu Jul 06 2017 14:12:38 GMT+0800 (China Standard Time)_
