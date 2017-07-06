@@ -1,4 +1,4 @@
-# @studyportals/product-deploy@v1.3.0-alpha.2
+# @studyportals/product-deploy@v1.3.0-alpha.3
 
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/v/@studyportals/product-deploy.svg?style=flat" alt="NPM version" /></a>
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/l/@studyportals/product-deploy.svg?style=flat" alt="NPM license" /></a>
@@ -11,70 +11,103 @@ Toolset to deploy StudyPortals products
 ## Modules
 
 <dl>
-<dt><a href="#module_bower">bower</a></dt>
+<dt><a href="#module_@studyportals/product-deploy">@studyportals/product-deploy</a></dt>
 <dd></dd>
-<dt><a href="#module_composer">composer</a></dt>
+<dt><a href="#module_lib/bower">lib/bower</a></dt>
 <dd></dd>
-<dt><a href="#module_log">log</a></dt>
+<dt><a href="#module_lib/composer">lib/composer</a></dt>
 <dd></dd>
-<dt><a href="#module_prepare">prepare</a></dt>
+<dt><a href="#module_lib/log">lib/log</a></dt>
+<dd></dd>
+<dt><a href="#module_lib/mkdirp">lib/mkdirp</a> ⇒ <code>Promise</code></dt>
+<dd></dd>
+<dt><a href="#module_lib/prepare">lib/prepare</a></dt>
+<dd></dd>
+<dt><a href="#module_lib/rimraf">lib/rimraf</a> ⇒ <code>Promise</code></dt>
 <dd></dd>
 </dl>
 
-<a name="module_bower"></a>
+<a name="module_@studyportals/product-deploy"></a>
 
-## bower
-<a name="exp_module_bower--install"></a>
+## @studyportals/product-deploy
 
-### install([opts]) ⇒ <code>Promise</code> ⏏
+* [@studyportals/product-deploy](#module_@studyportals/product-deploy)
+    * [.bower](#module_@studyportals/product-deploy.bower)
+    * [.composer](#module_@studyportals/product-deploy.composer)
+    * [.log](#module_@studyportals/product-deploy.log)
+    * [.prepare](#module_@studyportals/product-deploy.prepare)
+
+<a name="module_@studyportals/product-deploy.bower"></a>
+
+### @studyportals/product-deploy.bower
+**Kind**: static constant of [<code>@studyportals/product-deploy</code>](#module_@studyportals/product-deploy)  
+**See**: <a href="#lib/bower">  
+<a name="module_@studyportals/product-deploy.composer"></a>
+
+### @studyportals/product-deploy.composer
+**Kind**: static constant of [<code>@studyportals/product-deploy</code>](#module_@studyportals/product-deploy)  
+<a name="module_@studyportals/product-deploy.log"></a>
+
+### @studyportals/product-deploy.log
+**Kind**: static constant of [<code>@studyportals/product-deploy</code>](#module_@studyportals/product-deploy)  
+<a name="module_@studyportals/product-deploy.prepare"></a>
+
+### @studyportals/product-deploy.prepare
+**Kind**: static constant of [<code>@studyportals/product-deploy</code>](#module_@studyportals/product-deploy)  
+<a name="module_lib/bower"></a>
+
+## lib/bower
+<a name="module_lib/bower.install"></a>
+
+### lib/bower.install([opts]) ⇒ <code>Promise</code>
 Bower dependencies will be installed only if a bower.json exists.
 
 The installation will complete, without applying any changes, when no
 `bower.json` file is found.
 
-**Kind**: Exported function  
+**Kind**: static method of [<code>lib/bower</code>](#module_lib/bower)  
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
 | [opts] | <code>Object</code> |  |  |
 | [opts.cwd] | <code>string</code> | <code>&quot;process.cwd()&quot;</code> | Directory in which to execute bower install. |
 
-<a name="module_composer"></a>
+<a name="module_lib/composer"></a>
 
-## composer
-<a name="exp_module_composer--install"></a>
+## lib/composer
+<a name="module_lib/composer.install"></a>
 
-### install([opts]) ⇒ <code>Promise</code> ⏏
+### lib/composer.install([opts]) ⇒ <code>Promise</code>
 Composer dependencies will be installed only if a composer.json exists.
 
 The installation will complete, without applying any changes, when no
 `composer.json` file is found.
 
-**Kind**: Exported function  
+**Kind**: static method of [<code>lib/composer</code>](#module_lib/composer)  
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
 | [opts] | <code>Object</code> |  |  |
 | [opts.cwd] | <code>string</code> | <code>&quot;process.cwd()&quot;</code> | Directory in which to execute composer install. |
 
-<a name="module_log"></a>
+<a name="module_lib/log"></a>
 
-## log
+## lib/log
 
-* [log](#module_log)
-    * [VERBOSITY](#exp_module_log--VERBOSITY) : <code>enum</code> ⏏
-    * [setVerbosity(x)](#exp_module_log--setVerbosity) ⇒ ⏏
-    * [debug(message)](#exp_module_log--debug) ⇒ ⏏
-    * [info(message)](#exp_module_log--info) ⇒ ⏏
-    * [warning(message)](#exp_module_log--warning) ⇒ ⏏
-    * [error(message)](#exp_module_log--error) ⇒ ⏏
+* [lib/log](#module_lib/log)
+    * [.VERBOSITY](#module_lib/log.VERBOSITY) : <code>enum</code>
+    * [.setVerbosity(x)](#module_lib/log.setVerbosity) ⇒
+    * [.debug(message)](#module_lib/log.debug) ⇒
+    * [.info(message)](#module_lib/log.info) ⇒
+    * [.warning(message)](#module_lib/log.warning) ⇒
+    * [.error(message)](#module_lib/log.error) ⇒
 
-<a name="exp_module_log--VERBOSITY"></a>
+<a name="module_lib/log.VERBOSITY"></a>
 
-### VERBOSITY : <code>enum</code> ⏏
+### lib/log.VERBOSITY : <code>enum</code>
 Default options for verbosity
 
-**Kind**: Exported enum  
+**Kind**: static enum of [<code>lib/log</code>](#module_lib/log)  
 **Properties**
 
 | Name | Type | Default |
@@ -86,83 +119,101 @@ Default options for verbosity
 | DEBUG | <code>number</code> | <code>4</code> | 
 | ALL | <code>number</code> | <code>4</code> | 
 
-<a name="exp_module_log--setVerbosity"></a>
+<a name="module_lib/log.setVerbosity"></a>
 
-### setVerbosity(x) ⇒ ⏏
+### lib/log.setVerbosity(x) ⇒
 Set the verbosity level.
 
 The default verbosity level is: `process.env['VERBOSITY'] || VERBOSITY.WARNING;`
 
-**Kind**: Exported function  
+**Kind**: static method of [<code>lib/log</code>](#module_lib/log)  
 **Returns**: void  
 
 | Param | Type | Description |
 | --- | --- | --- |
 | x | <code>VERBOSITY</code> \| <code>number</code> | Verbosity level |
 
-<a name="exp_module_log--debug"></a>
+<a name="module_lib/log.debug"></a>
 
-### debug(message) ⇒ ⏏
+### lib/log.debug(message) ⇒
 Debug message (gray)
 
-**Kind**: Exported function  
+**Kind**: static method of [<code>lib/log</code>](#module_lib/log)  
 **Returns**: void  
 
 | Param | Type |
 | --- | --- |
 | message | <code>string</code> | 
 
-<a name="exp_module_log--info"></a>
+<a name="module_lib/log.info"></a>
 
-### info(message) ⇒ ⏏
+### lib/log.info(message) ⇒
 Info message (white)
 
-**Kind**: Exported function  
+**Kind**: static method of [<code>lib/log</code>](#module_lib/log)  
 **Returns**: void  
 
 | Param | Type |
 | --- | --- |
 | message | <code>string</code> | 
 
-<a name="exp_module_log--warning"></a>
+<a name="module_lib/log.warning"></a>
 
-### warning(message) ⇒ ⏏
+### lib/log.warning(message) ⇒
 Warning message (yellow)
 
-**Kind**: Exported function  
+**Kind**: static method of [<code>lib/log</code>](#module_lib/log)  
 **Returns**: void  
 
 | Param | Type |
 | --- | --- |
 | message | <code>string</code> | 
 
-<a name="exp_module_log--error"></a>
+<a name="module_lib/log.error"></a>
 
-### error(message) ⇒ ⏏
+### lib/log.error(message) ⇒
 Error message (red)
 
-**Kind**: Exported function  
+**Kind**: static method of [<code>lib/log</code>](#module_lib/log)  
 **Returns**: void  
 
 | Param | Type |
 | --- | --- |
 | message | <code>string</code> | 
 
-<a name="module_prepare"></a>
+<a name="module_lib/mkdirp"></a>
 
-## prepare
-<a name="exp_module_prepare--emptyDir"></a>
+## lib/mkdirp ⇒ <code>Promise</code>
+**See**: https://www.npmjs.com/package/mkdirp  
 
-### emptyDir(dir) ⇒ <code>Promise</code> ⏏
+| Param | Type | Description |
+| --- | --- | --- |
+| dir | <code>string</code> | The directory |
+
+<a name="module_lib/prepare"></a>
+
+## lib/prepare
+<a name="module_lib/prepare.emptyDir"></a>
+
+### lib/prepare.emptyDir(dir) ⇒ <code>Promise</code>
 Empties this directory.
 
 Essentially it removed and re-created the directory.
 
-**Kind**: Exported function  
+**Kind**: static method of [<code>lib/prepare</code>](#module_lib/prepare)  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| dir | <code>string</code> | The directory |
+
+<a name="module_lib/rimraf"></a>
+
+## lib/rimraf ⇒ <code>Promise</code>
+**See**: https://www.npmjs.com/package/rimraf  
 
 | Param | Type | Description |
 | --- | --- | --- |
 | dir | <code>string</code> | The directory |
 
 
-_README.md generated at: Wed Jul 05 2017 18:23:35 GMT+0800 (China Standard Time)_
+_README.md generated at: Thu Jul 06 2017 13:57:34 GMT+0800 (China Standard Time)_
