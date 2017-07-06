@@ -2,20 +2,22 @@
 
 const chai = require('chai');
 chai.use(require('chai-fs'));
-const prepare = require('./../lib/prepare');
 const expect = chai.expect;
+const path = require('path');
+const prepare = require('./../lib/prepare');
 const rimraf = require('rimraf');
 
-const dst = './testcases/prepare';
-
-before(function(){
-	return prepare.emptyDir(`${dst}/create_some_subfolder`)
-		.then(() => { return prepare.emptyDir(dst) });
-});
+const dst = `${path.resolve(__dirname)}/../testcases/prepare`;
 
 it('The folder should exist and be empty', () =>{
 
-	expect(dst).to.be.a.directory().and.empty;
+	return prepare.emptyDir(`${dst}/create_some_subfolder`)
+		.then(() =>{
+			return prepare.emptyDir(dst)
+		})
+		.then(() =>{
+			expect(dst).to.be.a.directory().and.empty;
+		});
 });
 
 after(function(done){

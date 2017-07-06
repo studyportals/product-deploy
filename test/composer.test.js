@@ -4,7 +4,7 @@ const chai = require('chai');
 const composer = require('./../lib/composer');
 const rimraf = require('rimraf');
 
-const CWD = './testcases/composer/';
+const CWD = `${path.resolve(__dirname)}/../testcases/composer`;
 
 const deleteVendorFolder = function(done){
 	rimraf(`${CWD}/vendor`, function(err){
