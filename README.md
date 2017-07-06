@@ -1,4 +1,4 @@
-# @studyportals/product-deploy@v1.3.0-alpha.4
+# @studyportals/product-deploy@v1.3.0-alpha.5
 
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/v/@studyportals/product-deploy.svg?style=flat" alt="NPM version" /></a>
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/l/@studyportals/product-deploy.svg?style=flat" alt="NPM license" /></a>
@@ -19,11 +19,11 @@ Toolset to deploy StudyPortals products
 <dd></dd>
 <dt><a href="#module_lib/log">lib/log</a></dt>
 <dd></dd>
-<dt><a href="#module_lib/mkdirp">lib/mkdirp</a> ⇒ <code>Promise</code></dt>
+<dt><a href="#module_lib/mkdirp">lib/mkdirp</a></dt>
 <dd></dd>
 <dt><a href="#module_lib/prepare">lib/prepare</a></dt>
 <dd></dd>
-<dt><a href="#module_lib/rimraf">lib/rimraf</a> ⇒ <code>Promise</code></dt>
+<dt><a href="#module_lib/rimraf">lib/rimraf</a></dt>
 <dd></dd>
 </dl>
 
@@ -186,7 +186,11 @@ Error message (red)
 
 <a name="module_lib/mkdirp"></a>
 
-## lib/mkdirp ⇒ <code>Promise</code>
+## lib/mkdirp
+<a name="exp_module_lib/mkdirp--mkdirp"></a>
+
+### mkdirp(dir) ⇒ <code>Promise</code> ⏏
+**Kind**: Exported function  
 **See**: https://www.npmjs.com/package/mkdirp  
 
 | Param | Type | Description |
@@ -211,12 +215,18 @@ Essentially it removed and re-created the directory.
 
 <a name="module_lib/rimraf"></a>
 
-## lib/rimraf ⇒ <code>Promise</code>
+## lib/rimraf
+<a name="exp_module_lib/rimraf--rimarf"></a>
+
+### rimarf(glob) ⇒ <code>Promise</code> ⏏
+The UNIX command `rm -rf` for node.It will ask the use (console) to retry when the glob cannot be removed due toan `EBUSY` error.
+
+**Kind**: Exported function  
 **See**: https://www.npmjs.com/package/rimraf  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| dir | <code>string</code> | The directory |
+| glob | <code>string</code> | The glob to delete |
 
 
-_README.md generated at: Thu Jul 06 2017 14:13:28 GMT+0800 (China Standard Time)_
+_README.md generated at: Thu Jul 06 2017 18:21:41 GMT+0800 (China Standard Time)_
