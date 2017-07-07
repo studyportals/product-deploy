@@ -1,4 +1,4 @@
-# @studyportals/product-deploy@v1.3.0-alpha.5
+# @studyportals/product-deploy@v1.3.0-alpha.7
 
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/v/@studyportals/product-deploy.svg?style=flat" alt="NPM version" /></a>
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/l/@studyportals/product-deploy.svg?style=flat" alt="NPM license" /></a>
@@ -216,10 +216,13 @@ Essentially it removed and re-created the directory.
 <a name="module_lib/rimraf"></a>
 
 ## lib/rimraf
-<a name="exp_module_lib/rimraf--rimarf"></a>
+<a name="exp_module_lib/rimraf--rimraf"></a>
 
-### rimarf(glob) ⇒ <code>Promise</code> ⏏
-The UNIX command `rm -rf` for node.It will ask the use (console) to retry when the glob cannot be removed due toan `EBUSY` error.
+### rimraf(glob) ⇒ <code>Promise</code> ⏏
+The UNIX command `rm -rf` for node.
+
+It will ask the use (console) to retry when the glob cannot be removed due to
+an `EBUSY` error.
 
 **Kind**: Exported function  
 **See**: https://www.npmjs.com/package/rimraf  
@@ -229,4 +232,4 @@ The UNIX command `rm -rf` for node.It will ask the use (console) to retry when
 | glob | <code>string</code> | The glob to delete |
 
 
-_README.md generated at: Thu Jul 06 2017 18:21:41 GMT+0800 (China Standard Time)_
+_README.md generated at: Fri Jul 07 2017 11:12:08 GMT+0800 (China Standard Time)_
