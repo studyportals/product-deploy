@@ -42,8 +42,10 @@
     "gulp": "^3.9.1",
     "gulp-bower": "0.0.13",
     "gulp-composer": "^0.4.0",
+    "gulp-confirm": "^1.0.6",
     "gulp-util": "^3.0.8",
     "mkdirp": "^0.5.1",
+    "node-ask": "^1.0.1",
     "rimraf": "^2.6.1",
     "yesno": "0.0.1"
   }

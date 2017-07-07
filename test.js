@@ -1,17 +1,9 @@
-const rimraf = require('./lib/rimraf');
+const prepare = require('./lib/prepare');
 const path = require('path');
 
 let dir = `${path.resolve(__dirname)}/testcases/prepare`;
-return rimraf(dir)
+return prepare.emptyDir(dir)
 	.then(function() {
 
 		console.log('done');
-	})
-	.then(function() {
-
-		console.log('next');
-	})
-	.catch(function() {
-		process.exit();
 	});
-//process.exit();
