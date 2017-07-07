@@ -205,9 +205,14 @@ Error message (red)
 ### lib/prepare.emptyDir(dir) ⇒ <code>Promise</code>
 Empties this directory.
 
-Essentially it removed and re-created the directory.
+Essentially it removes and re-created the directory.
 
 **Kind**: static method of [<code>lib/prepare</code>](#module_lib/prepare)  
+**See**
+
+- [lib/rimraf](#module_lib/rimraf)
+- [lib/mkdirp](#module_lib/mkdirp)
+
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -232,4 +237,4 @@ an `EBUSY` error.
 | glob | <code>string</code> | The glob to delete |
 
 
-_README.md generated at: Fri Jul 07 2017 11:12:08 GMT+0800 (China Standard Time)_
+_README.md generated at: Fri Jul 07 2017 11:18:28 GMT+0800 (China Standard Time)_
