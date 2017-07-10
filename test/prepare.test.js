@@ -9,7 +9,7 @@ const rimraf = require('./../lib/rimraf');
 
 const dst = `${path.resolve(__dirname)}/../testcases/prepare`;
 
-it('The folder should exist and be empty', () =>{
+it('Should ensure the folder exists and is empty.', () =>{
 
 	return prepare.emptyDir(`${dst}/create_some_subfolder`)
 		.then(() =>{
