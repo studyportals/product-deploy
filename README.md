@@ -1,4 +1,4 @@
-# @studyportals/product-deploy@v1.3.0-RC.2
+# @studyportals/product-deploy@v1.3.0-RC.3
 
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/v/@studyportals/product-deploy.svg?style=flat" alt="NPM version" /></a>
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/l/@studyportals/product-deploy.svg?style=flat" alt="NPM license" /></a>
@@ -200,10 +200,10 @@ Error message (red)
 <a name="module_lib/prepare"></a>
 
 ## lib/prepare
-<a name="module_lib/prepare.emptyDir"></a>
+<a name="module_lib/prepare.ensureEmptyDir"></a>
 
-### lib/prepare.emptyDir(dir) ⇒ <code>Promise</code>
-Empties this directory.
+### lib/prepare.ensureEmptyDir(dir) ⇒ <code>Promise</code>
+Ensures the directory exists and is empty.
 
 Essentially it removes and re-created the directory.
 
@@ -237,4 +237,4 @@ an `EBUSY` error.
 | glob | <code>string</code> | The glob to delete |
 
 
-_README.md generated at: Mon Jul 10 2017 17:02:00 GMT+0800 (China Standard Time)_
+_README.md generated at: Mon Jul 10 2017 17:19:05 GMT+0800 (China Standard Time)_

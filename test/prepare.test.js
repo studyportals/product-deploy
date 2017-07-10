@@ -11,9 +11,9 @@ const dst = `${path.resolve(__dirname)}/../testcases/prepare`;
 
 it('Should ensure the folder exists and is empty.', () =>{
 
-	return prepare.emptyDir(`${dst}/create_some_subfolder`)
+	return prepare.ensureEmptyDir(`${dst}/create_some_subfolder`)
 		.then(() =>{
-			return prepare.emptyDir(dst)
+			return prepare.ensureEmptyDir(dst)
 		})
 		.then(() =>{
 			expect(dst).to.be.a.directory().and.empty;
