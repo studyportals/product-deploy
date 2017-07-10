@@ -44,8 +44,7 @@
     "gulp-util": "^3.0.8",
     "mkdirp": "^0.5.1",
     "node-ask": "^1.0.1",
-    "rimraf": "^2.6.1",
-    "yesno": "0.0.1"
+    "rimraf": "^2.6.1"
   },
   "false": {}
 }
