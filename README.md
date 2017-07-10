@@ -1,4 +1,4 @@
-# @studyportals/product-deploy@v1.3.0-RC.1
+# @studyportals/product-deploy@v1.3.0-RC.2
 
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/v/@studyportals/product-deploy.svg?style=flat" alt="NPM version" /></a>
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/l/@studyportals/product-deploy.svg?style=flat" alt="NPM license" /></a>
@@ -17,9 +17,9 @@ Toolset to deploy StudyPortals products
 <dd></dd>
 <dt><a href="#module_lib/composer">lib/composer</a></dt>
 <dd></dd>
-<dt><a href="#module_lib/log">lib/log</a></dt>
+<dt><a href="#module_lib/ensureDir">lib/ensureDir</a></dt>
 <dd></dd>
-<dt><a href="#module_lib/mkdirp">lib/mkdirp</a></dt>
+<dt><a href="#module_lib/log">lib/log</a></dt>
 <dd></dd>
 <dt><a href="#module_lib/prepare">lib/prepare</a></dt>
 <dd></dd>
@@ -92,6 +92,19 @@ The installation will complete, without applying any changes, when no
 | --- | --- | --- | --- |
 | [opts] | <code>Object</code> |  |  |
 | [opts.cwd] | <code>string</code> | <code>&quot;process.cwd()&quot;</code> | Directory in which to execute composer install. |
+
+<a name="module_lib/ensureDir"></a>
+
+## lib/ensureDir
+<a name="exp_module_lib/ensureDir--ensureDir"></a>
+
+### ensureDir(dir) ⇒ <code>Promise</code> ⏏
+**Kind**: Exported function  
+**See**: https://www.npmjs.com/package/mkdirp  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| dir | <code>string</code> | The directory |
 
 <a name="module_lib/log"></a>
 
@@ -184,19 +197,6 @@ Error message (red)
 | --- | --- |
 | message | <code>string</code> | 
 
-<a name="module_lib/mkdirp"></a>
-
-## lib/mkdirp
-<a name="exp_module_lib/mkdirp--mkdirp"></a>
-
-### mkdirp(dir) ⇒ <code>Promise</code> ⏏
-**Kind**: Exported function  
-**See**: https://www.npmjs.com/package/mkdirp  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| dir | <code>string</code> | The directory |
-
 <a name="module_lib/prepare"></a>
 
 ## lib/prepare
@@ -237,4 +237,4 @@ an `EBUSY` error.
 | glob | <code>string</code> | The glob to delete |
 
 
-_README.md generated at: Mon Jul 10 2017 14:22:15 GMT+0800 (China Standard Time)_
+_README.md generated at: Mon Jul 10 2017 17:02:00 GMT+0800 (China Standard Time)_

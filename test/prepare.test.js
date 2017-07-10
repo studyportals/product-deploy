@@ -20,6 +20,6 @@ it('The folder should exist and be empty', () =>{
 		});
 });
 
-after(function(){
+after(() =>{
 	return rimraf(dst);
 });
