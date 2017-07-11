@@ -12,9 +12,9 @@ const bower = require('./lib/bower');
 
 /**
  * @static
- * @see {@link #module_lib/composer|lib/composer}
+ * @see {@link https://www.npmjs.com/package/@studyportals/composer|@studyportals/composer}
  */
-const composer = require('./lib/composer');
+const composer = require('@studyportals/composer');
 
 /**
  * @static

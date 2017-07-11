@@ -1,4 +1,4 @@
-# @studyportals/product-deploy@v1.3.0-RC.3
+# @studyportals/product-deploy@v1.3.0-RC.4
 
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/v/@studyportals/product-deploy.svg?style=flat" alt="NPM version" /></a>
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/l/@studyportals/product-deploy.svg?style=flat" alt="NPM license" /></a>
@@ -14,8 +14,6 @@ Toolset to deploy StudyPortals products
 <dt><a href="#module_@studyportals/product-deploy">@studyportals/product-deploy</a></dt>
 <dd></dd>
 <dt><a href="#module_lib/bower">lib/bower</a></dt>
-<dd></dd>
-<dt><a href="#module_lib/composer">lib/composer</a></dt>
 <dd></dd>
 <dt><a href="#module_lib/ensureDir">lib/ensureDir</a></dt>
 <dd></dd>
@@ -46,7 +44,7 @@ Toolset to deploy StudyPortals products
 
 ### @studyportals/product-deploy.composer
 **Kind**: static constant of [<code>@studyportals/product-deploy</code>](#module_@studyportals/product-deploy)  
-**See**: [lib/composer](#module_lib/composer)  
+**See**: [@studyportals/composer](https://www.npmjs.com/package/@studyportals/composer)  
 <a name="module_@studyportals/product-deploy.log"></a>
 
 ### @studyportals/product-deploy.log
@@ -74,24 +72,6 @@ The installation will complete, without applying any changes, when no
 | --- | --- | --- | --- |
 | [opts] | <code>Object</code> |  |  |
 | [opts.cwd] | <code>string</code> | <code>&quot;process.cwd()&quot;</code> | Directory in which to execute bower install. |
-
-<a name="module_lib/composer"></a>
-
-## lib/composer
-<a name="module_lib/composer.install"></a>
-
-### lib/composer.install([opts]) ⇒ <code>Promise</code>
-Composer dependencies will be installed only if a composer.json exists.
-
-The installation will complete, without applying any changes, when no
-`composer.json` file is found.
-
-**Kind**: static method of [<code>lib/composer</code>](#module_lib/composer)  
-
-| Param | Type | Default | Description |
-| --- | --- | --- | --- |
-| [opts] | <code>Object</code> |  |  |
-| [opts.cwd] | <code>string</code> | <code>&quot;process.cwd()&quot;</code> | Directory in which to execute composer install. |
 
 <a name="module_lib/ensureDir"></a>
 
@@ -237,4 +217,4 @@ an `EBUSY` error.
 | glob | <code>string</code> | The glob to delete |
 
 
-_README.md generated at: Mon Jul 10 2017 17:19:05 GMT+0800 (China Standard Time)_
+_README.md generated at: Tue Jul 11 2017 12:41:31 GMT+0800 (China Standard Time)_
