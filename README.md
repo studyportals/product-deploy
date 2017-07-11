@@ -1,4 +1,4 @@
-# @studyportals/product-deploy@v1.3.0-RC.4
+# @studyportals/product-deploy@v1.3.0-RC.5
 
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/v/@studyportals/product-deploy.svg?style=flat" alt="NPM version" /></a>
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/l/@studyportals/product-deploy.svg?style=flat" alt="NPM license" /></a>
@@ -12,8 +12,6 @@ Toolset to deploy StudyPortals products
 
 <dl>
 <dt><a href="#module_@studyportals/product-deploy">@studyportals/product-deploy</a></dt>
-<dd></dd>
-<dt><a href="#module_lib/bower">lib/bower</a></dt>
 <dd></dd>
 <dt><a href="#module_lib/ensureDir">lib/ensureDir</a></dt>
 <dd></dd>
@@ -39,7 +37,7 @@ Toolset to deploy StudyPortals products
 
 ### @studyportals/product-deploy.bower
 **Kind**: static constant of [<code>@studyportals/product-deploy</code>](#module_@studyportals/product-deploy)  
-**See**: [lib/bower](#module_lib/bower)  
+**See**: [@studyportals/bower](https://www.npmjs.com/package/@studyportals/bower)  
 <a name="module_@studyportals/product-deploy.composer"></a>
 
 ### @studyportals/product-deploy.composer
@@ -55,24 +53,6 @@ Toolset to deploy StudyPortals products
 ### @studyportals/product-deploy.prepare
 **Kind**: static constant of [<code>@studyportals/product-deploy</code>](#module_@studyportals/product-deploy)  
 **See**: [lib/prepare](#module_lib/prepare)  
-<a name="module_lib/bower"></a>
-
-## lib/bower
-<a name="module_lib/bower.install"></a>
-
-### lib/bower.install([opts]) ⇒ <code>Promise</code>
-Bower dependencies will be installed only if a bower.json exists.
-
-The installation will complete, without applying any changes, when no
-`bower.json` file is found.
-
-**Kind**: static method of [<code>lib/bower</code>](#module_lib/bower)  
-
-| Param | Type | Default | Description |
-| --- | --- | --- | --- |
-| [opts] | <code>Object</code> |  |  |
-| [opts.cwd] | <code>string</code> | <code>&quot;process.cwd()&quot;</code> | Directory in which to execute bower install. |
-
 <a name="module_lib/ensureDir"></a>
 
 ## lib/ensureDir
@@ -217,4 +197,4 @@ an `EBUSY` error.
 | glob | <code>string</code> | The glob to delete |
 
 
-_README.md generated at: Tue Jul 11 2017 12:41:31 GMT+0800 (China Standard Time)_
+_README.md generated at: Tue Jul 11 2017 12:46:20 GMT+0800 (China Standard Time)_

@@ -6,9 +6,9 @@
 
 /**
  * @static
- * @see {@link #module_lib/bower|lib/bower}
+ * @see {@link https://www.npmjs.com/package/@studyportals/bower|@studyportals/bower}
  */
-const bower = require('./lib/bower');
+const bower = require('@studyportals/bower');
 
 /**
  * @static
