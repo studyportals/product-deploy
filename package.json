@@ -39,10 +39,8 @@
     "mocha": "^3.4.2"
   },
   "dependencies": {
-    "@studyportals/bower": "^1.0.0",
-    "@studyportals/composer": "^1.0.0",
-    "gulp-bower": "0.0.13",
-    "gulp-composer": "^0.4.0",
+    "@studyportals/bower": "^1.0.1",
+    "@studyportals/composer": "^1.0.1",
     "gulp-util": "^3.0.8",
     "mkdirp": "^0.5.1",
     "node-ask": "^1.0.1",
