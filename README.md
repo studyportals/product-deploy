@@ -68,8 +68,11 @@ Toolset to deploy StudyPortals products
 
 Use `@studyportals/node-log` instead.
 
-**Todo:**: remove in next major release  
 **See**: [@studyportals/node-log](https://www.npmjs.com/package/@studyportals/node-log)  
+**Todo**
+
+- [ ] remove in next major release
+
 <a name="module_lib/prepare"></a>
 
 ## lib/prepare
@@ -110,4 +113,4 @@ an `EBUSY` error.
 | glob | <code>string</code> | The glob to delete |
 
 
-_README.md generated at: Wed Jul 12 2017 14:48:09 GMT+0800 (China Standard Time)_
+_README.md generated at: Wed Jul 12 2017 14:49:48 GMT+0800 (China Standard Time)_
