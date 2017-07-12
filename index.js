@@ -17,15 +17,10 @@ const bower = require('@studyportals/bower');
 const composer = require('@studyportals/composer');
 
 /**
- * Use `@studyportals/node-log` instead.
- * @deprecated
- * @see {@link https://www.npmjs.com/package/@studyportals/node-log|@studyportals/node-log}
- *
  * @static
- * @private
- * @see {@link #module_lib/log|lib/log}
+ * @see {@link https://www.npmjs.com/package/@studyportals/node-log|@studyportals/node-log}
  */
-const log = require('./lib/log');
+const log = require('@studyportals/node-log');
 
 /**
  * @static
