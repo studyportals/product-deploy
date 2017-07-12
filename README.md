@@ -15,8 +15,9 @@ Toolset to deploy StudyPortals products
 <dd></dd>
 <dt><a href="#module_lib/ensureDir">lib/ensureDir</a></dt>
 <dd></dd>
-<dt><a href="#module_lib/log">lib/log</a></dt>
-<dd></dd>
+<dt><del><a href="#module_lib/log">lib/log</a></del></dt>
+<dd><p>Use <code>@studyportals/node-log</code> instead.</p>
+</dd>
 <dt><a href="#module_lib/prepare">lib/prepare</a></dt>
 <dd></dd>
 <dt><a href="#module_lib/rimraf">lib/rimraf</a></dt>
@@ -68,95 +69,13 @@ Toolset to deploy StudyPortals products
 
 <a name="module_lib/log"></a>
 
-## lib/log
+## ~~lib/log~~
+***Deprecated***
 
-* [lib/log](#module_lib/log)
-    * [.VERBOSITY](#module_lib/log.VERBOSITY) : <code>enum</code>
-    * [.setVerbosity(x)](#module_lib/log.setVerbosity) ⇒
-    * [.debug(message)](#module_lib/log.debug) ⇒
-    * [.info(message)](#module_lib/log.info) ⇒
-    * [.warning(message)](#module_lib/log.warning) ⇒
-    * [.error(message)](#module_lib/log.error) ⇒
+Use `@studyportals/node-log` instead.
 
-<a name="module_lib/log.VERBOSITY"></a>
-
-### lib/log.VERBOSITY : <code>enum</code>
-Default options for verbosity
-
-**Kind**: static enum of [<code>lib/log</code>](#module_lib/log)  
-**Properties**
-
-| Name | Type | Default |
-| --- | --- | --- |
-| NONE | <code>number</code> | <code>0</code> | 
-| ERROR | <code>number</code> | <code>1</code> | 
-| WARNING | <code>number</code> | <code>2</code> | 
-| INFO | <code>number</code> | <code>3</code> | 
-| DEBUG | <code>number</code> | <code>4</code> | 
-| ALL | <code>number</code> | <code>4</code> | 
-
-<a name="module_lib/log.setVerbosity"></a>
-
-### lib/log.setVerbosity(x) ⇒
-Set the verbosity level.
-
-The default verbosity level is: `process.env['VERBOSITY'] || VERBOSITY.WARNING;`
-
-**Kind**: static method of [<code>lib/log</code>](#module_lib/log)  
-**Returns**: void  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| x | <code>VERBOSITY</code> \| <code>number</code> | Verbosity level |
-
-<a name="module_lib/log.debug"></a>
-
-### lib/log.debug(message) ⇒
-Debug message (gray)
-
-**Kind**: static method of [<code>lib/log</code>](#module_lib/log)  
-**Returns**: void  
-
-| Param | Type |
-| --- | --- |
-| message | <code>string</code> | 
-
-<a name="module_lib/log.info"></a>
-
-### lib/log.info(message) ⇒
-Info message (white)
-
-**Kind**: static method of [<code>lib/log</code>](#module_lib/log)  
-**Returns**: void  
-
-| Param | Type |
-| --- | --- |
-| message | <code>string</code> | 
-
-<a name="module_lib/log.warning"></a>
-
-### lib/log.warning(message) ⇒
-Warning message (yellow)
-
-**Kind**: static method of [<code>lib/log</code>](#module_lib/log)  
-**Returns**: void  
-
-| Param | Type |
-| --- | --- |
-| message | <code>string</code> | 
-
-<a name="module_lib/log.error"></a>
-
-### lib/log.error(message) ⇒
-Error message (red)
-
-**Kind**: static method of [<code>lib/log</code>](#module_lib/log)  
-**Returns**: void  
-
-| Param | Type |
-| --- | --- |
-| message | <code>string</code> | 
-
+**Todo:**: remove in next major release  
+**See**: [@studyportals/node-log](https://www.npmjs.com/package/@studyportals/node-log)  
 <a name="module_lib/prepare"></a>
 
 ## lib/prepare
@@ -197,4 +116,4 @@ an `EBUSY` error.
 | glob | <code>string</code> | The glob to delete |
 
 
-_README.md generated at: Tue Jul 11 2017 12:46:20 GMT+0800 (China Standard Time)_
+_README.md generated at: Wed Jul 12 2017 14:28:43 GMT+0800 (China Standard Time)_
