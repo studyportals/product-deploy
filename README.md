@@ -1,4 +1,4 @@
-# @studyportals/product-deploy@v1.3.0-RC.6
+# @studyportals/product-deploy@v1.3.0
 
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/v/@studyportals/product-deploy.svg?style=flat" alt="NPM version" /></a>
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/l/@studyportals/product-deploy.svg?style=flat" alt="NPM license" /></a>
@@ -113,4 +113,4 @@ an `EBUSY` error.
 | glob | <code>string</code> | The glob to delete |
 
 
-_README.md generated at: Wed Jul 12 2017 14:49:48 GMT+0800 (China Standard Time)_
+_README.md generated at: Wed Jul 12 2017 16:59:55 GMT+0800 (China Standard Time)_
