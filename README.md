@@ -1,4 +1,4 @@
-# @studyportals/product-deploy@v1.3.3
+# @studyportals/product-deploy@v1.3.4-alpha.2
 
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/v/@studyportals/product-deploy.svg?style=flat" alt="NPM version" /></a>
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/l/@studyportals/product-deploy.svg?style=flat" alt="NPM license" /></a>
@@ -29,21 +29,12 @@ Toolset to deploy StudyPortals products
 ## @studyportals/product-deploy
 
 * [@studyportals/product-deploy](#module_@studyportals/product-deploy)
-    * [.bower](#module_@studyportals/product-deploy.bower)
-    * [.composer](#module_@studyportals/product-deploy.composer)
     * [.log](#module_@studyportals/product-deploy.log)
     * [.prepare](#module_@studyportals/product-deploy.prepare)
+    * [.bower](#module_@studyportals/product-deploy.bower)
+    * [.composer](#module_@studyportals/product-deploy.composer)
+    * [.sass](#module_@studyportals/product-deploy.sass)
 
-<a name="module_@studyportals/product-deploy.bower"></a>
-
-### @studyportals/product-deploy.bower
-**Kind**: static constant of [<code>@studyportals/product-deploy</code>](#module_@studyportals/product-deploy)  
-**See**: [@studyportals/bower](https://www.npmjs.com/package/@studyportals/bower)  
-<a name="module_@studyportals/product-deploy.composer"></a>
-
-### @studyportals/product-deploy.composer
-**Kind**: static constant of [<code>@studyportals/product-deploy</code>](#module_@studyportals/product-deploy)  
-**See**: [@studyportals/composer](https://www.npmjs.com/package/@studyportals/composer)  
 <a name="module_@studyportals/product-deploy.log"></a>
 
 ### @studyportals/product-deploy.log
@@ -54,6 +45,21 @@ Toolset to deploy StudyPortals products
 ### @studyportals/product-deploy.prepare
 **Kind**: static constant of [<code>@studyportals/product-deploy</code>](#module_@studyportals/product-deploy)  
 **See**: [lib/prepare](#module_lib/prepare)  
+<a name="module_@studyportals/product-deploy.bower"></a>
+
+### @studyportals/product-deploy.bower
+**Kind**: static constant of [<code>@studyportals/product-deploy</code>](#module_@studyportals/product-deploy)  
+**See**: [@studyportals/bower](https://www.npmjs.com/package/@studyportals/bower)  
+<a name="module_@studyportals/product-deploy.composer"></a>
+
+### @studyportals/product-deploy.composer
+**Kind**: static constant of [<code>@studyportals/product-deploy</code>](#module_@studyportals/product-deploy)  
+**See**: [@studyportals/composer](https://www.npmjs.com/package/@studyportals/composer)  
+<a name="module_@studyportals/product-deploy.sass"></a>
+
+### @studyportals/product-deploy.sass
+**Kind**: static constant of [<code>@studyportals/product-deploy</code>](#module_@studyportals/product-deploy)  
+**See**: [@studyportals/sass](https://www.npmjs.com/package/@studyportals/sass)  
 <a name="module_lib/ensureDir"></a>
 
 ## lib/ensureDir
@@ -119,4 +125,4 @@ an `EBUSY` error.
 | glob | <code>string</code> | The glob to delete |
 
 
-_README.md generated at: Mon Jul 17 2017 14:03:53 GMT+0200 (W. Europe Daylight Time)_
+_README.md generated at: Thu Jul 20 2017 09:57:16 GMT+0200 (W. Europe Daylight Time)_
