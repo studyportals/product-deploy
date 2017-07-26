@@ -41,7 +41,7 @@
   "dependencies": {
     "@studyportals/bower": "^1.0.2",
     "@studyportals/composer": "^1.0.4",
-    "@studyportals/js": "^1.0.0-alpha.3",
+    "@studyportals/js": "^1.0.0",
     "@studyportals/node-log": "^1.0.0",
     "@studyportals/sass": "^1.0.0",
     "gulp": "^3.9.1",
