@@ -1,4 +1,4 @@
-# @studyportals/product-deploy@v1.4.1-0
+# @studyportals/product-deploy@v1.5.0
 
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/v/@studyportals/product-deploy.svg?style=flat" alt="NPM version" /></a>
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/l/@studyportals/product-deploy.svg?style=flat" alt="NPM license" /></a>
@@ -86,7 +86,7 @@ Toolset to deploy StudyPortals products
 ## lib/js
 <a name="module_lib/js.compile"></a>
 
-### lib/js.compile([opts]) ⇒ <code>Promise</code>
+### lib/js.compile([opts])
 Compiles ES6 js into uglified ES2015 js.
 
 **Kind**: static method of [<code>lib/js</code>](#module_lib/js)  
@@ -94,7 +94,7 @@ Compiles ES6 js into uglified ES2015 js.
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
 | [opts] | <code>Object</code> |  |  |
-| [opts.from] | <code>String</code> \| <code>Array</code> | <code>All *.js files in process.cwd()</code> | Glob |
+| [opts.from] | <code>String</code> \| <code>Array</code> | <code>*.js</code> | Glob |
 | [opts.to] | <code>String</code> | <code>process.cwd()</code> |  |
 | [opts.uglify] | <code>String</code> | <code>true</code> |  |
 
@@ -150,4 +150,4 @@ an `EBUSY` error.
 | glob | <code>string</code> | The glob to delete |
 
 
-_README.md generated at: Fri Jul 21 2017 12:48:27 GMT+0200 (W. Europe Daylight Time)_
+_README.md generated at: Wed Jul 26 2017 12:29:11 GMT+0200 (W. Europe Daylight Time)_
