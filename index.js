@@ -34,10 +34,17 @@ const composer = require('@studyportals/composer');
  */
 const sass = require('@studyportals/sass');
 
+/**
+ * @static
+ * @see {@link #module_lib/js|lib/js}
+ */
+const js = require('./lib/js');
+
 module.exports = {
 	log,
 	prepare,
 	bower,
 	composer,
 	sass,
+	js,
 };
