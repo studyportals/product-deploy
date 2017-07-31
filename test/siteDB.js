@@ -21,4 +21,4 @@ it('It should compile Site.db without errors', () =>{
 		buildDir,
 		product: 'Bachelors'
 	});
-}).timeout(10000);
+}).timeout(15000);
