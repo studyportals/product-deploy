@@ -163,7 +163,7 @@ an `EBUSY` error.
 <a name="module_lib/siteDB.compile"></a>
 
 ### lib/siteDB.compile(opts) ⇒ <code>Promise</code>
-Compile the siteDB.It will execute the sql statements in these files:- `${opts.buildDir}/vendor/studyportals/cms/Core/InitTables.sqlite`- `${opts.buildDir}/Packages/${opts.product}/Core/Site.sqlite`
+Compile the siteDB.It will execute the sql statements in these files- `${opts.buildDir}/vendor/studyportals/cms/Core/InitTables.sqlite`- `${opts.buildDir}/Packages/${opts.product}/Core/Site.sqlite`and generates- `${opts.buildDir}/Packages/${opts.product}/Core/Site.sqlite`
 
 **Kind**: static method of [<code>lib/siteDB</code>](#module_lib/siteDB)  
 
@@ -174,4 +174,4 @@ Compile the siteDB.It will execute the sql statements in these files:- `${opt
 | opts.product | <code>String</code> | 
 
 
-_README.md generated at: Mon Jul 31 2017 12:19:35 GMT+0200 (W. Europe Daylight Time)_
+_README.md generated at: Mon Jul 31 2017 12:23:19 GMT+0200 (W. Europe Daylight Time)_
