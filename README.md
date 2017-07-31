@@ -160,12 +160,12 @@ an `EBUSY` error.
 <a name="module_lib/siteDB"></a>
 
 ## lib/siteDB
-<a name="module_lib/siteDB..compile"></a>
+<a name="module_lib/siteDB.compile"></a>
 
-### lib/siteDB~compile(opts) ⇒ <code>Promise</code>
-Compile the siteDB
+### lib/siteDB.compile(opts) ⇒ <code>Promise</code>
+Compile the siteDB.It will execute the sql statements in these files:`${opts.buildDir}/vendor/studyportals/cms/Core/InitTables.sqlite``${opts.buildDir}/Packages/${opts.product}/Core/Site.sqlite`
 
-**Kind**: inner method of [<code>lib/siteDB</code>](#module_lib/siteDB)  
+**Kind**: static method of [<code>lib/siteDB</code>](#module_lib/siteDB)  
 
 | Param | Type |
 | --- | --- |
@@ -174,4 +174,4 @@ Compile the siteDB
 | opts.product | <code>String</code> | 
 
 
-_README.md generated at: Mon Jul 31 2017 11:28:58 GMT+0200 (W. Europe Daylight Time)_
+_README.md generated at: Mon Jul 31 2017 11:36:51 GMT+0200 (W. Europe Daylight Time)_
