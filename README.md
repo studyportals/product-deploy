@@ -1,4 +1,4 @@
-# @studyportals/product-deploy@v1.5.0
+# @studyportals/product-deploy@v1.6.0-alpha.1
 
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/v/@studyportals/product-deploy.svg?style=flat" alt="NPM version" /></a>
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/l/@studyportals/product-deploy.svg?style=flat" alt="NPM license" /></a>
@@ -24,6 +24,8 @@ Toolset to deploy StudyPortals products
 <dd></dd>
 <dt><a href="#module_lib/rimraf">lib/rimraf</a></dt>
 <dd></dd>
+<dt><a href="#module_lib/siteDB">lib/siteDB</a></dt>
+<dd></dd>
 </dl>
 
 <a name="module_@studyportals/product-deploy"></a>
@@ -37,6 +39,7 @@ Toolset to deploy StudyPortals products
     * [.composer](#module_@studyportals/product-deploy.composer)
     * [.sass](#module_@studyportals/product-deploy.sass)
     * [.js](#module_@studyportals/product-deploy.js)
+    * [.siteDB](#module_@studyportals/product-deploy.siteDB)
 
 <a name="module_@studyportals/product-deploy.log"></a>
 
@@ -68,6 +71,11 @@ Toolset to deploy StudyPortals products
 ### @studyportals/product-deploy.js
 **Kind**: static constant of [<code>@studyportals/product-deploy</code>](#module_@studyportals/product-deploy)  
 **See**: [lib/js](#module_lib/js)  
+<a name="module_@studyportals/product-deploy.siteDB"></a>
+
+### @studyportals/product-deploy.siteDB
+**Kind**: static constant of [<code>@studyportals/product-deploy</code>](#module_@studyportals/product-deploy)  
+**See**: [lib/siteDB](#module_lib/siteDB)  
 <a name="module_lib/ensureDir"></a>
 
 ## lib/ensureDir
@@ -149,5 +157,21 @@ an `EBUSY` error.
 | --- | --- | --- |
 | glob | <code>string</code> | The glob to delete |
 
+<a name="module_lib/siteDB"></a>
 
-_README.md generated at: Wed Jul 26 2017 12:29:11 GMT+0200 (W. Europe Daylight Time)_
+## lib/siteDB
+<a name="module_lib/siteDB..compile"></a>
+
+### lib/siteDB~compile(opts) ⇒ <code>Promise</code>
+Compile the siteDB
+
+**Kind**: inner method of [<code>lib/siteDB</code>](#module_lib/siteDB)  
+
+| Param | Type |
+| --- | --- |
+| opts | <code>Object</code> | 
+| opts.buildDir | <code>String</code> | 
+| opts.product | <code>String</code> | 
+
+
+_README.md generated at: Mon Jul 31 2017 11:28:58 GMT+0200 (W. Europe Daylight Time)_
