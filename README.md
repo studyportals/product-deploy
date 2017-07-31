@@ -1,4 +1,4 @@
-# @studyportals/product-deploy@v1.6.0-alpha.1
+# @studyportals/product-deploy@v1.6.0-RC.1
 
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/v/@studyportals/product-deploy.svg?style=flat" alt="NPM version" /></a>
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/l/@studyportals/product-deploy.svg?style=flat" alt="NPM license" /></a>
@@ -174,4 +174,4 @@ Compile the siteDB.It will execute the sql statements in these files:`${opts.
 | opts.product | <code>String</code> | 
 
 
-_README.md generated at: Mon Jul 31 2017 11:40:01 GMT+0200 (W. Europe Daylight Time)_
+_README.md generated at: Mon Jul 31 2017 11:54:11 GMT+0200 (W. Europe Daylight Time)_
