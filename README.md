@@ -79,10 +79,10 @@ Toolset to deploy StudyPortals products
 <a name="module_lib/ensureDir"></a>
 
 ## lib/ensureDir
-<a name="exp_module_lib/ensureDir--ensureDir"></a>
+<a name="module_lib/ensureDir.ensureDir"></a>
 
-### ensureDir(dir) ⇒ <code>Promise</code> ⏏
-**Kind**: Exported function  
+### lib/ensureDir.ensureDir(dir) ⇒ <code>Promise</code>
+**Kind**: static method of [<code>lib/ensureDir</code>](#module_lib/ensureDir)  
 **See**: https://www.npmjs.com/package/mkdirp  
 
 | Param | Type | Description |
@@ -142,15 +142,15 @@ Essentially it removes and re-created the directory.
 <a name="module_lib/rimraf"></a>
 
 ## lib/rimraf
-<a name="exp_module_lib/rimraf--rimraf"></a>
+<a name="module_lib/rimraf.rimraf"></a>
 
-### rimraf(glob) ⇒ <code>Promise</code> ⏏
+### lib/rimraf.rimraf(glob) ⇒ <code>Promise</code>
 The UNIX command `rm -rf` for node.
 
 It will ask the use (console) to retry when the glob cannot be removed due to
 an `EBUSY` error.
 
-**Kind**: Exported function  
+**Kind**: static method of [<code>lib/rimraf</code>](#module_lib/rimraf)  
 **See**: https://www.npmjs.com/package/rimraf  
 
 | Param | Type | Description |
@@ -174,4 +174,4 @@ Compile the siteDB.It will execute the sql statements in these files:`${opts.
 | opts.product | <code>String</code> | 
 
 
-_README.md generated at: Mon Jul 31 2017 11:36:51 GMT+0200 (W. Europe Daylight Time)_
+_README.md generated at: Mon Jul 31 2017 11:40:01 GMT+0200 (W. Europe Daylight Time)_
