@@ -40,6 +40,12 @@ const sass = require('@studyportals/sass');
  */
 const js = require('./lib/js');
 
+/**
+ * @static
+ * @see {@link #module_lib/siteDB|lib/siteDB}
+ */
+const siteDB = require('./lib/siteDB');
+
 module.exports = {
 	log,
 	prepare,
@@ -47,4 +53,5 @@ module.exports = {
 	composer,
 	sass,
 	js,
+	siteDB,
 };
