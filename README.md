@@ -1,4 +1,4 @@
-# @studyportals/product-deploy@v1.6.0-RC.2
+# @studyportals/product-deploy@v1.6.0
 
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/v/@studyportals/product-deploy.svg?style=flat" alt="NPM version" /></a>
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/l/@studyportals/product-deploy.svg?style=flat" alt="NPM license" /></a>
@@ -163,7 +163,7 @@ an `EBUSY` error.
 <a name="module_lib/siteDB.compile"></a>
 
 ### lib/siteDB.compile(opts) ⇒ <code>Promise</code>
-Compile the siteDB.It will execute the sql statements in these files- `${opts.buildDir}/vendor/studyportals/cms/Core/InitTables.sqlite`- `${opts.buildDir}/Packages/${opts.product}/Core/Site.sqlite`and generates- `${opts.buildDir}/Packages/${opts.product}/Core/Site.db`
+Compile the Site.db.It will execute the sql statements in these files- `${opts.buildDir}/vendor/studyportals/cms/Core/InitTables.sqlite`- `${opts.buildDir}/Packages/${opts.product}/Core/Site.sqlite`and generates- `${opts.buildDir}/Packages/${opts.product}/Core/Site.db`
 
 **Kind**: static method of [<code>lib/siteDB</code>](#module_lib/siteDB)  
 
@@ -174,4 +174,4 @@ Compile the siteDB.It will execute the sql statements in these files- `${opts
 | opts.product | <code>String</code> | 
 
 
-_README.md generated at: Mon Jul 31 2017 12:27:33 GMT+0200 (W. Europe Daylight Time)_
+_README.md generated at: Sat Aug 05 2017 19:03:26 GMT+0200 (W. Europe Daylight Time)_
