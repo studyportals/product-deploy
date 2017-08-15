@@ -1,4 +1,4 @@
-# @studyportals/product-deploy@v1.7.0-alpha.1
+# @studyportals/product-deploy@v1.7.0-alpha.4
 
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/v/@studyportals/product-deploy.svg?style=flat" alt="NPM version" /></a>
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/l/@studyportals/product-deploy.svg?style=flat" alt="NPM license" /></a>
@@ -31,9 +31,6 @@ Toolset to deploy StudyPortals products
 ## Constants
 
 <dl>
-<dt><a href="#_products">_products</a></dt>
-<dd><p>HashMap of product =&gt; producttype</p>
-</dd>
 <dt><a href="#env">env</a></dt>
 <dd><p>Environments</p>
 </dd>
@@ -42,6 +39,14 @@ Toolset to deploy StudyPortals products
 ## Functions
 
 <dl>
+<dt><a href="#attachToGulp">attachToGulp(gulp, opts)</a></dt>
+<dd><p>Overwrite gulp tasks from <code>@prtl/local-deploy-portal-spici</code></p>
+<p>This file is used to overwrite already existing gulp tasks from our private
+<code>@prtl/local-deploy-portal-spici</code>. Therefore is is also an intermediate state
+until we can fully rely on this package for our deploys. Once all the steps
+are rewritten we can simply expose one method per type of deploy and call that
+from the main <code>Gulpfile.js</code></p>
+</dd>
 <dt><a href="#configure">configure(opts)</a> ⇒ <code>Promise</code></dt>
 <dd><p>Copy the project configuration.</p>
 </dd>
@@ -60,6 +65,7 @@ Toolset to deploy StudyPortals products
     * [.js](#module_@studyportals/product-deploy.js)
     * [.siteDB](#module_@studyportals/product-deploy.siteDB)
     * [.configure](#module_@studyportals/product-deploy.configure)
+    * [.attachToGulp](#module_@studyportals/product-deploy.attachToGulp)
 
 <a name="module_@studyportals/product-deploy.log"></a>
 
@@ -101,6 +107,11 @@ Toolset to deploy StudyPortals products
 ### @studyportals/product-deploy.configure
 **Kind**: static constant of [<code>@studyportals/product-deploy</code>](#module_@studyportals/product-deploy)  
 **See**: [lib/configure](#module_lib/configure)  
+<a name="module_@studyportals/product-deploy.attachToGulp"></a>
+
+### @studyportals/product-deploy.attachToGulp
+**Kind**: static constant of [<code>@studyportals/product-deploy</code>](#module_@studyportals/product-deploy)  
+**See**: [lib/attachToGulp](#module_lib/attachToGulp)  
 <a name="module_lib/ensureDir"></a>
 
 ## lib/ensureDir
@@ -205,18 +216,27 @@ and generates
 | opts.buildDir | <code>String</code> | 
 | opts.product | <code>String</code> | 
 
-<a name="_products"></a>
-
-## _products
-HashMap of product => producttype
-
-**Kind**: global constant  
 <a name="env"></a>
 
 ## env
 Environments
 
 **Kind**: global constant  
+<a name="attachToGulp"></a>
+
+## attachToGulp(gulp, opts)
+Overwrite gulp tasks from `@prtl/local-deploy-portal-spici`This file is used to overwrite already existing gulp tasks from our private`@prtl/local-deploy-portal-spici`. Therefore is is also an intermediate stateuntil we can fully rely on this package for our deploys. Once all the stepsare rewritten we can simply expose one method per type of deploy and call thatfrom the main `Gulpfile.js`
+
+**Kind**: global function  
+
+| Param | Type |
+| --- | --- |
+| gulp | <code>Gulp</code> | 
+| opts | <code>Object</code> | 
+| opts.buildDir | <code>string</code> | 
+| opts.env | <code>string</code> | 
+| opts.enableCompression | <code>string</code> | 
+
 <a name="configure"></a>
 
 ## configure(opts) ⇒ <code>Promise</code>
@@ -232,4 +252,4 @@ Copy the project configuration.
 | opts.env | <code>string</code> | 
 
 
-_README.md generated at: Tue Aug 15 2017 15:52:04 GMT+0200 (W. Europe Daylight Time)_
+_README.md generated at: Tue Aug 15 2017 16:48:14 GMT+0200 (W. Europe Daylight Time)_

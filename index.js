@@ -52,6 +52,12 @@ const siteDB = require('./lib/siteDB');
  */
 const configure = require('./lib/configure');
 
+/**
+ * @static
+ * @see {@link #module_lib/attachToGulp|lib/attachToGulp}
+ */
+const attachToGulp = require('./lib/attachToGulp');
+
 module.exports = {
 	log,
 	prepare,
@@ -61,4 +67,5 @@ module.exports = {
 	js,
 	siteDB,
 	configure,
+	attachToGulp
 };
