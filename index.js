@@ -46,6 +46,12 @@ const js = require('./lib/js');
  */
 const siteDB = require('./lib/siteDB');
 
+/**
+ * @static
+ * @see {@link #module_lib/configure|lib/configure}
+ */
+const configure = require('./lib/configure');
+
 module.exports = {
 	log,
 	prepare,
@@ -54,4 +60,5 @@ module.exports = {
 	sass,
 	js,
 	siteDB,
+	configure,
 };

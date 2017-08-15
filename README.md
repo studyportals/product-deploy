@@ -1,4 +1,4 @@
-# @studyportals/product-deploy@v1.6.0
+# @studyportals/product-deploy@v1.7.0-alpha.1
 
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/v/@studyportals/product-deploy.svg?style=flat" alt="NPM version" /></a>
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/l/@studyportals/product-deploy.svg?style=flat" alt="NPM license" /></a>
@@ -28,6 +28,25 @@ Toolset to deploy StudyPortals products
 <dd></dd>
 </dl>
 
+## Constants
+
+<dl>
+<dt><a href="#_products">_products</a></dt>
+<dd><p>HashMap of product =&gt; producttype</p>
+</dd>
+<dt><a href="#env">env</a></dt>
+<dd><p>Environments</p>
+</dd>
+</dl>
+
+## Functions
+
+<dl>
+<dt><a href="#configure">configure(opts)</a> ⇒ <code>Promise</code></dt>
+<dd><p>Copy the project configuration.</p>
+</dd>
+</dl>
+
 <a name="module_@studyportals/product-deploy"></a>
 
 ## @studyportals/product-deploy
@@ -40,6 +59,7 @@ Toolset to deploy StudyPortals products
     * [.sass](#module_@studyportals/product-deploy.sass)
     * [.js](#module_@studyportals/product-deploy.js)
     * [.siteDB](#module_@studyportals/product-deploy.siteDB)
+    * [.configure](#module_@studyportals/product-deploy.configure)
 
 <a name="module_@studyportals/product-deploy.log"></a>
 
@@ -76,6 +96,11 @@ Toolset to deploy StudyPortals products
 ### @studyportals/product-deploy.siteDB
 **Kind**: static constant of [<code>@studyportals/product-deploy</code>](#module_@studyportals/product-deploy)  
 **See**: [lib/siteDB](#module_lib/siteDB)  
+<a name="module_@studyportals/product-deploy.configure"></a>
+
+### @studyportals/product-deploy.configure
+**Kind**: static constant of [<code>@studyportals/product-deploy</code>](#module_@studyportals/product-deploy)  
+**See**: [lib/configure](#module_lib/configure)  
 <a name="module_lib/ensureDir"></a>
 
 ## lib/ensureDir
@@ -163,7 +188,14 @@ an `EBUSY` error.
 <a name="module_lib/siteDB.compile"></a>
 
 ### lib/siteDB.compile(opts) ⇒ <code>Promise</code>
-Compile the Site.db.It will execute the sql statements in these files- `${opts.buildDir}/vendor/studyportals/cms/Core/InitTables.sqlite`- `${opts.buildDir}/Packages/${opts.product}/Core/Site.sqlite`and generates- `${opts.buildDir}/Packages/${opts.product}/Core/Site.db`
+Compile the Site.db.
+
+It will execute the sql statements in these files
+- `${opts.buildDir}/vendor/studyportals/cms/Core/InitTables.sqlite`
+- `${opts.buildDir}/Packages/${opts.product}/Core/Site.sqlite`
+
+and generates
+- `${opts.buildDir}/Packages/${opts.product}/Core/Site.db`
 
 **Kind**: static method of [<code>lib/siteDB</code>](#module_lib/siteDB)  
 
@@ -173,5 +205,31 @@ Compile the Site.db.It will execute the sql statements in these files- `${opt
 | opts.buildDir | <code>String</code> | 
 | opts.product | <code>String</code> | 
 
+<a name="_products"></a>
 
-_README.md generated at: Sat Aug 05 2017 19:03:26 GMT+0200 (W. Europe Daylight Time)_
+## _products
+HashMap of product => producttype
+
+**Kind**: global constant  
+<a name="env"></a>
+
+## env
+Environments
+
+**Kind**: global constant  
+<a name="configure"></a>
+
+## configure(opts) ⇒ <code>Promise</code>
+Copy the project configuration.
+
+**Kind**: global function  
+
+| Param | Type |
+| --- | --- |
+| opts | <code>Object</code> | 
+| [opts.product] | <code>string</code> | 
+| opts.to | <code>string</code> | 
+| opts.env | <code>string</code> | 
+
+
+_README.md generated at: Tue Aug 15 2017 15:52:04 GMT+0200 (W. Europe Daylight Time)_
