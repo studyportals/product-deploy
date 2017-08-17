@@ -1,4 +1,4 @@
-# @studyportals/product-deploy@v1.7.0-alpha.4
+# @studyportals/product-deploy@v1.7.0-alpha.5
 
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/v/@studyportals/product-deploy.svg?style=flat" alt="NPM version" /></a>
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/l/@studyportals/product-deploy.svg?style=flat" alt="NPM license" /></a>
@@ -24,7 +24,7 @@ Toolset to deploy StudyPortals products
 <dd></dd>
 <dt><a href="#module_lib/rimraf">lib/rimraf</a></dt>
 <dd></dd>
-<dt><a href="#module_lib/siteDB">lib/siteDB</a></dt>
+<dt><del><a href="#module_lib/siteDB">lib/siteDB</a></del></dt>
 <dd></dd>
 </dl>
 
@@ -59,11 +59,11 @@ from the main <code>Gulpfile.js</code></p>
 * [@studyportals/product-deploy](#module_@studyportals/product-deploy)
     * [.log](#module_@studyportals/product-deploy.log)
     * [.prepare](#module_@studyportals/product-deploy.prepare)
-    * [.bower](#module_@studyportals/product-deploy.bower)
+    * ~~[.bower](#module_@studyportals/product-deploy.bower)~~
     * [.composer](#module_@studyportals/product-deploy.composer)
     * [.sass](#module_@studyportals/product-deploy.sass)
     * [.js](#module_@studyportals/product-deploy.js)
-    * [.siteDB](#module_@studyportals/product-deploy.siteDB)
+    * ~~[.siteDB](#module_@studyportals/product-deploy.siteDB)~~
     * [.configure](#module_@studyportals/product-deploy.configure)
     * [.attachToGulp](#module_@studyportals/product-deploy.attachToGulp)
 
@@ -79,9 +79,15 @@ from the main <code>Gulpfile.js</code></p>
 **See**: [lib/prepare](#module_lib/prepare)  
 <a name="module_@studyportals/product-deploy.bower"></a>
 
-### @studyportals/product-deploy.bower
+### ~~@studyportals/product-deploy.bower~~
+***Deprecated***
+
 **Kind**: static constant of [<code>@studyportals/product-deploy</code>](#module_@studyportals/product-deploy)  
 **See**: [@studyportals/bower](https://www.npmjs.com/package/@studyportals/bower)  
+**Todo**
+
+- [ ] remove in next major release
+
 <a name="module_@studyportals/product-deploy.composer"></a>
 
 ### @studyportals/product-deploy.composer
@@ -99,9 +105,15 @@ from the main <code>Gulpfile.js</code></p>
 **See**: [lib/js](#module_lib/js)  
 <a name="module_@studyportals/product-deploy.siteDB"></a>
 
-### @studyportals/product-deploy.siteDB
+### ~~@studyportals/product-deploy.siteDB~~
+***Deprecated***
+
 **Kind**: static constant of [<code>@studyportals/product-deploy</code>](#module_@studyportals/product-deploy)  
 **See**: [lib/siteDB](#module_lib/siteDB)  
+**Todo**
+
+- [ ] remove in next major release
+
 <a name="module_@studyportals/product-deploy.configure"></a>
 
 ### @studyportals/product-deploy.configure
@@ -195,7 +207,13 @@ an `EBUSY` error.
 
 <a name="module_lib/siteDB"></a>
 
-## lib/siteDB
+## ~~lib/siteDB~~
+***Deprecated***
+
+**Todo**
+
+- [ ] remove in next major release
+
 <a name="module_lib/siteDB.compile"></a>
 
 ### lib/siteDB.compile(opts) ⇒ <code>Promise</code>
@@ -229,13 +247,13 @@ Overwrite gulp tasks from `@prtl/local-deploy-portal-spici`This file is used t
 
 **Kind**: global function  
 
-| Param | Type |
-| --- | --- |
-| gulp | <code>Gulp</code> | 
-| opts | <code>Object</code> | 
-| opts.buildDir | <code>string</code> | 
-| opts.env | <code>string</code> | 
-| opts.enableCompression | <code>string</code> | 
+| Param | Type | Default |
+| --- | --- | --- |
+| gulp | <code>Gulp</code> |  | 
+| opts | <code>Object</code> |  | 
+| opts.buildDir | <code>string</code> |  | 
+| [opts.env] | <code>String</code> | <code>Testing</code> | 
+| [opts.enableCompression] | <code>boolean</code> | <code>false</code> | 
 
 <a name="configure"></a>
 
@@ -252,4 +270,4 @@ Copy the project configuration.
 | opts.env | <code>string</code> | 
 
 
-_README.md generated at: Tue Aug 15 2017 16:48:14 GMT+0200 (W. Europe Daylight Time)_
+_README.md generated at: Thu Aug 17 2017 17:54:09 GMT+0200 (W. Europe Daylight Time)_
