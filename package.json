@@ -7,7 +7,7 @@
     "docs": "jsdoc2md",
     "build": "npm --no-git-tag-version version prerelease",
     "test": "mocha",
-    "preversion": "npm test",
+    "preversion": "npm prune && npm install && npm test",
     "version": "npm run docs && git add -A"
   },
   "main": "index.js",
