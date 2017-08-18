@@ -1,4 +1,4 @@
-# @studyportals/product-deploy@v1.7.0-alpha.5
+# @studyportals/product-deploy@v1.7.0-alpha.6
 
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/v/@studyportals/product-deploy.svg?style=flat" alt="NPM version" /></a>
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/l/@studyportals/product-deploy.svg?style=flat" alt="NPM license" /></a>
@@ -262,12 +262,12 @@ Copy the project configuration.
 
 **Kind**: global function  
 
-| Param | Type |
-| --- | --- |
-| opts | <code>Object</code> | 
-| [opts.product] | <code>string</code> | 
-| opts.to | <code>string</code> | 
-| opts.env | <code>string</code> | 
+| Param | Type | Default |
+| --- | --- | --- |
+| opts | <code>Object</code> |  | 
+| [opts.product] | <code>string</code> |  | 
+| opts.to | <code>string</code> |  | 
+| [opts.env] | <code>string</code> | <code>&quot;Testing&quot;</code> | 
 
 
-_README.md generated at: Thu Aug 17 2017 17:54:09 GMT+0200 (W. Europe Daylight Time)_
+_README.md generated at: Fri Aug 18 2017 10:09:48 GMT+0200 (W. Europe Daylight Time)_
