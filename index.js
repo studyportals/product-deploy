@@ -18,14 +18,6 @@ const prepare = require('./lib/prepare');
 
 /**
  * @static
- * @see {@link https://www.npmjs.com/package/@studyportals/bower|@studyportals/bower}
- * @deprecated
- * @todo remove in next major release
- */
-const bower = require('@studyportals/bower');
-
-/**
- * @static
  * @see {@link https://www.npmjs.com/package/@studyportals/composer|@studyportals/composer}
  */
 const composer = require('@studyportals/composer');
@@ -44,17 +36,15 @@ const js = require('./lib/js');
 
 /**
  * @static
- * @see {@link #module_lib/siteDB|lib/siteDB}
- * @deprecated
- * @todo remove in next major release
- */
-const siteDB = require('./lib/siteDB');
-
-/**
- * @static
  * @see {@link #module_lib/configure|lib/configure}
  */
 const configure = require('./lib/configure');
+
+/**
+ * @static
+ * @see {@link #module_lib/assemble|lib/assemble}
+ */
+const assemble = require('./lib/assemble');
 
 /**
  * @static
@@ -65,11 +55,10 @@ const attachToGulp = require('./lib/attachToGulp');
 module.exports = {
 	log,
 	prepare,
-	bower,
 	composer,
 	sass,
 	js,
-	siteDB,
 	configure,
+	assemble,
 	attachToGulp
 };
