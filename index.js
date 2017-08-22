@@ -52,6 +52,12 @@ const assemble = require('./lib/assemble');
  */
 const attachToGulp = require('./lib/attachToGulp');
 
+/**
+ * @static
+ * @see {@link #module_lib/portal|lib/portal}
+ */
+const Portal = require('./lib/portal');
+
 module.exports = {
 	log,
 	prepare,
@@ -60,5 +66,6 @@ module.exports = {
 	js,
 	configure,
 	assemble,
-	attachToGulp
+	attachToGulp,
+	Portal
 };
