@@ -1,4 +1,4 @@
-# @studyportals/product-deploy@v2.0.0-alpha.1
+# @studyportals/product-deploy@v2.0.0-alpha.2
 
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/v/@studyportals/product-deploy.svg?style=flat" alt="NPM version" /></a>
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/l/@studyportals/product-deploy.svg?style=flat" alt="NPM license" /></a>
@@ -75,8 +75,8 @@ from the main <code>Gulpfile.js</code></p>
 | Param | Type | Default |
 | --- | --- | --- |
 | opts | <code>Object</code> |  | 
-| [opts.from] | <code>string</code> |  | 
 | opts.to | <code>string</code> |  | 
+| [opts.from] | <code>string</code> | <code>&quot;current working directory&quot;</code> | 
 | [opts.env] | <code>string</code> | <code>&quot;Testing&quot;</code> | 
 
 <a name="Portal+assemle"></a>
@@ -140,4 +140,4 @@ from the main `Gulpfile.js`
 | [opts.env] | <code>String</code> | <code>Testing</code> | 
 
 
-_README.md generated at: Thu Aug 24 2017 14:00:54 GMT+0200 (W. Europe Daylight Time)_
+_README.md generated at: Thu Aug 24 2017 14:36:55 GMT+0200 (W. Europe Daylight Time)_
