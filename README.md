@@ -1,4 +1,4 @@
-# @studyportals/product-deploy@v2.0.0-alpha.2
+# @studyportals/product-deploy@v2.0.0-alpha.3
 
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/v/@studyportals/product-deploy.svg?style=flat" alt="NPM version" /></a>
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/l/@studyportals/product-deploy.svg?style=flat" alt="NPM license" /></a>
@@ -28,7 +28,7 @@ Toolset to deploy StudyPortals products
 <dt><a href="#attachToGulp">attachToGulp(gulp, opts)</a></dt>
 <dd><p>Overwrite gulp tasks from <code>@prtl/local-deploy-portal-spici</code></p>
 <p>This file is used to overwrite already existing gulp tasks from our private
-<code>@prtl/local-deploy-portal-spici</code>. Therefore is is also an intermediate state
+<code>@prtl/local-deploy-portal-spici</code>. Therefore it is also an intermediate state
 until we can fully rely on this package for our deploys. Once all the steps
 are rewritten we can simply expose one method per type of deploy and call that
 from the main <code>Gulpfile.js</code></p>
@@ -125,7 +125,7 @@ Make sure the deploy location exists and is empty.
 Overwrite gulp tasks from `@prtl/local-deploy-portal-spici`
 
 This file is used to overwrite already existing gulp tasks from our private
-`@prtl/local-deploy-portal-spici`. Therefore is is also an intermediate state
+`@prtl/local-deploy-portal-spici`. Therefore it is also an intermediate state
 until we can fully rely on this package for our deploys. Once all the steps
 are rewritten we can simply expose one method per type of deploy and call that
 from the main `Gulpfile.js`
@@ -140,4 +140,4 @@ from the main `Gulpfile.js`
 | [opts.env] | <code>String</code> | <code>Testing</code> | 
 
 
-_README.md generated at: Thu Aug 24 2017 14:36:55 GMT+0200 (W. Europe Daylight Time)_
+_README.md generated at: Thu Aug 24 2017 16:50:21 GMT+0200 (W. Europe Daylight Time)_
