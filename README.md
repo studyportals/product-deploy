@@ -1,4 +1,4 @@
-# @studyportals/product-deploy@v2.0.0-alpha.0
+# @studyportals/product-deploy@v2.0.0-alpha.1
 
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/v/@studyportals/product-deploy.svg?style=flat" alt="NPM version" /></a>
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/l/@studyportals/product-deploy.svg?style=flat" alt="NPM license" /></a>
@@ -13,32 +13,18 @@ Toolset to deploy StudyPortals products
 <dl>
 <dt><a href="#module_@studyportals/product-deploy">@studyportals/product-deploy</a></dt>
 <dd></dd>
-<dt><a href="#module_lib/ensureDir">lib/ensureDir</a></dt>
-<dd></dd>
-<dt><a href="#module_lib/js">lib/js</a></dt>
-<dd></dd>
-<dt><del><a href="#module_lib/log">lib/log</a></del></dt>
-<dd><p>Use <code>@studyportals/node-log</code> instead.</p>
-</dd>
-<dt><a href="#module_lib/prepare">lib/prepare</a></dt>
-<dd></dd>
-<dt><a href="#module_lib/rimraf">lib/rimraf</a></dt>
-<dd></dd>
 </dl>
 
-## Constants
+## Classes
 
 <dl>
-<dt><a href="#env">env</a></dt>
-<dd><p>Environments</p>
-</dd>
+<dt><a href="#Portal">Portal</a> : <code><a href="#Portal">Portal</a></code></dt>
+<dd></dd>
 </dl>
 
 ## Functions
 
 <dl>
-<dt><a href="#assemble">assemble(opts)</a> ⇒ <code>Promise</code></dt>
-<dd></dd>
 <dt><a href="#attachToGulp">attachToGulp(gulp, opts)</a></dt>
 <dd><p>Overwrite gulp tasks from <code>@prtl/local-deploy-portal-spici</code></p>
 <p>This file is used to overwrite already existing gulp tasks from our private
@@ -47,9 +33,6 @@ until we can fully rely on this package for our deploys. Once all the steps
 are rewritten we can simply expose one method per type of deploy and call that
 from the main <code>Gulpfile.js</code></p>
 </dd>
-<dt><a href="#configure">configure(opts)</a> ⇒ <code>Promise</code></dt>
-<dd><p>Copy the project configuration.</p>
-</dd>
 </dl>
 
 <a name="module_@studyportals/product-deploy"></a>
@@ -57,153 +40,85 @@ from the main <code>Gulpfile.js</code></p>
 ## @studyportals/product-deploy
 
 * [@studyportals/product-deploy](#module_@studyportals/product-deploy)
-    * [.log](#module_@studyportals/product-deploy.log)
-    * [.prepare](#module_@studyportals/product-deploy.prepare)
-    * [.composer](#module_@studyportals/product-deploy.composer)
-    * [.sass](#module_@studyportals/product-deploy.sass)
-    * [.js](#module_@studyportals/product-deploy.js)
-    * [.configure](#module_@studyportals/product-deploy.configure)
-    * [.assemble](#module_@studyportals/product-deploy.assemble)
     * [.attachToGulp](#module_@studyportals/product-deploy.attachToGulp)
+    * [.Portal](#module_@studyportals/product-deploy.Portal)
 
-<a name="module_@studyportals/product-deploy.log"></a>
-
-### @studyportals/product-deploy.log
-**Kind**: static constant of [<code>@studyportals/product-deploy</code>](#module_@studyportals/product-deploy)  
-**See**: [@studyportals/node-log](https://www.npmjs.com/package/@studyportals/node-log)  
-<a name="module_@studyportals/product-deploy.prepare"></a>
-
-### @studyportals/product-deploy.prepare
-**Kind**: static constant of [<code>@studyportals/product-deploy</code>](#module_@studyportals/product-deploy)  
-**See**: [lib/prepare](#module_lib/prepare)  
-<a name="module_@studyportals/product-deploy.composer"></a>
-
-### @studyportals/product-deploy.composer
-**Kind**: static constant of [<code>@studyportals/product-deploy</code>](#module_@studyportals/product-deploy)  
-**See**: [@studyportals/composer](https://www.npmjs.com/package/@studyportals/composer)  
-<a name="module_@studyportals/product-deploy.sass"></a>
-
-### @studyportals/product-deploy.sass
-**Kind**: static constant of [<code>@studyportals/product-deploy</code>](#module_@studyportals/product-deploy)  
-**See**: [@studyportals/sass](https://www.npmjs.com/package/@studyportals/sass)  
-<a name="module_@studyportals/product-deploy.js"></a>
-
-### @studyportals/product-deploy.js
-**Kind**: static constant of [<code>@studyportals/product-deploy</code>](#module_@studyportals/product-deploy)  
-**See**: [lib/js](#module_lib/js)  
-<a name="module_@studyportals/product-deploy.configure"></a>
-
-### @studyportals/product-deploy.configure
-**Kind**: static constant of [<code>@studyportals/product-deploy</code>](#module_@studyportals/product-deploy)  
-**See**: [lib/configure](#module_lib/configure)  
-<a name="module_@studyportals/product-deploy.assemble"></a>
-
-### @studyportals/product-deploy.assemble
-**Kind**: static constant of [<code>@studyportals/product-deploy</code>](#module_@studyportals/product-deploy)  
-**See**: [lib/assemble](#module_lib/assemble)  
 <a name="module_@studyportals/product-deploy.attachToGulp"></a>
 
 ### @studyportals/product-deploy.attachToGulp
 **Kind**: static constant of [<code>@studyportals/product-deploy</code>](#module_@studyportals/product-deploy)  
 **See**: [lib/attachToGulp](#module_lib/attachToGulp)  
-<a name="module_lib/ensureDir"></a>
+<a name="module_@studyportals/product-deploy.Portal"></a>
 
-## lib/ensureDir
-<a name="module_lib/ensureDir.ensureDir"></a>
+### @studyportals/product-deploy.Portal
+**Kind**: static constant of [<code>@studyportals/product-deploy</code>](#module_@studyportals/product-deploy)  
+**See**: [lib/portal](#module_lib/portal)  
+<a name="Portal"></a>
 
-### lib/ensureDir.ensureDir(dir) ⇒ <code>Promise</code>
-**Kind**: static method of [<code>lib/ensureDir</code>](#module_lib/ensureDir)  
-**See**: https://www.npmjs.com/package/mkdirp  
+## Portal : [<code>Portal</code>](#Portal)
+**Kind**: global class  
 
-| Param | Type | Description |
+* [Portal](#Portal) : [<code>Portal</code>](#Portal)
+    * [new Portal(opts)](#new_Portal_new)
+    * [.assemle()](#Portal+assemle) ⇒ <code>Promise</code>
+    * [.configure()](#Portal+configure) ⇒ <code>Promise</code>
+    * [.sass()](#Portal+sass) ⇒ <code>Promise</code>
+    * [.js()](#Portal+js) ⇒ <code>Promise</code>
+    * [.composer()](#Portal+composer) ⇒ <code>Promise</code>
+    * [.ensureEmptyDir()](#Portal+ensureEmptyDir) ⇒ <code>Promise</code>
+    * [.workingCopy()](#Portal+workingCopy) ⇒ <code>Promise</code>
+
+<a name="new_Portal_new"></a>
+
+### new Portal(opts)
+
+| Param | Type | Default |
 | --- | --- | --- |
-| dir | <code>string</code> | The directory |
+| opts | <code>Object</code> |  | 
+| [opts.from] | <code>string</code> |  | 
+| opts.to | <code>string</code> |  | 
+| [opts.env] | <code>string</code> | <code>&quot;Testing&quot;</code> | 
 
-<a name="module_lib/js"></a>
+<a name="Portal+assemle"></a>
 
-## lib/js
-<a name="module_lib/js.compile"></a>
+### portal.assemle() ⇒ <code>Promise</code>
+Assemble the portal into the deploy location.
 
-### lib/js.compile([opts])
-Compiles ES6 js into uglified ES2015 js.
+**Kind**: instance method of [<code>Portal</code>](#Portal)  
+<a name="Portal+configure"></a>
 
-**Kind**: static method of [<code>lib/js</code>](#module_lib/js)  
+### portal.configure() ⇒ <code>Promise</code>
+Copy the configuration.
 
-| Param | Type | Default | Description |
-| --- | --- | --- | --- |
-| [opts] | <code>Object</code> |  |  |
-| [opts.from] | <code>String</code> \| <code>Array</code> | <code>*.js</code> | Glob |
-| [opts.to] | <code>String</code> | <code>process.cwd()</code> |  |
-| [opts.uglify] | <code>String</code> | <code>true</code> |  |
+**Kind**: instance method of [<code>Portal</code>](#Portal)  
+<a name="Portal+sass"></a>
 
-<a name="module_lib/log"></a>
+### portal.sass() ⇒ <code>Promise</code>
+Compile scss files into css.
 
-## ~~lib/log~~
-***Deprecated***
+**Kind**: instance method of [<code>Portal</code>](#Portal)  
+<a name="Portal+js"></a>
 
-Use `@studyportals/node-log` instead.
+### portal.js() ⇒ <code>Promise</code>
+Compile js files with babel and uglifies them when enableCompression is true
 
-**See**: [@studyportals/node-log](https://www.npmjs.com/package/@studyportals/node-log)  
-**Todo**
+**Kind**: instance method of [<code>Portal</code>](#Portal)  
+<a name="Portal+composer"></a>
 
-- [ ] remove in next major release
+### portal.composer() ⇒ <code>Promise</code>
+Install composer dependencies
 
-<a name="module_lib/prepare"></a>
+**Kind**: instance method of [<code>Portal</code>](#Portal)  
+<a name="Portal+ensureEmptyDir"></a>
 
-## lib/prepare
-<a name="module_lib/prepare.ensureEmptyDir"></a>
+### portal.ensureEmptyDir() ⇒ <code>Promise</code>
+Make sure the deploy location exists and is empty.
 
-### lib/prepare.ensureEmptyDir(dir) ⇒ <code>Promise</code>
-Ensures the directory exists and is empty.
+**Kind**: instance method of [<code>Portal</code>](#Portal)  
+<a name="Portal+workingCopy"></a>
 
-Essentially it removes and re-created the directory.
-
-**Kind**: static method of [<code>lib/prepare</code>](#module_lib/prepare)  
-**See**
-
-- [lib/rimraf](#module_lib/rimraf)
-- [lib/mkdirp](#module_lib/mkdirp)
-
-
-| Param | Type | Description |
-| --- | --- | --- |
-| dir | <code>string</code> | The directory |
-
-<a name="module_lib/rimraf"></a>
-
-## lib/rimraf
-<a name="module_lib/rimraf.rimraf"></a>
-
-### lib/rimraf.rimraf(glob) ⇒ <code>Promise</code>
-The UNIX command `rm -rf` for node.
-
-It will ask the use (console) to retry when the glob cannot be removed due to
-an `EBUSY` error.
-
-**Kind**: static method of [<code>lib/rimraf</code>](#module_lib/rimraf)  
-**See**: https://www.npmjs.com/package/rimraf  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| glob | <code>string</code> | The glob to delete |
-
-<a name="env"></a>
-
-## env
-Environments
-
-**Kind**: global constant  
-<a name="assemble"></a>
-
-## assemble(opts) ⇒ <code>Promise</code>
-**Kind**: global function  
-
-| Param | Type |
-| --- | --- |
-| opts | <code>Object</code> | 
-| [opts.from] | <code>string</code> | 
-| opts.to | <code>string</code> | 
-
+### portal.workingCopy() ⇒ <code>Promise</code>
+**Kind**: instance method of [<code>Portal</code>](#Portal)  
 <a name="attachToGulp"></a>
 
 ## attachToGulp(gulp, opts)
@@ -223,21 +138,6 @@ from the main `Gulpfile.js`
 | opts | <code>Object</code> |  | 
 | opts.buildDir | <code>string</code> |  | 
 | [opts.env] | <code>String</code> | <code>Testing</code> | 
-| [opts.enableCompression] | <code>boolean</code> | <code>false</code> | 
-
-<a name="configure"></a>
-
-## configure(opts) ⇒ <code>Promise</code>
-Copy the project configuration.
-
-**Kind**: global function  
-
-| Param | Type | Default |
-| --- | --- | --- |
-| opts | <code>Object</code> |  | 
-| [opts.product] | <code>string</code> |  | 
-| opts.to | <code>string</code> |  | 
-| [opts.env] | <code>string</code> | <code>&quot;Testing&quot;</code> | 
 
 
-_README.md generated at: Tue Aug 22 2017 10:30:56 GMT+0200 (W. Europe Daylight Time)_
+_README.md generated at: Thu Aug 24 2017 14:00:54 GMT+0200 (W. Europe Daylight Time)_
