@@ -1,4 +1,4 @@
-# @studyportals/product-deploy@v2.0.0-alpha.4
+# @studyportals/product-deploy@v2.0.0-alpha.5
 
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/v/@studyportals/product-deploy.svg?style=flat" alt="NPM version" /></a>
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/l/@studyportals/product-deploy.svg?style=flat" alt="NPM license" /></a>
@@ -18,7 +18,7 @@ Toolset to deploy StudyPortals products
 ## Classes
 
 <dl>
-<dt><a href="#Portal">Portal</a> : <code><a href="#Portal">Portal</a></code></dt>
+<dt><a href="#Deploy">Deploy</a> : <code><a href="#Deploy">Deploy</a></code></dt>
 <dd></dd>
 </dl>
 
@@ -53,19 +53,19 @@ from the main <code>Gulpfile.js</code></p>
 ### @studyportals/product-deploy.Portal
 **Kind**: static constant of [<code>@studyportals/product-deploy</code>](#module_@studyportals/product-deploy)  
 **See**: [lib/portal](#module_lib/portal)  
-<a name="Portal"></a>
+<a name="Deploy"></a>
 
-## Portal : [<code>Portal</code>](#Portal)
+## Deploy : [<code>Deploy</code>](#Deploy)
 **Kind**: global class  
 
-* [Portal](#Portal) : [<code>Portal</code>](#Portal)
-    * [new Portal(opts)](#new_Portal_new)
-    * [.workingCopy()](#Portal+workingCopy) ⇒ <code>Promise</code>
-    * [.full(gulp)](#Portal+full) ⇒ <code>Promise</code>
+* [Deploy](#Deploy) : [<code>Deploy</code>](#Deploy)
+    * [new Deploy(opts)](#new_Deploy_new)
+    * [.workingCopy()](#Deploy+workingCopy) ⇒ <code>Promise</code>
+    * [.full(gulp)](#Deploy+full) ⇒ <code>Promise</code>
 
-<a name="new_Portal_new"></a>
+<a name="new_Deploy_new"></a>
 
-### new Portal(opts)
+### new Deploy(opts)
 
 | Param | Type | Default |
 | --- | --- | --- |
@@ -74,18 +74,18 @@ from the main <code>Gulpfile.js</code></p>
 | [opts.from] | <code>string</code> | <code>&quot;current working directory&quot;</code> | 
 | [opts.env] | <code>string</code> | <code>&quot;Testing&quot;</code> | 
 
-<a name="Portal+workingCopy"></a>
+<a name="Deploy+workingCopy"></a>
 
-### portal.workingCopy() ⇒ <code>Promise</code>
+### deploy.workingCopy() ⇒ <code>Promise</code>
 Deploy based on the current folder.
 
-**Kind**: instance method of [<code>Portal</code>](#Portal)  
-<a name="Portal+full"></a>
+**Kind**: instance method of [<code>Deploy</code>](#Deploy)  
+<a name="Deploy+full"></a>
 
-### portal.full(gulp) ⇒ <code>Promise</code>
+### deploy.full(gulp) ⇒ <code>Promise</code>
 Full deployIt will clone the repository from github and executes a fresh deploy.
 
-**Kind**: instance method of [<code>Portal</code>](#Portal)  
+**Kind**: instance method of [<code>Deploy</code>](#Deploy)  
 
 | Param | Type |
 | --- | --- |
@@ -112,4 +112,4 @@ from the main `Gulpfile.js`
 | [opts.env] | <code>String</code> | <code>Testing</code> | 
 
 
-_README.md generated at: Fri Aug 25 2017 13:05:07 GMT+0200 (W. Europe Daylight Time)_
+_README.md generated at: Fri Aug 25 2017 17:03:55 GMT+0200 (W. Europe Daylight Time)_
