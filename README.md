@@ -60,13 +60,8 @@ from the main <code>Gulpfile.js</code></p>
 
 * [Portal](#Portal) : [<code>Portal</code>](#Portal)
     * [new Portal(opts)](#new_Portal_new)
-    * [.assemle()](#Portal+assemle) ⇒ <code>Promise</code>
-    * [.configure()](#Portal+configure) ⇒ <code>Promise</code>
-    * [.sass()](#Portal+sass) ⇒ <code>Promise</code>
-    * [.js()](#Portal+js) ⇒ <code>Promise</code>
-    * [.composer()](#Portal+composer) ⇒ <code>Promise</code>
-    * [.ensureEmptyDir()](#Portal+ensureEmptyDir) ⇒ <code>Promise</code>
     * [.workingCopy()](#Portal+workingCopy) ⇒ <code>Promise</code>
+    * [.full(gulp)](#Portal+full) ⇒ <code>Promise</code>
 
 <a name="new_Portal_new"></a>
 
@@ -79,46 +74,21 @@ from the main <code>Gulpfile.js</code></p>
 | [opts.from] | <code>string</code> | <code>&quot;current working directory&quot;</code> | 
 | [opts.env] | <code>string</code> | <code>&quot;Testing&quot;</code> | 
 
-<a name="Portal+assemle"></a>
-
-### portal.assemle() ⇒ <code>Promise</code>
-Assemble the portal into the deploy location.
-
-**Kind**: instance method of [<code>Portal</code>](#Portal)  
-<a name="Portal+configure"></a>
-
-### portal.configure() ⇒ <code>Promise</code>
-Copy the configuration.
-
-**Kind**: instance method of [<code>Portal</code>](#Portal)  
-<a name="Portal+sass"></a>
-
-### portal.sass() ⇒ <code>Promise</code>
-Compile scss files into css.
-
-**Kind**: instance method of [<code>Portal</code>](#Portal)  
-<a name="Portal+js"></a>
-
-### portal.js() ⇒ <code>Promise</code>
-Compile js files with babel and uglifies them when enableCompression is true
-
-**Kind**: instance method of [<code>Portal</code>](#Portal)  
-<a name="Portal+composer"></a>
-
-### portal.composer() ⇒ <code>Promise</code>
-Install composer dependencies
-
-**Kind**: instance method of [<code>Portal</code>](#Portal)  
-<a name="Portal+ensureEmptyDir"></a>
-
-### portal.ensureEmptyDir() ⇒ <code>Promise</code>
-Make sure the deploy location exists and is empty.
-
-**Kind**: instance method of [<code>Portal</code>](#Portal)  
 <a name="Portal+workingCopy"></a>
 
 ### portal.workingCopy() ⇒ <code>Promise</code>
 **Kind**: instance method of [<code>Portal</code>](#Portal)  
+<a name="Portal+full"></a>
+
+### portal.full(gulp) ⇒ <code>Promise</code>
+Full deployIt will clone the repository from github and executes a fresh deploy.
+
+**Kind**: instance method of [<code>Portal</code>](#Portal)  
+
+| Param | Type |
+| --- | --- |
+| gulp | <code>Gulp</code> | 
+
 <a name="attachToGulp"></a>
 
 ## attachToGulp(gulp, opts)
@@ -140,4 +110,4 @@ from the main `Gulpfile.js`
 | [opts.env] | <code>String</code> | <code>Testing</code> | 
 
 
-_README.md generated at: Thu Aug 24 2017 16:50:21 GMT+0200 (W. Europe Daylight Time)_
+_README.md generated at: Fri Aug 25 2017 12:30:33 GMT+0200 (W. Europe Daylight Time)_
