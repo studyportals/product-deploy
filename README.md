@@ -1,4 +1,4 @@
-# @studyportals/product-deploy@v2.0.0-alpha.3
+# @studyportals/product-deploy@v2.0.0-alpha.4
 
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/v/@studyportals/product-deploy.svg?style=flat" alt="NPM version" /></a>
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/l/@studyportals/product-deploy.svg?style=flat" alt="NPM license" /></a>
@@ -77,6 +77,8 @@ from the main <code>Gulpfile.js</code></p>
 <a name="Portal+workingCopy"></a>
 
 ### portal.workingCopy() ⇒ <code>Promise</code>
+Deploy based on the current folder.
+
 **Kind**: instance method of [<code>Portal</code>](#Portal)  
 <a name="Portal+full"></a>
 
@@ -110,4 +112,4 @@ from the main `Gulpfile.js`
 | [opts.env] | <code>String</code> | <code>Testing</code> | 
 
 
-_README.md generated at: Fri Aug 25 2017 12:30:33 GMT+0200 (W. Europe Daylight Time)_
+_README.md generated at: Fri Aug 25 2017 13:05:07 GMT+0200 (W. Europe Daylight Time)_
