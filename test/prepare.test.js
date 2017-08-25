@@ -4,8 +4,8 @@ const chai = require('chai');
 chai.use(require('chai-fs'));
 const expect = chai.expect;
 const path = require('path');
-const prepare = require('./../lib/prepare');
-const rimraf = require('./../lib/rimraf');
+const prepare = require('./../lib/private/prepare');
+const rimraf = require('./../lib/private/rimraf');
 
 const dst = `${path.resolve(__dirname)}/../testcases/prepare`;
 
