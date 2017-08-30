@@ -43,6 +43,7 @@
     "@studyportals/js": "^1.0.0",
     "@studyportals/node-log": "^1.0.0",
     "@studyportals/sass": "^1.0.0",
+    "chokidar": "^1.7.0",
     "fs-extra": "^4.0.0",
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.1",
