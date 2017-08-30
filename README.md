@@ -1,4 +1,4 @@
-# @studyportals/product-deploy@v2.0.0-alpha.5
+# @studyportals/product-deploy@v2.0.0-alpha.6
 
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/v/@studyportals/product-deploy.svg?style=flat" alt="NPM version" /></a>
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/l/@studyportals/product-deploy.svg?style=flat" alt="NPM license" /></a>
@@ -83,7 +83,9 @@ Deploy based on the current folder.
 <a name="Deploy+full"></a>
 
 ### deploy.full(gulp) ⇒ <code>Promise</code>
-Full deployIt will clone the repository from github and executes a fresh deploy.
+Full deploy
+
+It will clone the repository from github and executes a fresh deploy.
 
 **Kind**: instance method of [<code>Deploy</code>](#Deploy)  
 
@@ -112,4 +114,4 @@ from the main `Gulpfile.js`
 | [opts.env] | <code>String</code> | <code>Testing</code> | 
 
 
-_README.md generated at: Fri Aug 25 2017 17:03:55 GMT+0200 (W. Europe Daylight Time)_
+_README.md generated at: Wed Aug 30 2017 10:52:26 GMT+0200 (W. Europe Daylight Time)_
