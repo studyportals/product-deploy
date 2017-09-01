@@ -1,4 +1,4 @@
-# @studyportals/product-deploy@v2.0.0-alpha.7
+# @studyportals/product-deploy@v2.0.0-alpha.8
 
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/v/@studyportals/product-deploy.svg?style=flat" alt="NPM version" /></a>
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/l/@studyportals/product-deploy.svg?style=flat" alt="NPM license" /></a>
@@ -110,4 +110,4 @@ from the main `Gulpfile.js`
 | [opts.env] | <code>String</code> | <code>Testing</code> | 
 
 
-_README.md generated at: Thu Aug 31 2017 10:32:26 GMT+0200 (W. Europe Daylight Time)_
+_README.md generated at: Fri Sep 01 2017 17:49:55 GMT+0200 (W. Europe Daylight Time)_
