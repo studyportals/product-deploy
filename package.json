@@ -35,7 +35,6 @@
     "@studyportals/jsdoc-to-markdown": "^1.0.2",
     "chai": "^4.1.0",
     "chai-fs": "^1.0.0",
-    "globby": "^6.1.0",
     "mocha": "^3.4.2"
   },
   "dependencies": {
@@ -45,6 +44,7 @@
     "@studyportals/sass": "^1.0.0",
     "chokidar": "^1.7.0",
     "fs-extra": "^4.0.0",
+    "globby": "^6.1.0",
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.1",
     "gulp-if": "^2.0.2",
