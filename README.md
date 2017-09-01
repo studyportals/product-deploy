@@ -1,4 +1,4 @@
-# @studyportals/product-deploy@v2.0.0-alpha.6
+# @studyportals/product-deploy@v2.0.0-alpha.7
 
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/v/@studyportals/product-deploy.svg?style=flat" alt="NPM version" /></a>
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/l/@studyportals/product-deploy.svg?style=flat" alt="NPM license" /></a>
@@ -61,7 +61,7 @@ from the main <code>Gulpfile.js</code></p>
 * [Deploy](#Deploy) : [<code>Deploy</code>](#Deploy)
     * [new Deploy(opts)](#new_Deploy_new)
     * [.workingCopy()](#Deploy+workingCopy) ⇒ <code>Promise</code>
-    * [.full(gulp)](#Deploy+full) ⇒ <code>Promise</code>
+    * [.full()](#Deploy+full) ⇒ <code>Promise</code>
 
 <a name="new_Deploy_new"></a>
 
@@ -73,6 +73,7 @@ from the main <code>Gulpfile.js</code></p>
 | opts.to | <code>string</code> |  | 
 | [opts.from] | <code>string</code> | <code>&quot;current working directory&quot;</code> | 
 | [opts.env] | <code>string</code> | <code>&quot;Testing&quot;</code> | 
+| [opts.gulp] | <code>Gulp</code> |  | 
 
 <a name="Deploy+workingCopy"></a>
 
@@ -82,17 +83,12 @@ Deploy based on the current folder.
 **Kind**: instance method of [<code>Deploy</code>](#Deploy)  
 <a name="Deploy+full"></a>
 
-### deploy.full(gulp) ⇒ <code>Promise</code>
+### deploy.full() ⇒ <code>Promise</code>
 Full deploy
 
 It will clone the repository from github and executes a fresh deploy.
 
 **Kind**: instance method of [<code>Deploy</code>](#Deploy)  
-
-| Param | Type |
-| --- | --- |
-| gulp | <code>Gulp</code> | 
-
 <a name="attachToGulp"></a>
 
 ## attachToGulp(gulp, opts)
@@ -114,4 +110,4 @@ from the main `Gulpfile.js`
 | [opts.env] | <code>String</code> | <code>Testing</code> | 
 
 
-_README.md generated at: Wed Aug 30 2017 10:52:26 GMT+0200 (W. Europe Daylight Time)_
+_README.md generated at: Thu Aug 31 2017 10:32:26 GMT+0200 (W. Europe Daylight Time)_
