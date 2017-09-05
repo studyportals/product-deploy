@@ -1,6 +1,6 @@
 {
   "name": "@studyportals/product-deploy",
-  "version": "2.0.0-alpha.9",
+  "version": "2.0.0-alpha.10",
   "description": "Toolset to deploy StudyPortals products",
   "author": "StudyPortals B.V.",
   "scripts": {
@@ -39,7 +39,7 @@
   },
   "dependencies": {
     "@studyportals/composer": "^1.0.4",
-    "@studyportals/js": "^1.0.0",
+    "@studyportals/js": "^1.1.0",
     "@studyportals/node-log": "^1.1.0",
     "@studyportals/sass": "^1.0.0",
     "chokidar": "^1.7.0",
