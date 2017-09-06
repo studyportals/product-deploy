@@ -12,13 +12,6 @@ require('./lib/private/config');
  */
 const attachToGulp = require('./lib/attachToGulp');
 
-/**
- * @static
- * @see {@link #module_lib/portal|lib/portal}
- */
-const Portal = require('./lib/deploy');
-
 module.exports = {
 	attachToGulp,
-	Portal
 };
