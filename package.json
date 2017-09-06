@@ -39,7 +39,7 @@
   },
   "dependencies": {
     "@studyportals/composer": "^1.0.4",
-    "@studyportals/js": "^1.1.0",
+    "@studyportals/js": "^1.1.2",
     "@studyportals/node-log": "^1.1.1",
     "@studyportals/sass": "^1.0.0",
     "chokidar": "^1.7.0",
