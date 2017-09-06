@@ -38,12 +38,11 @@ Attach the deploy to the gulp task `deploy.cms.workingcopy`.
 
 **Kind**: global function  
 
-| Param | Type | Default |
-| --- | --- | --- |
-| gulp | <code>Gulp</code> |  | 
-| opts | <code>Object</code> |  | 
-| opts.buildDir | <code>string</code> |  | 
-| [opts.env] | <code>String</code> | <code>Testing</code> | 
+| Param | Type |
+| --- | --- |
+| gulp | <code>Gulp</code> | 
+| opts | <code>Object</code> | 
+| opts.buildDir | <code>string</code> | 
 
 
-_README.md generated at: Wed Sep 06 2017 12:12:01 GMT+0200 (W. Europe Daylight Time)_
+_README.md generated at: Wed Sep 06 2017 12:23:01 GMT+0200 (W. Europe Daylight Time)_
