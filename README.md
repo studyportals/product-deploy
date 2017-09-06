@@ -1,4 +1,4 @@
-# @studyportals/product-deploy@v2.0.0-alpha.15
+# @studyportals/product-deploy@v2.0.0
 
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/v/@studyportals/product-deploy.svg?style=flat" alt="NPM version" /></a>
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/l/@studyportals/product-deploy.svg?style=flat" alt="NPM license" /></a>
@@ -45,4 +45,4 @@ Attach the deploy to the gulp task `deploy.cms.workingcopy`.
 | opts.buildDir | <code>string</code> | 
 
 
-_README.md generated at: Wed Sep 06 2017 12:23:01 GMT+0200 (W. Europe Daylight Time)_
+_README.md generated at: Wed Sep 06 2017 15:01:30 GMT+0200 (W. Europe Daylight Time)_
