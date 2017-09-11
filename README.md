@@ -45,4 +45,4 @@ Attach the deploy to the gulp task `deploy.cms.workingcopy`.
 | opts.buildDir | <code>string</code> | 
 
 
-_README.md generated at: Mon Sep 11 2017 16:08:22 GMT+0200 (W. Europe Daylight Time)_
+_README.md generated at: Mon Sep 11 2017 15:33:23 GMT+0200 (W. Europe Daylight Time)_
