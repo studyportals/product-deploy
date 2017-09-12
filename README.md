@@ -1,4 +1,4 @@
-# @studyportals/product-deploy@v2.2.0-alpha.1
+# @studyportals/product-deploy@v2.2.0-alpha.2
 
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/v/@studyportals/product-deploy.svg?style=flat" alt="NPM version" /></a>
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/l/@studyportals/product-deploy.svg?style=flat" alt="NPM license" /></a>
@@ -66,12 +66,12 @@ Toolset to deploy StudyPortals products
 
 ### new Deploy(opts)
 
-| Param | Type | Default |
-| --- | --- | --- |
-| opts | <code>Object</code> |  | 
-| opts.to | <code>string</code> |  | 
-| [opts.from] | <code>string</code> | <code>&quot;current working directory&quot;</code> | 
-| [opts.gulp] | <code>Gulp</code> |  | 
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| opts | <code>Object</code> |  |  |
+| [opts.from] | <code>string</code> | <code>&quot;process.cwd()&quot;</code> | Source folder |
+| opts.to | <code>string</code> |  | Deploy folder |
+| [opts.gulp] | <code>Gulp</code> |  |  |
 
 <a name="Deploy+assemble"></a>
 
@@ -149,4 +149,4 @@ Attach the deploy to the gulp task `deploy.cms.workingcopy`.
 | opts.buildDir | <code>string</code> | 
 
 
-_README.md generated at: Tue Sep 12 2017 15:53:00 GMT+0200 (W. Europe Daylight Time)_
+_README.md generated at: Tue Sep 12 2017 16:01:06 GMT+0200 (W. Europe Daylight Time)_
