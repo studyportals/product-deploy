@@ -1,6 +1,6 @@
 {
   "name": "@studyportals/product-deploy",
-  "version": "2.1.4",
+  "version": "2.1.5-0",
   "description": "Toolset to deploy StudyPortals products",
   "author": "StudyPortals B.V.",
   "scripts": {
@@ -35,7 +35,7 @@
     "@studyportals/jsdoc-to-markdown": "^1.0.2"
   },
   "dependencies": {
-    "@studyportals/composer": "^1.0.4",
+    "@studyportals/composer": "^1.0.5",
     "@studyportals/js": "^1.1.2",
     "@studyportals/node-log": "^1.1.1",
     "@studyportals/sass": "^1.0.0",
@@ -50,10 +50,10 @@
     "gulp-if": "^2.0.2",
     "gulp-util": "^3.0.8",
     "mkdirp": "^0.5.1",
-    "mocha": "^3.4.2",
+    "mocha": "^3.5.3",
     "node-ask": "^1.0.1",
     "request": "^2.81.0",
-    "rimraf": "^2.6.1"
+    "rimraf": "^2.6.2"
   },
   "false": {}
 }

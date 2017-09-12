@@ -12,6 +12,13 @@ require('./lib/private/config');
  */
 const attachToGulp = require('./lib/attachToGulp');
 
+/**
+ * @static
+ * @see {@link #module_lib/Deploy|lib/Deploy}
+ */
+const Deploy = require('./lib/deploy');
+
 module.exports = {
 	attachToGulp,
+	Deploy
 };
