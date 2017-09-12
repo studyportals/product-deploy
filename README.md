@@ -1,4 +1,4 @@
-# @studyportals/product-deploy@v2.1.5-0
+# @studyportals/product-deploy@v2.2.0-alpha.1
 
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/v/@studyportals/product-deploy.svg?style=flat" alt="NPM version" /></a>
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/l/@studyportals/product-deploy.svg?style=flat" alt="NPM license" /></a>
@@ -60,6 +60,7 @@ Toolset to deploy StudyPortals products
     * [.composer()](#Deploy+composer) ⇒ <code>Promise</code>
     * [.prepare()](#Deploy+prepare) ⇒ <code>Promise</code>
     * [.workingCopy()](#Deploy+workingCopy) ⇒ <code>Promise</code>
+    * [.startWatchers()](#Deploy+startWatchers)
 
 <a name="new_Deploy_new"></a>
 
@@ -75,31 +76,63 @@ Toolset to deploy StudyPortals products
 <a name="Deploy+assemble"></a>
 
 ### deploy.assemble() ⇒ <code>Promise</code>
-Assemble the portal into the deploy location.
+Copy the folder `opts.from` into `opts.to`
+
+- excludes certain files like .git, node_modules etc.
+- writes an revision.json containing the product name, timestamp and
+dependencies
 
 **Kind**: instance method of [<code>Deploy</code>](#Deploy)  
 <a name="Deploy+configure"></a>
 
 ### deploy.configure() ⇒ <code>Promise</code>
-Copy the configuration.
+Copy the configuration from `opts.from` into `opts.to`.
+
+It expects a folder structure like this:
+- Deploy/Config/Development
+- Deploy/Config/Live
+- Deploy/Config/Staging
+- Deploy/Config/Testing
+
+The Live config is always copied, the environment specific folder only
+if `process.env.PRTL_ENV` is set and differs from `Poduction` or `Live`
 
 **Kind**: instance method of [<code>Deploy</code>](#Deploy)  
 <a name="Deploy+composer"></a>
 
 ### deploy.composer() ⇒ <code>Promise</code>
-Install _composer dependencies
+Install composer dependencies in the `opts.from` folder.
 
 **Kind**: instance method of [<code>Deploy</code>](#Deploy)  
 <a name="Deploy+prepare"></a>
 
 ### deploy.prepare() ⇒ <code>Promise</code>
-Make sure the deploy location exists and is empty.
+Prepares the deploy location
+
+It makes sure the folder exists and is empty.
 
 **Kind**: instance method of [<code>Deploy</code>](#Deploy)  
 <a name="Deploy+workingCopy"></a>
 
 ### deploy.workingCopy() ⇒ <code>Promise</code>
-Deploy based on the current folder.
+workingCopy deploy.
+
+- prepare
+- composer
+- assemble
+- copy configuration
+- compile sass
+- compile js
+
+**Kind**: instance method of [<code>Deploy</code>](#Deploy)  
+<a name="Deploy+startWatchers"></a>
+
+### deploy.startWatchers()
+Start the file watchers
+
+- js
+- scss
+- file
 
 **Kind**: instance method of [<code>Deploy</code>](#Deploy)  
 <a name="attachToGulp"></a>
@@ -116,4 +149,4 @@ Attach the deploy to the gulp task `deploy.cms.workingcopy`.
 | opts.buildDir | <code>string</code> | 
 
 
-_README.md generated at: Tue Sep 12 2017 15:29:56 GMT+0200 (W. Europe Daylight Time)_
+_README.md generated at: Tue Sep 12 2017 15:53:00 GMT+0200 (W. Europe Daylight Time)_
