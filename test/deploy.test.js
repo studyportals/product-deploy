@@ -8,14 +8,10 @@ const chai = require('chai')
 const expect = chai.expect;
 const rimraf = require('./../lib/private/rimraf');
 
-const from = path.resolve(__dirname, '..', 'testcases', 'deploy', 'src');
-const to = path.resolve(__dirname, '..', 'testcases', 'deploy', 'dst');
-const gulp = require('gulp');
-
 const Deploy = new PD.Deploy({
-	from,
-	to,
-	gulp
+	from: path.resolve(__dirname, '..', 'testcases', 'deploy', 'src'),
+	to: path.resolve(__dirname, '..', 'testcases', 'deploy', 'dst'),
+	gulp: require('gulp')
 });
 
 describe('Deploy', function(){
@@ -26,7 +22,7 @@ describe('Deploy', function(){
 
 		return Deploy.prepare()
 			.then(() =>{
-				expect(to).to.be.a.directory().and.empty;
+				expect(Deploy.opts.to).to.be.a.directory().and.empty;
 			});
 	});
 
@@ -34,7 +30,7 @@ describe('Deploy', function(){
 
 		this.timeout(30000);
 
-		let vendorFolder = `${from}/vendor`;
+		let vendorFolder = `${Deploy.opts.from}/vendor`;
 
 		return rimraf(vendorFolder)
 			.then(() => {
@@ -52,7 +48,22 @@ describe('Deploy', function(){
 
 		return Deploy.assemble()
 			.then(() =>{
-				expect(to).to.be.a.directory().and.not.empty;
+				expect(Deploy.opts.to).to.be.a.directory().and.not.empty;
+			});
+	});
+
+	it('Should write the revision file', function(){
+
+		this.timeout(10000);
+
+		return Deploy.writeRevisionJson()
+			.then(() =>{
+
+				const jsonPath = path.join(Deploy.opts.to, 'revision.json');
+				expect(jsonPath).to.be.a.file();
+
+				const revisionJson = require(jsonPath);
+				expect(revisionJson).to.have.property('revision')
 			});
 	});
 
@@ -63,7 +74,7 @@ describe('Deploy', function(){
 
 		return Deploy.sass()
 			.then(() =>{
-				expect(path.join(to, 'css/style.css')).to.be.a.file();
+				expect(path.join(Deploy.opts.to, 'css/style.css')).to.be.a.file();
 			});
 	});
 
@@ -73,7 +84,7 @@ describe('Deploy', function(){
 
 		return Deploy.js()
 			.then(() =>{
-				expect(path.join(to, 'js/code.js')).to.be.a.file();
+				expect(path.join(Deploy.opts.to, 'js/code.js')).to.be.a.file();
 			});
 	});
 
@@ -83,8 +94,8 @@ describe('Deploy', function(){
 
 		return Deploy.configure()
 			.then(() =>{
-				expect(path.join(to, 'Production.conf')).to.be.a.file();
-				expect(path.join(to, 'Development.conf')).to.be.a.file();
+				expect(path.join(Deploy.opts.to, 'Production.conf')).to.be.a.file();
+				expect(path.join(Deploy.opts.to, 'Development.conf')).to.be.a.file();
 			});
 	});
 });

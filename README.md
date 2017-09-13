@@ -1,4 +1,4 @@
-# @studyportals/product-deploy@v2.2.0-alpha.5
+# @studyportals/product-deploy@v2.2.0-alpha.6
 
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/v/@studyportals/product-deploy.svg?style=flat" alt="NPM version" /></a>
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/l/@studyportals/product-deploy.svg?style=flat" alt="NPM license" /></a>
@@ -62,6 +62,7 @@ Toolset to deploy StudyPortals products
 * [Deploy](#Deploy) : [<code>Deploy</code>](#Deploy)
     * [new Deploy(opts)](#new_Deploy_new)
     * [.assemble()](#Deploy+assemble) ⇒ <code>Promise</code>
+    * [.writeRevisionJson()](#Deploy+writeRevisionJson) ⇒ <code>Promise</code>
     * [.configure()](#Deploy+configure) ⇒ <code>Promise</code>
     * [.composer()](#Deploy+composer) ⇒ <code>Promise</code>
     * [.prepare()](#Deploy+prepare) ⇒ <code>Promise</code>
@@ -88,6 +89,12 @@ Copy the folder `opts.from` into `opts.to`
 - excludes certain files like .git, node_modules etc.
 - writes an revision.json containing the product name, timestamp and
 dependencies
+
+**Kind**: instance method of [<code>Deploy</code>](#Deploy)  
+<a name="Deploy+writeRevisionJson"></a>
+
+### deploy.writeRevisionJson() ⇒ <code>Promise</code>
+Write the revision.json into `opts.to`.
 
 **Kind**: instance method of [<code>Deploy</code>](#Deploy)  
 <a name="Deploy+configure"></a>
@@ -173,4 +180,4 @@ Tasks:
 | opts.buildDir | <code>string</code> | 
 
 
-_README.md generated at: Wed Sep 13 2017 13:43:27 GMT+0200 (W. Europe Daylight Time)_
+_README.md generated at: Wed Sep 13 2017 15:10:03 GMT+0200 (W. Europe Daylight Time)_
