@@ -8,8 +8,8 @@ const chai = require('chai')
 const expect = chai.expect;
 const rimraf = require('./../lib/private/rimraf');
 
-const from = path.resolve(__dirname, '..', 'testcases', 'deploy-from');
-const to = path.resolve(__dirname, '..', 'testcases', 'deploy-build');
+const from = path.resolve(__dirname, '..', 'testcases', 'deploy', 'src');
+const to = path.resolve(__dirname, '..', 'testcases', 'deploy', 'dst');
 const gulp = require('gulp');
 
 const Deploy = new PD.Deploy({
@@ -53,6 +53,26 @@ describe('Deploy', function(){
 		return Deploy.assemble()
 			.then(() =>{
 				expect(to).to.be.a.directory().and.not.empty;
+			});
+	});
+
+	it('Should compile sass', function(){
+
+		this.timeout(10000);
+
+		return Deploy.sass()
+			.then(() =>{
+				expect(path.join(to, 'css/style.css')).to.be.a.file();
+			});
+	});
+
+	it('Should compile js', function(){
+
+		this.timeout(10000);
+
+		return Deploy.js()
+			.then(() =>{
+				expect(path.join(to, 'js/code.js')).to.be.a.file();
 			});
 	});
 
