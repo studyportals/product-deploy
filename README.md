@@ -1,4 +1,4 @@
-# @studyportals/product-deploy@v2.2.0-alpha.2
+# @studyportals/product-deploy@v2.2.0-alpha.3
 
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/v/@studyportals/product-deploy.svg?style=flat" alt="NPM version" /></a>
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/l/@studyportals/product-deploy.svg?style=flat" alt="NPM license" /></a>
@@ -26,7 +26,13 @@ Toolset to deploy StudyPortals products
 
 <dl>
 <dt><a href="#attachToGulp">attachToGulp(gulp, opts)</a></dt>
-<dd><p>Attach the deploy to the gulp task <code>deploy.cms.workingcopy</code>.</p>
+<dd><p>Attach the deploy tasks to gulp</p>
+<p>Tasks:</p>
+<ul>
+<li>deploy.cms.workingcopy</li>
+<li>deploy.servicelayer</li>
+<li>deploy.servicelayer.codebuild</li>
+</ul>
 </dd>
 </dl>
 
@@ -59,7 +65,8 @@ Toolset to deploy StudyPortals products
     * [.configure()](#Deploy+configure) ⇒ <code>Promise</code>
     * [.composer()](#Deploy+composer) ⇒ <code>Promise</code>
     * [.prepare()](#Deploy+prepare) ⇒ <code>Promise</code>
-    * [.workingCopy()](#Deploy+workingCopy) ⇒ <code>Promise</code>
+    * [.sass()](#Deploy+sass) ⇒ <code>Promise</code>
+    * [.js()](#Deploy+js) ⇒ <code>Promise</code>
     * [.startWatchers()](#Deploy+startWatchers)
 
 <a name="new_Deploy_new"></a>
@@ -112,17 +119,29 @@ Prepares the deploy location
 It makes sure the folder exists and is empty.
 
 **Kind**: instance method of [<code>Deploy</code>](#Deploy)  
-<a name="Deploy+workingCopy"></a>
+<a name="Deploy+sass"></a>
 
-### deploy.workingCopy() ⇒ <code>Promise</code>
-workingCopy deploy.
+### deploy.sass() ⇒ <code>Promise</code>
+Compile scss files into css.
 
-- prepare
-- composer
-- assemble
-- copy configuration
-- compile sass
-- compile js
+Takes all `*.scss` files excluding the folders:
+- test
+- bower_components
+- node_modules
+
+**Kind**: instance method of [<code>Deploy</code>](#Deploy)  
+<a name="Deploy+js"></a>
+
+### deploy.js() ⇒ <code>Promise</code>
+Compile js files (babel and uglify)
+
+Takes all `*.js` files excluding the folders:
+- test
+- bower_component
+- node_modules
+
+First it will pipe them through babel. When `Deploy.enableCompression` is
+true it will also uglyfies them.
 
 **Kind**: instance method of [<code>Deploy</code>](#Deploy)  
 <a name="Deploy+startWatchers"></a>
@@ -138,7 +157,12 @@ Start the file watchers
 <a name="attachToGulp"></a>
 
 ## attachToGulp(gulp, opts)
-Attach the deploy to the gulp task `deploy.cms.workingcopy`.
+Attach the deploy tasks to gulp
+
+Tasks:
+- deploy.cms.workingcopy
+- deploy.servicelayer
+- deploy.servicelayer.codebuild
 
 **Kind**: global function  
 
@@ -149,4 +173,4 @@ Attach the deploy to the gulp task `deploy.cms.workingcopy`.
 | opts.buildDir | <code>string</code> | 
 
 
-_README.md generated at: Tue Sep 12 2017 16:01:06 GMT+0200 (W. Europe Daylight Time)_
+_README.md generated at: Wed Sep 13 2017 12:32:20 GMT+0200 (W. Europe Daylight Time)_
