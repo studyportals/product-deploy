@@ -8,14 +8,15 @@
  * work nicely together with Mocha. That is the reason to have this manual test.
  */
 
-process.env.PRTL_ENV = process.env.PRTL_ENV || 'Development';
-
+const env = require('../../../lib/private/env');
 const deploy = require('../../../lib/private/deploy');
 const path = require('path');
 
 const from = path.resolve(__dirname);
 const to = path.resolve(__dirname, '..', 'dst');
 const gulp = require('gulp');
+
+process.env.PRTL_ENV = process.env.PRTL_ENV || env.DEV;
 
 const Deploy = new deploy({
 	from,
