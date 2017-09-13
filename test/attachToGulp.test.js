@@ -11,25 +11,18 @@ PD.attachToGulp(gulp, {
 	buildDir: path.resolve(__dirname, '..', 'testcases', 'deploy', 'dst')
 });
 
-describe('attachToGulp', function(){
+const testTask = function(task){
 
-	it('Gulp should have tasks defined', function(){
+	it(`Gulp should have task ${task}`, function(){
 
 		expect(gulp).to.have.property('tasks');
+		expect(gulp.tasks).to.have.property(task);
 	});
+};
 
-	it('Gulp should have task deploy.cms.workingcopy', function(){
+describe('attachToGulp', function(){
 
-		expect(gulp.tasks).to.have.property('deploy.cms.workingcopy');
-	});
-
-	it('Gulp should have task deploy.servicelayer', function(){
-
-		expect(gulp.tasks).to.have.property('deploy.servicelayer');
-	});
-
-	it('Gulp should have task deploy.servicelayer.codebuild', function(){
-
-		expect(gulp.tasks).to.have.property('deploy.servicelayer.codebuild');
-	});
+	testTask('deploy.cms.workingcopy');
+	testTask('deploy.servicelayer');
+	testTask('deploy.servicelayer.codebuild');
 });

@@ -19,6 +19,7 @@ describe('Deploy', function(){
 	it('Should ensure the deploy folder exists and is empty', function(){
 
 		this.timeout(10000);
+		this.slow(1000);
 
 		return Deploy.prepare()
 			.then(() =>{
@@ -29,6 +30,7 @@ describe('Deploy', function(){
 	it('Should install composer', function(){
 
 		this.timeout(30000);
+		this.slow(15000);
 
 		let vendorFolder = `${Deploy.opts.from}/vendor`;
 
@@ -45,6 +47,7 @@ describe('Deploy', function(){
 	it('Should assemble the project', function(){
 
 		this.timeout(10000);
+		this.slow(5000);
 
 		return Deploy.assemble()
 			.then(() =>{
@@ -55,6 +58,7 @@ describe('Deploy', function(){
 	it('Should write the revision file', function(){
 
 		this.timeout(10000);
+		this.slow(500);
 
 		return Deploy.writeRevisionJson()
 			.then(() =>{
@@ -81,6 +85,7 @@ describe('Deploy', function(){
 	it('Should compile js', function(){
 
 		this.timeout(10000);
+		this.slow(5000);
 
 		return Deploy.js()
 			.then(() =>{
@@ -89,6 +94,8 @@ describe('Deploy', function(){
 	});
 
 	it('Should configure the project', function(){
+
+		this.slow(1000);
 
 		process.env.PRTL_ENV = require('../lib/private/env').DEV;
 
