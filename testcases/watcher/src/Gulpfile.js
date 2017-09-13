@@ -9,7 +9,7 @@
  */
 
 const env = require('../../../lib/private/env');
-const deploy = require('../../../lib/private/deploy');
+const PD = require('../../../index');
 const path = require('path');
 
 const from = path.resolve(__dirname);
@@ -18,7 +18,7 @@ const gulp = require('gulp');
 
 process.env.PRTL_ENV = process.env.PRTL_ENV || env.DEV;
 
-const Deploy = new deploy({
+const Deploy = new PD.Deploy({
 	from,
 	to,
 	gulp
@@ -30,6 +30,6 @@ gulp.task('default', function(){
 	 * I know it's private and should not be accessible. For this specific test
 	 * case I will allow it.
 	 */
-	return Deploy._assemble()
-		.then(function(){ return Deploy._js_watcher() });
+	return Deploy.assemble()
+		.then(function(){ return Deploy.startWatchers() });
 });
