@@ -1,4 +1,4 @@
-# @studyportals/product-deploy@v2.2.0-alpha.8
+# @studyportals/product-deploy@v2.2.0-alpha.9
 
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/v/@studyportals/product-deploy.svg?style=flat" alt="NPM version" /></a>
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/l/@studyportals/product-deploy.svg?style=flat" alt="NPM license" /></a>
@@ -135,6 +135,7 @@ Takes all `*.scss` files excluding the folders:
 - test
 - bower_components
 - node_modules
+- vendor
 
 **Kind**: instance method of [<code>Deploy</code>](#Deploy)  
 <a name="Deploy+js"></a>
@@ -146,6 +147,7 @@ Takes all `*.js` files excluding the folders:
 - test
 - bower_component
 - node_modules
+- vendor
 
 First it will pipe them through babel. When `Deploy.enableCompression` is
 true it will also uglyfies them.
@@ -180,4 +182,4 @@ Tasks:
 | opts.buildDir | <code>string</code> | 
 
 
-_README.md generated at: Wed Sep 13 2017 17:00:30 GMT+0200 (W. Europe Daylight Time)_
+_README.md generated at: Wed Sep 13 2017 17:41:45 GMT+0200 (W. Europe Daylight Time)_
