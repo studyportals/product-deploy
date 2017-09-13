@@ -1,13 +1,13 @@
 {
   "name": "@studyportals/product-deploy",
-  "version": "2.2.0-alpha.2",
+  "version": "2.2.0-alpha.3",
   "description": "Toolset to deploy StudyPortals products",
   "author": "StudyPortals B.V.",
   "scripts": {
     "docs": "jsdoc2md",
     "build": "npm --no-git-tag-version version prerelease",
     "test": "mocha",
-    "preversion": "npm prune && npm update && npm test",
+    "preversion": "npm prune && npm install && npm test",
     "version": "npm run docs && git add -A"
   },
   "main": "index.js",
@@ -43,7 +43,7 @@
     "chai-fs": "^1.0.0",
     "chai-http": "^3.0.0",
     "chokidar": "^1.7.0",
-    "fs-extra": "^4.0.0",
+    "fs-extra": "^4.0.2",
     "globby": "^6.1.0",
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.1",
