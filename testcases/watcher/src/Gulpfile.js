@@ -31,5 +31,7 @@ gulp.task('default', function(){
 	 * case I will allow it.
 	 */
 	return Deploy.assemble()
-		.then(function(){ return Deploy.startWatchers() });
+		.then(function(){
+			return Deploy.startWatchers()
+		});
 });

@@ -18,7 +18,7 @@ module.exports = function(Deploy){
 		let vendorFolder = `${Deploy.opts.from}/vendor`;
 
 		return rimraf(vendorFolder)
-			.then(() => {
+			.then(() =>{
 
 				return Deploy.composer()
 			})
