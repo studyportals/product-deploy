@@ -1,4 +1,4 @@
-# @studyportals/product-deploy@v2.2.0-alpha.10
+# @studyportals/product-deploy@v2.2.0-alpha.11
 
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/v/@studyportals/product-deploy.svg?style=flat" alt="NPM version" /></a>
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/l/@studyportals/product-deploy.svg?style=flat" alt="NPM license" /></a>
@@ -190,7 +190,9 @@ Start the file watchers
 <a name="SimplePageTester+run"></a>
 
 ### simplePageTester.run(pages)
-Run the test
+Executes simple accessibility tests to the specified pages.
+
+If the pages cannot be reached, the test will be marked as failed.
 
 **Kind**: instance method of [<code>SimplePageTester</code>](#SimplePageTester)  
 
@@ -217,4 +219,4 @@ Tasks:
 | opts.buildDir | <code>string</code> | 
 
 
-_README.md generated at: Thu Sep 14 2017 12:04:00 GMT+0200 (W. Europe Daylight Time)_
+_README.md generated at: Thu Sep 14 2017 12:15:03 GMT+0200 (W. Europe Daylight Time)_

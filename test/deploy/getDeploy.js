@@ -9,6 +9,4 @@ const Deploy = new PD.Deploy({
 	gulp: require('gulp')
 });
 
-console.log('getDeploy');
-
 module.exports = Deploy;
