@@ -20,9 +20,8 @@ Toolset to deploy StudyPortals products
 <dl>
 <dt><a href="#Deploy">Deploy</a> : <code><a href="#Deploy">Deploy</a></code></dt>
 <dd></dd>
-<dt><a href="#SimplePageTester">SimplePageTester</a></dt>
-<dd><p>Simple page tester</p>
-</dd>
+<dt><a href="#SimplePageTester">SimplePageTester</a> : <code><a href="#SimplePageTester">SimplePageTester</a></code></dt>
+<dd></dd>
 </dl>
 
 ## Functions
@@ -46,6 +45,7 @@ Toolset to deploy StudyPortals products
 * [@studyportals/product-deploy](#module_@studyportals/product-deploy)
     * [.attachToGulp](#module_@studyportals/product-deploy.attachToGulp)
     * [.Deploy](#module_@studyportals/product-deploy.Deploy)
+    * [.SimplePageTester](#module_@studyportals/product-deploy.SimplePageTester)
 
 <a name="module_@studyportals/product-deploy.attachToGulp"></a>
 
@@ -57,6 +57,11 @@ Toolset to deploy StudyPortals products
 ### @studyportals/product-deploy.Deploy
 **Kind**: static constant of [<code>@studyportals/product-deploy</code>](#module_@studyportals/product-deploy)  
 **See**: [lib/Deploy](#module_lib/Deploy)  
+<a name="module_@studyportals/product-deploy.SimplePageTester"></a>
+
+### @studyportals/product-deploy.SimplePageTester
+**Kind**: static constant of [<code>@studyportals/product-deploy</code>](#module_@studyportals/product-deploy)  
+**See**: [lib/SimplePageTester](#module_lib/SimplePageTester)  
 <a name="Deploy"></a>
 
 ## Deploy : [<code>Deploy</code>](#Deploy)
@@ -71,7 +76,7 @@ Toolset to deploy StudyPortals products
     * [.prepare()](#Deploy+prepare) ⇒ <code>Promise</code>
     * [.sass()](#Deploy+sass) ⇒ <code>Promise</code>
     * [.js()](#Deploy+js) ⇒ <code>Promise</code>
-    * [.startWatchers()](#Deploy+startWatchers)
+    * [.startWatchers()](#Deploy+startWatchers) ⇒ <code>undefined</code>
 
 <a name="new_Deploy_new"></a>
 
@@ -82,7 +87,7 @@ Toolset to deploy StudyPortals products
 | opts | <code>Object</code> |  |  |
 | opts.to | <code>string</code> |  | Deploy folder |
 | [opts.from] | <code>string</code> | <code>&quot;process.cwd()&quot;</code> | Source folder |
-| [opts.gulp] | <code>Gulp</code> |  |  |
+| [opts.gulp] | <code>Gulp</code> | <code></code> | Instance of Gulp |
 
 <a name="Deploy+assemble"></a>
 
@@ -90,8 +95,6 @@ Toolset to deploy StudyPortals products
 Copy the folder `opts.from` into `opts.to`
 
 - excludes certain files like .git, node_modules etc.
-- writes an revision.json containing the product name, timestamp and
-dependencies
 
 **Kind**: instance method of [<code>Deploy</code>](#Deploy)  
 <a name="Deploy+writeRevisionJson"></a>
@@ -158,7 +161,7 @@ true it will also uglyfies them.
 **Kind**: instance method of [<code>Deploy</code>](#Deploy)  
 <a name="Deploy+startWatchers"></a>
 
-### deploy.startWatchers()
+### deploy.startWatchers() ⇒ <code>undefined</code>
 Start the file watchers
 
 - js
@@ -168,12 +171,10 @@ Start the file watchers
 **Kind**: instance method of [<code>Deploy</code>](#Deploy)  
 <a name="SimplePageTester"></a>
 
-## SimplePageTester
-Simple page tester
-
+## SimplePageTester : [<code>SimplePageTester</code>](#SimplePageTester)
 **Kind**: global class  
 
-* [SimplePageTester](#SimplePageTester)
+* [SimplePageTester](#SimplePageTester) : [<code>SimplePageTester</code>](#SimplePageTester)
     * [new SimplePageTester(repo, url)](#new_SimplePageTester_new)
     * [.run(pages)](#SimplePageTester+run)
 
@@ -216,4 +217,4 @@ Tasks:
 | opts.buildDir | <code>string</code> | 
 
 
-_README.md generated at: Thu Sep 14 2017 10:57:09 GMT+0200 (W. Europe Daylight Time)_
+_README.md generated at: Thu Sep 14 2017 12:04:00 GMT+0200 (W. Europe Daylight Time)_
