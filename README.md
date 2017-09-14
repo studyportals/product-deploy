@@ -1,4 +1,4 @@
-# @studyportals/product-deploy@v2.2.0-alpha.9
+# @studyportals/product-deploy@v2.2.0-alpha.10
 
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/v/@studyportals/product-deploy.svg?style=flat" alt="NPM version" /></a>
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/l/@studyportals/product-deploy.svg?style=flat" alt="NPM license" /></a>
@@ -80,8 +80,8 @@ Toolset to deploy StudyPortals products
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
 | opts | <code>Object</code> |  |  |
-| [opts.from] | <code>string</code> | <code>&quot;process.cwd()&quot;</code> | Source folder |
 | opts.to | <code>string</code> |  | Deploy folder |
+| [opts.from] | <code>string</code> | <code>&quot;process.cwd()&quot;</code> | Source folder |
 | [opts.gulp] | <code>Gulp</code> |  |  |
 
 <a name="Deploy+assemble"></a>
@@ -216,4 +216,4 @@ Tasks:
 | opts.buildDir | <code>string</code> | 
 
 
-_README.md generated at: Thu Sep 14 2017 09:47:50 GMT+0200 (W. Europe Daylight Time)_
+_README.md generated at: Thu Sep 14 2017 10:57:09 GMT+0200 (W. Europe Daylight Time)_
