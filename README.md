@@ -20,6 +20,9 @@ Toolset to deploy StudyPortals products
 <dl>
 <dt><a href="#Deploy">Deploy</a> : <code><a href="#Deploy">Deploy</a></code></dt>
 <dd></dd>
+<dt><a href="#SimplePageTester">SimplePageTester</a></dt>
+<dd><p>Simple page tester</p>
+</dd>
 </dl>
 
 ## Functions
@@ -163,6 +166,37 @@ Start the file watchers
 - file
 
 **Kind**: instance method of [<code>Deploy</code>](#Deploy)  
+<a name="SimplePageTester"></a>
+
+## SimplePageTester
+Simple page tester
+
+**Kind**: global class  
+
+* [SimplePageTester](#SimplePageTester)
+    * [new SimplePageTester(repo, url)](#new_SimplePageTester_new)
+    * [.run(pages)](#SimplePageTester+run)
+
+<a name="new_SimplePageTester_new"></a>
+
+### new SimplePageTester(repo, url)
+
+| Param | Type | Description |
+| --- | --- | --- |
+| repo | <code>String</code> | Name of the GitHub repository |
+| url | <code>String</code> | The base url to test. |
+
+<a name="SimplePageTester+run"></a>
+
+### simplePageTester.run(pages)
+Run the test
+
+**Kind**: instance method of [<code>SimplePageTester</code>](#SimplePageTester)  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| pages | <code>Array.&lt;String&gt;</code> | List of pages to test for statuscode 200 |
+
 <a name="attachToGulp"></a>
 
 ## attachToGulp(gulp, opts)
@@ -182,4 +216,4 @@ Tasks:
 | opts.buildDir | <code>string</code> | 
 
 
-_README.md generated at: Wed Sep 13 2017 17:41:45 GMT+0200 (W. Europe Daylight Time)_
+_README.md generated at: Thu Sep 14 2017 09:47:50 GMT+0200 (W. Europe Daylight Time)_
