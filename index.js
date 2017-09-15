@@ -4,6 +4,7 @@
  * @module @studyportals/product-deploy
  */
 
+require('./lib/private/check-for-update');
 require('./lib/private/config');
 
 /**
