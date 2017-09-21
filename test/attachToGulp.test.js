@@ -1,6 +1,6 @@
 "use strict";
 
-const PD = require('../index')
+const PD = require('../index');
 const path = require('path');
 const chai = require('chai');
 
