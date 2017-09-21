@@ -1,6 +1,7 @@
 "use strict";
 
-const chai = require('chai');
+const chai = require('chai')
+    .use(require('chai-fs'));
 const path = require('path');
 
 /**

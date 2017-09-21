@@ -1,4 +1,4 @@
-# @studyportals/product-deploy@v2.2.2
+# @studyportals/product-deploy@v2.2.3-4
 
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/v/@studyportals/product-deploy.svg?style=flat" alt="NPM version" /></a>
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/l/@studyportals/product-deploy.svg?style=flat" alt="NPM license" /></a>
@@ -110,12 +110,13 @@ Copy the configuration from `opts.from` into `opts.to`.
 
 It expects a folder structure like this:
 - Deploy/Config/Development
-- Deploy/Config/Live
-- Deploy/Config/Staging
+- Deploy/Config/Integration
 - Deploy/Config/Testing
+- Deploy/Config/Staging
+- Deploy/Config/Live
 
 The Live config is always copied, the environment specific folder only
-if `process.env.PRTL_ENV` is set and differs from `Poduction` or `Live`
+if `process.env.PRTL_ENV` is set and differs from `Production` or `Live`
 
 **Kind**: instance method of [<code>Deploy</code>](#Deploy)  
 <a name="Deploy+composer"></a>
@@ -219,4 +220,4 @@ Tasks:
 | opts.buildDir | <code>string</code> | 
 
 
-_README.md generated at: Mon Sep 18 2017 14:09:21 GMT+0200 (W. Europe Daylight Time)_
+_README.md generated at: Thu Sep 21 2017 12:30:22 GMT+0200 (CEST)_

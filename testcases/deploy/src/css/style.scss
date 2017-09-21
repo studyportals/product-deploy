@@ -1,6 +1,6 @@
-$color: black;
+@import 'colors';
 
 body {
 
-	background-color: $color;
+	background-color: $black;
 }
