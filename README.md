@@ -1,4 +1,4 @@
-# @studyportals/product-deploy@v2.2.8-2
+# @studyportals/product-deploy@v2.2.8-3
 
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/v/@studyportals/product-deploy.svg?style=flat" alt="NPM version" /></a>
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/l/@studyportals/product-deploy.svg?style=flat" alt="NPM license" /></a>
@@ -223,4 +223,4 @@ Tasks:
 | opts.buildDir | <code>string</code> | 
 
 
-_README.md generated at: Tue Sep 26 2017 12:15:20 GMT+0200 (CEST)_
+_README.md generated at: Tue Sep 26 2017 12:20:05 GMT+0200 (CEST)_
