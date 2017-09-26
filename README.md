@@ -1,4 +1,4 @@
-# @studyportals/product-deploy@v2.2.8-0
+# @studyportals/product-deploy@v2.2.8-1
 
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/v/@studyportals/product-deploy.svg?style=flat" alt="NPM version" /></a>
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/l/@studyportals/product-deploy.svg?style=flat" alt="NPM license" /></a>
@@ -169,6 +169,9 @@ Start the file watchers
 - scss
 - file
 
+Watchers can be disabled by providing a comma separated list in the env var `PRTL_DISABLED_WATCHERS`
+For instance `PRTL_DISABLED_WATCHERS=file` will enable js and scss watchers but disables the file watcher.
+
 **Kind**: instance method of [<code>Deploy</code>](#Deploy)  
 <a name="SimplePageTester"></a>
 
@@ -220,4 +223,4 @@ Tasks:
 | opts.buildDir | <code>string</code> | 
 
 
-_README.md generated at: Mon Sep 25 2017 17:48:29 GMT+0200 (CEST)_
+_README.md generated at: Tue Sep 26 2017 10:11:51 GMT+0200 (CEST)_
