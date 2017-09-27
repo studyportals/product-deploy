@@ -18,7 +18,7 @@ module.exports = function(Deploy){
 
 		return Deploy.js()
 			.then(() =>{
-				chai.expect(path.join(Deploy.opts.to, 'js/code.js')).to.be.a.file();
+				chai.expect(path.join(Deploy.distFolder, 'js/code.js')).to.be.a.file();
 			});
 	});
 };
