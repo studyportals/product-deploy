@@ -18,7 +18,7 @@ module.exports = function(Deploy){
 
 		return Deploy.sass()
 			.then(() =>{
-				chai.expect(path.join(Deploy.opts.to, 'css/style.css')).to.be.a.file();
+				chai.expect(path.join(Deploy.opts.to, 'dist/css/style.css')).to.be.a.file();
 			});
 	});
 };
