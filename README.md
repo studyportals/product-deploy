@@ -1,4 +1,4 @@
-# @studyportals/product-deploy@v3.0.0-alpha.3
+# @studyportals/product-deploy@v3.0.0-alpha.4
 
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/v/@studyportals/product-deploy.svg?style=flat" alt="NPM version" /></a>
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/l/@studyportals/product-deploy.svg?style=flat" alt="NPM license" /></a>
@@ -104,6 +104,8 @@ Write the revision.json into `opts.to`.
 
 ### deploy.configure() ⇒ <code>Promise</code>
 Copy the configuration from Deploy/Config/<ENV> to the root.
+
+The config for Base is always copied, after that the env specific config is copied.
 
 It expects a folder structure like this:
 - Deploy/Config/Production
@@ -232,4 +234,4 @@ Tasks:
 | gulp | <code>Gulp</code> | 
 
 
-_README.md generated at: Wed Sep 27 2017 23:39:11 GMT+0200 (CEST)_
+_README.md generated at: Thu Sep 28 2017 00:27:10 GMT+0200 (CEST)_
