@@ -26,12 +26,5 @@ const Deploy = new PD.Deploy({
 
 gulp.task('default', function(){
 
-	/*
-	 * I know it's private and should not be accessible. For this specific test
-	 * case I will allow it.
-	 */
-	return Deploy.assemble()
-		.then(function(){
-			return Deploy.startWatchers()
-		});
+	return Deploy.startWatchers();
 });
