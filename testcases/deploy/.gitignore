@@ -1,0 +1,5 @@
+vendor
+dist
+Development.conf
+Production.conf
+revision.json

@@ -19,8 +19,8 @@ module.exports = function(Deploy){
 
 		return Deploy.configure()
 			.then(() =>{
-				chai.expect(path.join(Deploy.opts.to, 'Production.conf')).to.be.a.file();
-				chai.expect(path.join(Deploy.opts.to, 'Development.conf')).to.be.a.file();
+				chai.expect(path.join(Deploy.opts.from, 'Production.conf')).to.be.a.file();
+				chai.expect(path.join(Deploy.opts.from, 'Development.conf')).to.be.a.file();
 			});
 	});
 };
