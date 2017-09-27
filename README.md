@@ -1,4 +1,4 @@
-# @studyportals/product-deploy@v2.3.0-alpha.1
+# @studyportals/product-deploy@v2.3.0
 
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/v/@studyportals/product-deploy.svg?style=flat" alt="NPM version" /></a>
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/l/@studyportals/product-deploy.svg?style=flat" alt="NPM license" /></a>
@@ -74,8 +74,8 @@ Toolset to deploy StudyPortals products
     * [.configure()](#Deploy+configure) ⇒ <code>Promise</code>
     * [.composer()](#Deploy+composer) ⇒ <code>Promise</code>
     * [.prepare()](#Deploy+prepare) ⇒ <code>Promise</code>
-    * [.sass()](#Deploy+sass) ⇒ <code>Promise</code>
-    * [.js()](#Deploy+js) ⇒ <code>Promise</code>
+    * [.sass(from)](#Deploy+sass) ⇒ <code>Promise</code>
+    * [.js(from)](#Deploy+js) ⇒ <code>Promise</code>
     * [.startWatchers()](#Deploy+startWatchers) ⇒ <code>undefined</code>
 
 <a name="new_Deploy_new"></a>
@@ -135,7 +135,7 @@ It makes sure the folder exists and is empty.
 **Kind**: instance method of [<code>Deploy</code>](#Deploy)  
 <a name="Deploy+sass"></a>
 
-### deploy.sass() ⇒ <code>Promise</code>
+### deploy.sass(from) ⇒ <code>Promise</code>
 Compile scss files into css.
 
 Takes all `*.scss` files excluding the folders:
@@ -145,9 +145,14 @@ Takes all `*.scss` files excluding the folders:
 - vendor
 
 **Kind**: instance method of [<code>Deploy</code>](#Deploy)  
+
+| Param | Type |
+| --- | --- |
+| from | <code>Array.&lt;glob&gt;</code> \| <code>string</code> | 
+
 <a name="Deploy+js"></a>
 
-### deploy.js() ⇒ <code>Promise</code>
+### deploy.js(from) ⇒ <code>Promise</code>
 Compile js files (babel and uglify)
 
 Takes all `*.js` files excluding the folders:
@@ -160,6 +165,11 @@ First it will pipe them through babel. When `Deploy.enableCompression` is
 true it will also uglyfies them.
 
 **Kind**: instance method of [<code>Deploy</code>](#Deploy)  
+
+| Param | Type |
+| --- | --- |
+| from | <code>Array.&lt;glob&gt;</code> \| <code>string</code> | 
+
 <a name="Deploy+startWatchers"></a>
 
 ### deploy.startWatchers() ⇒ <code>undefined</code>
@@ -223,4 +233,4 @@ Tasks:
 | opts.buildDir | <code>string</code> | 
 
 
-_README.md generated at: Wed Sep 27 2017 15:16:13 GMT+0200 (CEST)_
+_README.md generated at: Wed Sep 27 2017 15:26:17 GMT+0200 (CEST)_
