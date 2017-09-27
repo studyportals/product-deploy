@@ -19,6 +19,7 @@ module.exports = function(Deploy){
 
 		return Deploy.configure()
 			.then(() =>{
+				chai.expect(path.join(Deploy.opts.from, 'Base.conf')).to.be.a.file();
 				chai.expect(path.join(Deploy.opts.from, 'Development.conf')).to.be.a.file();
 			});
 	});
