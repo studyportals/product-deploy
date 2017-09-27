@@ -1,4 +1,4 @@
-# @studyportals/product-deploy@v3.0.0-alpha.1
+# @studyportals/product-deploy@v3.0.0-alpha.2
 
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/v/@studyportals/product-deploy.svg?style=flat" alt="NPM version" /></a>
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/l/@studyportals/product-deploy.svg?style=flat" alt="NPM license" /></a>
@@ -24,10 +24,18 @@ Toolset to deploy StudyPortals products
 <dd></dd>
 </dl>
 
+## Constants
+
+<dl>
+<dt><a href="#globalIgnoredFolder">globalIgnoredFolder</a></dt>
+<dd><p>List of folders which should always be ignored</p>
+</dd>
+</dl>
+
 ## Functions
 
 <dl>
-<dt><a href="#attachToGulp">attachToGulp(gulp, opts)</a></dt>
+<dt><a href="#attachToGulp">attachToGulp(gulp)</a></dt>
 <dd><p>Attach the deploy tasks to gulp</p>
 <p>Tasks:</p>
 <ul>
@@ -69,14 +77,12 @@ Toolset to deploy StudyPortals products
 
 * [Deploy](#Deploy) : [<code>Deploy</code>](#Deploy)
     * [new Deploy(opts)](#new_Deploy_new)
-    * [.assemble()](#Deploy+assemble) ⇒ <code>Promise</code>
     * [.writeRevisionJson()](#Deploy+writeRevisionJson) ⇒ <code>Promise</code>
     * [.configure()](#Deploy+configure) ⇒ <code>Promise</code>
     * [.composer()](#Deploy+composer) ⇒ <code>Promise</code>
-    * [.prepare()](#Deploy+prepare) ⇒ <code>Promise</code>
     * [.sass([from])](#Deploy+sass) ⇒ <code>Promise</code>
     * [.js([from])](#Deploy+js) ⇒ <code>Promise</code>
-    * [.startWatchers()](#Deploy+startWatchers) ⇒ <code>undefined</code>
+    * [.startWatchers([opts])](#Deploy+startWatchers) ⇒ <code>undefined</code>
 
 <a name="new_Deploy_new"></a>
 
@@ -85,18 +91,9 @@ Toolset to deploy StudyPortals products
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
 | opts | <code>Object</code> |  |  |
-| opts.to | <code>string</code> |  | Deploy folder |
 | [opts.from] | <code>string</code> | <code>&quot;process.cwd()&quot;</code> | Source folder |
 | [opts.gulp] | <code>Gulp</code> | <code></code> | Instance of Gulp |
 
-<a name="Deploy+assemble"></a>
-
-### deploy.assemble() ⇒ <code>Promise</code>
-Copy the folder `opts.from` into `opts.to`
-
-- excludes certain files like .git, node_modules etc.
-
-**Kind**: instance method of [<code>Deploy</code>](#Deploy)  
 <a name="Deploy+writeRevisionJson"></a>
 
 ### deploy.writeRevisionJson() ⇒ <code>Promise</code>
@@ -106,31 +103,19 @@ Write the revision.json into `opts.to`.
 <a name="Deploy+configure"></a>
 
 ### deploy.configure() ⇒ <code>Promise</code>
-Copy the configuration from `opts.from` into `opts.to`.
+Copy the configuration from Deploy/Config/<ENV> to the root.
 
 It expects a folder structure like this:
-- Deploy/Config/Development
-- Deploy/Config/Integration
-- Deploy/Config/Testing
+- Deploy/Config/Production
 - Deploy/Config/Staging
-- Deploy/Config/Live
-
-The Live config is always copied, the environment specific folder only
-if `process.env.PRTL_ENV` is set and differs from `Production` or `Live`
+- Deploy/Config/Development
+- Deploy/Config/<process.env.PRTL_ENV>
 
 **Kind**: instance method of [<code>Deploy</code>](#Deploy)  
 <a name="Deploy+composer"></a>
 
 ### deploy.composer() ⇒ <code>Promise</code>
 Install composer dependencies in the `opts.from` folder.
-
-**Kind**: instance method of [<code>Deploy</code>](#Deploy)  
-<a name="Deploy+prepare"></a>
-
-### deploy.prepare() ⇒ <code>Promise</code>
-Prepares the deploy location
-
-It makes sure the folder exists and is empty.
 
 **Kind**: instance method of [<code>Deploy</code>](#Deploy)  
 <a name="Deploy+sass"></a>
@@ -172,7 +157,7 @@ true it will also uglyfies them.
 
 <a name="Deploy+startWatchers"></a>
 
-### deploy.startWatchers() ⇒ <code>undefined</code>
+### deploy.startWatchers([opts]) ⇒ <code>undefined</code>
 Start the file watchers
 
 - js
@@ -182,10 +167,17 @@ Start the file watchers
 Watchers can be disabled by providing a comma separated list in the env var `PRTL_DISABLED_WATCHERS`
 For instance `PRTL_DISABLED_WATCHERS=file` will enable js and scss watchers but disables the file watcher.
 
-TODO: Remove the plain file watcher
-TODO: Add watchers to re-apply configuration when changed.
+TODO: Disable watchers with env var?
 
 **Kind**: instance method of [<code>Deploy</code>](#Deploy)  
+
+| Param | Type | Default |
+| --- | --- | --- |
+| [opts] | <code>Object</code> |  | 
+| [opts.scss] | <code>boolean</code> | <code>true</code> | 
+| [opts.js] | <code>boolean</code> | <code>true</code> | 
+| [opts.config] | <code>boolean</code> | <code>true</code> | 
+
 <a name="SimplePageTester"></a>
 
 ## SimplePageTester : [<code>SimplePageTester</code>](#SimplePageTester)
@@ -217,9 +209,15 @@ If the pages cannot be reached, the test will be marked as failed.
 | --- | --- | --- |
 | pages | <code>Array.&lt;String&gt;</code> | List of pages to test for statuscode 200 |
 
+<a name="globalIgnoredFolder"></a>
+
+## globalIgnoredFolder
+List of folders which should always be ignored
+
+**Kind**: global constant  
 <a name="attachToGulp"></a>
 
-## attachToGulp(gulp, opts)
+## attachToGulp(gulp)
 Attach the deploy tasks to gulp
 
 Tasks:
@@ -232,8 +230,6 @@ Tasks:
 | Param | Type |
 | --- | --- |
 | gulp | <code>Gulp</code> | 
-| opts | <code>Object</code> | 
-| opts.buildDir | <code>string</code> | 
 
 
-_README.md generated at: Wed Sep 27 2017 21:19:57 GMT+0200 (CEST)_
+_README.md generated at: Wed Sep 27 2017 23:18:06 GMT+0200 (CEST)_
