@@ -12,7 +12,6 @@
   },
   "main": "index.js",
   "directories": {
-    "bin": "./bin",
     "lib": "./lib"
   },
   "repository": {
