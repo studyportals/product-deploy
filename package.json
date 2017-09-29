@@ -12,7 +12,6 @@
   },
   "main": "index.js",
   "directories": {
-    "bin": "./bin",
     "lib": "./lib"
   },
   "repository": {
@@ -35,7 +34,6 @@
     "@studyportals/jsdoc-to-markdown": "^1.0.2"
   },
   "dependencies": {
-    "@studyportals/composer": "^1.0.5",
     "@studyportals/js": "^1.1.2",
     "@studyportals/node-log": "^1.1.1",
     "autoprefixer": "^7.1.2",
@@ -46,6 +44,7 @@
     "fs-extra": "^4.0.2",
     "globby": "^6.1.0",
     "gulp": "^3.9.1",
+    "gulp-composer": "^0.4.2",
     "gulp-concat": "^2.6.1",
     "gulp-if": "^2.0.2",
     "gulp-postcss": "^7.0.0",
