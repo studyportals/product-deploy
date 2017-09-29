@@ -1,4 +1,4 @@
-# @studyportals/product-deploy@v3.0.0-alpha.6
+# @studyportals/product-deploy@v3.0.0-alpha.7
 
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/v/@studyportals/product-deploy.svg?style=flat" alt="NPM version" /></a>
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/l/@studyportals/product-deploy.svg?style=flat" alt="NPM license" /></a>
@@ -234,4 +234,4 @@ Tasks:
 | gulp | <code>Gulp</code> | 
 
 
-_README.md generated at: Thu Sep 28 2017 14:40:50 GMT+0200 (CEST)_
+_README.md generated at: Fri Sep 29 2017 12:36:51 GMT+0200 (CEST)_
