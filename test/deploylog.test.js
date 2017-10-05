@@ -2,7 +2,7 @@
 
 const request = require('request');
 
-process.env.PRTL_DEPLOYLOG_ENDPOINT = 'https://ebq58mmn8e.execute-api.eu-central-1.amazonaws.com/dev/create';
+process.env.PRTL_DEPLOYLOG_ENDPOINT = 'https://fzsm37215j.execute-api.eu-central-1.amazonaws.com/prod/create';
 
 try{
 
