@@ -35,7 +35,7 @@
   },
   "dependencies": {
     "@studyportals/js": "^1.1.2",
-    "@studyportals/node-log": "^1.1.1",
+    "@studyportals/node-log": "^1.1.2",
     "autoprefixer": "^7.1.2",
     "chai": "^4.1.2",
     "chai-fs": "^1.0.0",
