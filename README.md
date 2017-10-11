@@ -1,4 +1,4 @@
-# @studyportals/product-deploy@v2.3.7-1
+# @studyportals/product-deploy@v2.3.7
 
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/v/@studyportals/product-deploy.svg?style=flat" alt="NPM version" /></a>
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/l/@studyportals/product-deploy.svg?style=flat" alt="NPM license" /></a>
@@ -74,8 +74,8 @@ Toolset to deploy StudyPortals products
     * [.configure()](#Deploy+configure) ⇒ <code>Promise</code>
     * [.composer()](#Deploy+composer) ⇒ <code>Promise</code>
     * [.prepare()](#Deploy+prepare) ⇒ <code>Promise</code>
-    * [.sass(from)](#Deploy+sass) ⇒ <code>Promise</code>
-    * [.js(from)](#Deploy+js) ⇒ <code>Promise</code>
+    * [.sass(opts)](#Deploy+sass) ⇒ <code>Promise</code>
+    * [.js(opts)](#Deploy+js) ⇒ <code>Promise</code>
     * [.startWatchers()](#Deploy+startWatchers) ⇒ <code>undefined</code>
 
 <a name="new_Deploy_new"></a>
@@ -135,7 +135,7 @@ It makes sure the folder exists and is empty.
 **Kind**: instance method of [<code>Deploy</code>](#Deploy)  
 <a name="Deploy+sass"></a>
 
-### deploy.sass(from) ⇒ <code>Promise</code>
+### deploy.sass(opts) ⇒ <code>Promise</code>
 Compile scss files into css.
 
 Takes all `*.scss` files excluding the folders:
@@ -146,13 +146,15 @@ Takes all `*.scss` files excluding the folders:
 
 **Kind**: instance method of [<code>Deploy</code>](#Deploy)  
 
-| Param | Type |
-| --- | --- |
-| from | <code>Array.&lt;glob&gt;</code> \| <code>string</code> | 
+| Param | Type | Default |
+| --- | --- | --- |
+| opts | <code>Object</code> |  | 
+| opts.from | <code>Array.&lt;glob&gt;</code> \| <code>string</code> |  | 
+| [opts.progress] | <code>boolean</code> | <code>true</code> | 
 
 <a name="Deploy+js"></a>
 
-### deploy.js(from) ⇒ <code>Promise</code>
+### deploy.js(opts) ⇒ <code>Promise</code>
 Compile js files (babel and uglify)
 
 Takes all `*.js` files excluding the folders:
@@ -166,9 +168,11 @@ true it will also uglyfies them.
 
 **Kind**: instance method of [<code>Deploy</code>](#Deploy)  
 
-| Param | Type |
-| --- | --- |
-| from | <code>Array.&lt;glob&gt;</code> \| <code>string</code> | 
+| Param | Type | Default |
+| --- | --- | --- |
+| opts | <code>Object</code> |  | 
+| opts.from | <code>Array.&lt;glob&gt;</code> \| <code>string</code> |  | 
+| [opts.progress] | <code>boolean</code> | <code>true</code> | 
 
 <a name="Deploy+startWatchers"></a>
 
@@ -233,4 +237,4 @@ Tasks:
 | opts.buildDir | <code>string</code> | 
 
 
-_README.md generated at: Thu Oct 05 2017 15:31:56 GMT+0200 (CEST)_
+_README.md generated at: Wed Oct 11 2017 12:09:36 GMT+0200 (CEST)_
