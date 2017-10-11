@@ -35,7 +35,7 @@
   },
   "dependencies": {
     "@studyportals/js": "^1.1.2",
-    "@studyportals/node-log": "^1.1.1",
+    "@studyportals/node-log": "^1.1.2",
     "autoprefixer": "^7.1.2",
     "chai": "^4.1.2",
     "chai-fs": "^1.0.0",
@@ -56,7 +56,8 @@
     "node-ask": "^1.0.1",
     "node-sass": "^4.5.3",
     "postcss-flexbugs-fixes": "^3.0.0",
-    "request": "^2.81.0",
+    "progress": "^2.0.0",
+    "request": "^2.83.0",
     "rimraf": "^2.6.2",
     "semver": "^5.4.1"
   },

@@ -1,8 +1,0 @@
-{
-    "product": "deploy",
-    "timestamp": "Thu, 28 Sep 2017 08:15:19 GMT",
-    "revision": "6875191d2cb5fd2658e2616c6c9238bd90becdd8",
-    "dependencies": {
-        "deploy": "6875191d2cb5fd2658e2616c6c9238bd90becdd8"
-    }
-}
