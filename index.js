@@ -9,6 +9,5 @@ require('./lib/private/check-for-update');
 
 module.exports = {
 	attachToGulp: require('./lib/attachToGulp'),
-	Deploy: require('./lib/deploy'),
 	SimplePageTester: require('./lib/simple-page-tester'),
 };

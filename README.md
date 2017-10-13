@@ -18,8 +18,6 @@ Toolset to deploy StudyPortals products
 ## Classes
 
 <dl>
-<dt><a href="#Deploy">Deploy</a> : <code><a href="#Deploy">Deploy</a></code></dt>
-<dd></dd>
 <dt><a href="#SimplePageTester">SimplePageTester</a> : <code><a href="#SimplePageTester">SimplePageTester</a></code></dt>
 <dd></dd>
 </dl>
@@ -35,124 +33,18 @@ Toolset to deploy StudyPortals products
 <li>deploy.servicelayer</li>
 <li>deploy.servicelayer.codebuild</li>
 </ul>
+<p>Behaviour can be changed by changing these env vars:</p>
+<ul>
+<li>process.env.PRTL_ENV - Set the portal environment; @see lib/private/env</li>
+<li>process.env.PRTL_DISABLE_WATCHERS - Watchers are disabled when this var truthy</li>
+<li>process.env.PRTL_DEPLOYLOG_ENDPOINT - The endpoint to which to send deploylogs.</li>
+</ul>
 </dd>
 </dl>
 
 <a name="module_@studyportals/product-deploy"></a>
 
 ## @studyportals/product-deploy
-<a name="Deploy"></a>
-
-## Deploy : [<code>Deploy</code>](#Deploy)
-**Kind**: global class  
-
-* [Deploy](#Deploy) : [<code>Deploy</code>](#Deploy)
-    * [new Deploy(opts)](#new_Deploy_new)
-    * [.writeRevisionJson()](#Deploy+writeRevisionJson) ⇒ <code>Promise</code>
-    * [.configure()](#Deploy+configure) ⇒ <code>Promise</code>
-    * [.composer()](#Deploy+composer) ⇒ <code>Promise</code>
-    * [.sass([opts])](#Deploy+sass) ⇒ <code>Promise</code>
-    * [.js([opts])](#Deploy+js) ⇒ <code>Promise</code>
-    * [.startWatchers([opts])](#Deploy+startWatchers) ⇒ <code>undefined</code>
-
-<a name="new_Deploy_new"></a>
-
-### new Deploy(opts)
-
-| Param | Type | Default | Description |
-| --- | --- | --- | --- |
-| opts | <code>Object</code> |  |  |
-| [opts.from] | <code>string</code> | <code>&quot;process.cwd()&quot;</code> | Source folder |
-| [opts.gulp] | <code>Gulp</code> | <code></code> | Instance of Gulp TODO: process.env.PRTL_ENV TODO: process.env.PRTL_DISABLE_WATCHERS TODO: process.env.PRTL_DEPLOYLOG_ENDPOINT |
-
-<a name="Deploy+writeRevisionJson"></a>
-
-### deploy.writeRevisionJson() ⇒ <code>Promise</code>
-Write the revision.json into `opts.to`.
-
-**Kind**: instance method of [<code>Deploy</code>](#Deploy)  
-<a name="Deploy+configure"></a>
-
-### deploy.configure() ⇒ <code>Promise</code>
-Copy the configuration from Deploy/Config/<ENV> to the root.
-
-The config for Base is always copied, after that the env specific config is copied.
-
-It expects a folder structure like this:
-- Deploy/Config/Production
-- Deploy/Config/Staging
-- Deploy/Config/Development
-- Deploy/Config/<process.env.PRTL_ENV>
-
-**Kind**: instance method of [<code>Deploy</code>](#Deploy)  
-<a name="Deploy+composer"></a>
-
-### deploy.composer() ⇒ <code>Promise</code>
-Install composer dependencies in the `opts.from` folder.
-
-**Kind**: instance method of [<code>Deploy</code>](#Deploy)  
-<a name="Deploy+sass"></a>
-
-### deploy.sass([opts]) ⇒ <code>Promise</code>
-Compile scss files into css.
-
-Takes all `*.scss` files excluding the folders:
-- test
-- bower_components
-- node_modules
-- vendor
-
-**Kind**: instance method of [<code>Deploy</code>](#Deploy)  
-
-| Param | Type | Default |
-| --- | --- | --- |
-| [opts] | <code>Object</code> |  | 
-| [opts.from] | <code>Array.&lt;glob&gt;</code> \| <code>string</code> |  | 
-| [opts.progress] | <code>boolean</code> | <code>true</code> | 
-
-<a name="Deploy+js"></a>
-
-### deploy.js([opts]) ⇒ <code>Promise</code>
-Compile js files (babel and uglify)
-
-Takes all `*.js` files excluding the folders:
-- test
-- bower_component
-- node_modules
-- vendor
-
-First it will pipe them through babel. When `Deploy.enableCompression` is
-true it will also uglyfies them.
-
-**Kind**: instance method of [<code>Deploy</code>](#Deploy)  
-
-| Param | Type | Default |
-| --- | --- | --- |
-| [opts] | <code>Object</code> |  | 
-| [opts.from] | <code>Array.&lt;glob&gt;</code> \| <code>string</code> |  | 
-| [opts.progress] | <code>boolean</code> | <code>true</code> | 
-
-<a name="Deploy+startWatchers"></a>
-
-### deploy.startWatchers([opts]) ⇒ <code>undefined</code>
-Start the file watchers
-
-- js
-- scss
-- file
-
-Watchers can be disabled by providing a comma separated list in the env var `PRTL_DISABLED_WATCHERS`
-For instance `PRTL_DISABLED_WATCHERS=file` will enable js and scss watchers but disables the file watcher.
-
-**Kind**: instance method of [<code>Deploy</code>](#Deploy)  
-
-| Param | Type | Default |
-| --- | --- | --- |
-| [opts] | <code>Object</code> |  | 
-| [opts.scss] | <code>boolean</code> | <code>true</code> | 
-| [opts.js] | <code>boolean</code> | <code>true</code> | 
-| [opts.config] | <code>boolean</code> | <code>true</code> | 
-
 <a name="SimplePageTester"></a>
 
 ## SimplePageTester : [<code>SimplePageTester</code>](#SimplePageTester)
@@ -194,6 +86,11 @@ Tasks:
 - deploy.servicelayer
 - deploy.servicelayer.codebuild
 
+Behaviour can be changed by changing these env vars:
+- process.env.PRTL_ENV - Set the portal environment; @see lib/private/env
+- process.env.PRTL_DISABLE_WATCHERS - Watchers are disabled when this var truthy
+- process.env.PRTL_DEPLOYLOG_ENDPOINT - The endpoint to which to send deploylogs.
+
 **Kind**: global function  
 
 | Param | Type |
@@ -201,4 +98,4 @@ Tasks:
 | gulp | <code>Gulp</code> | 
 
 
-_README.md generated at: Fri Oct 13 2017 10:01:57 GMT+0200 (CEST)_
+_README.md generated at: Fri Oct 13 2017 10:50:36 GMT+0200 (CEST)_
