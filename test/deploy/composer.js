@@ -15,7 +15,7 @@ module.exports = function(Deploy){
 		this.timeout(30000);
 		this.slow(15000);
 
-		let vendorFolder = `${Deploy.opts.from}/vendor`;
+		let vendorFolder = `${Deploy.opts.cwd}/vendor`;
 
 		return rimraf(vendorFolder)
 			.then(() =>{

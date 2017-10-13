@@ -18,7 +18,7 @@ module.exports = function(Deploy){
 		return Deploy.writeRevisionJson()
 			.then(() =>{
 
-				const jsonPath = path.join(Deploy.opts.from, 'revision.json');
+				const jsonPath = path.join(Deploy.opts.cwd, 'revision.json');
 				chai.expect(jsonPath).to.be.a.file();
 
 				const revisionJson = require(jsonPath);
