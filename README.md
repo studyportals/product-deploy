@@ -24,14 +24,6 @@ Toolset to deploy StudyPortals products
 <dd></dd>
 </dl>
 
-## Constants
-
-<dl>
-<dt><a href="#globalIgnoredFolder">globalIgnoredFolder</a></dt>
-<dd><p>List of folders which should always be ignored</p>
-</dd>
-</dl>
-
 ## Functions
 
 <dl>
@@ -49,27 +41,6 @@ Toolset to deploy StudyPortals products
 <a name="module_@studyportals/product-deploy"></a>
 
 ## @studyportals/product-deploy
-
-* [@studyportals/product-deploy](#module_@studyportals/product-deploy)
-    * [.attachToGulp](#module_@studyportals/product-deploy.attachToGulp)
-    * [.Deploy](#module_@studyportals/product-deploy.Deploy)
-    * [.SimplePageTester](#module_@studyportals/product-deploy.SimplePageTester)
-
-<a name="module_@studyportals/product-deploy.attachToGulp"></a>
-
-### @studyportals/product-deploy.attachToGulp
-**Kind**: static constant of [<code>@studyportals/product-deploy</code>](#module_@studyportals/product-deploy)  
-**See**: [lib/attachToGulp](#module_lib/attachToGulp)  
-<a name="module_@studyportals/product-deploy.Deploy"></a>
-
-### @studyportals/product-deploy.Deploy
-**Kind**: static constant of [<code>@studyportals/product-deploy</code>](#module_@studyportals/product-deploy)  
-**See**: [lib/Deploy](#module_lib/Deploy)  
-<a name="module_@studyportals/product-deploy.SimplePageTester"></a>
-
-### @studyportals/product-deploy.SimplePageTester
-**Kind**: static constant of [<code>@studyportals/product-deploy</code>](#module_@studyportals/product-deploy)  
-**See**: [lib/SimplePageTester](#module_lib/SimplePageTester)  
 <a name="Deploy"></a>
 
 ## Deploy : [<code>Deploy</code>](#Deploy)
@@ -213,12 +184,6 @@ If the pages cannot be reached, the test will be marked as failed.
 | --- | --- | --- |
 | pages | <code>Array.&lt;String&gt;</code> | List of pages to test for statuscode 200 |
 
-<a name="globalIgnoredFolder"></a>
-
-## globalIgnoredFolder
-List of folders which should always be ignored
-
-**Kind**: global constant  
 <a name="attachToGulp"></a>
 
 ## attachToGulp(gulp)
@@ -236,4 +201,4 @@ Tasks:
 | gulp | <code>Gulp</code> | 
 
 
-_README.md generated at: Wed Oct 11 2017 20:55:59 GMT+0200 (CEST)_
+_README.md generated at: Fri Oct 13 2017 10:01:57 GMT+0200 (CEST)_

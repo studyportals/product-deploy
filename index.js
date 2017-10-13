@@ -7,26 +7,8 @@
 require('./lib/private/config');
 require('./lib/private/check-for-update');
 
-/**
- * @static
- * @see {@link #module_lib/attachToGulp|lib/attachToGulp}
- */
-const attachToGulp = require('./lib/attachToGulp');
-
-/**
- * @static
- * @see {@link #module_lib/Deploy|lib/Deploy}
- */
-const Deploy = require('./lib/deploy');
-
-/**
- * @static
- * @see {@link #module_lib/SimplePageTester|lib/SimplePageTester}
- */
-const SimplePageTester = require('./lib/simple-page-tester');
-
 module.exports = {
-	attachToGulp,
-	Deploy,
-	SimplePageTester,
+	attachToGulp: require('./lib/attachToGulp'),
+	Deploy: require('./lib/deploy'),
+	SimplePageTester: require('./lib/simple-page-tester'),
 };
