@@ -1,6 +1,6 @@
 {
   "name": "@studyportals/product-deploy",
-  "version": "3.0.0-RC.2",
+  "version": "3.0.0-RC.3",
   "description": "Toolset to deploy StudyPortals products",
   "author": "StudyPortals B.V.",
   "scripts": {

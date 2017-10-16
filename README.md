@@ -1,4 +1,4 @@
-# @studyportals/product-deploy@v3.0.0-RC.2
+# @studyportals/product-deploy@v3.0.0-RC.3
 
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/v/@studyportals/product-deploy.svg?style=flat" alt="NPM version" /></a>
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/l/@studyportals/product-deploy.svg?style=flat" alt="NPM license" /></a>
@@ -36,7 +36,6 @@ Toolset to deploy StudyPortals products
 <p>Behaviour can be changed by changing these env vars:</p>
 <ul>
 <li>process.env.PRTL_ENV - Set the portal environment; @see lib/private/env</li>
-<li>process.env.PRTL_DISABLE_WATCHERS - Watchers are disabled when this var truthy</li>
 <li>process.env.PRTL_DEPLOYLOG_ENDPOINT - The endpoint to which to send deploylogs.</li>
 </ul>
 </dd>
@@ -88,7 +87,6 @@ Tasks:
 
 Behaviour can be changed by changing these env vars:
 - process.env.PRTL_ENV - Set the portal environment; @see lib/private/env
-- process.env.PRTL_DISABLE_WATCHERS - Watchers are disabled when this var truthy
 - process.env.PRTL_DEPLOYLOG_ENDPOINT - The endpoint to which to send deploylogs.
 
 **Kind**: global function  
@@ -98,4 +96,4 @@ Behaviour can be changed by changing these env vars:
 | gulp | <code>Gulp</code> | 
 
 
-_README.md generated at: Fri Oct 13 2017 12:31:02 GMT+0200 (CEST)_
+_README.md generated at: Mon Oct 16 2017 12:47:06 GMT+0200 (CEST)_
