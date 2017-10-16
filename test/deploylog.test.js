@@ -15,7 +15,7 @@ try{
             }
         }
     )
-    .on('error', function(err) {
+    .on('error', function(){
 
         // Nothing to do
     });
