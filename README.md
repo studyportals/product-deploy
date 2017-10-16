@@ -29,9 +29,9 @@ Toolset to deploy StudyPortals products
 <dd><p>Attach the deploy tasks to gulp</p>
 <p>Tasks:</p>
 <ul>
-<li>deploy.cms.workingcopy</li>
+<li>watch.cms</li>
+<li>deploy.cms</li>
 <li>deploy.servicelayer</li>
-<li>deploy.servicelayer.codebuild</li>
 </ul>
 <p>Behaviour can be changed by changing these env vars:</p>
 <ul>
@@ -81,9 +81,9 @@ If the pages cannot be reached, the test will be marked as failed.
 Attach the deploy tasks to gulp
 
 Tasks:
-- deploy.cms.workingcopy
+- watch.cms
+- deploy.cms
 - deploy.servicelayer
-- deploy.servicelayer.codebuild
 
 Behaviour can be changed by changing these env vars:
 - process.env.PRTL_ENV - Set the portal environment; @see lib/private/env
@@ -96,4 +96,4 @@ Behaviour can be changed by changing these env vars:
 | gulp | <code>Gulp</code> | 
 
 
-_README.md generated at: Mon Oct 16 2017 14:17:09 GMT+0200 (CEST)_
+_README.md generated at: Mon Oct 16 2017 16:31:44 GMT+0200 (CEST)_

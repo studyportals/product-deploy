@@ -22,6 +22,7 @@ const testTask = function(task){
 
 describe('attachToGulp', function(){
 
+	testTask('watch.cms');
 	testTask('deploy.cms');
 	testTask('deploy.servicelayer');
 });
