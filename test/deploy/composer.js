@@ -1,7 +1,7 @@
 "use strict";
 
 const chai = require('chai');
-const sp_rimraf = require('./../../lib/private/sp_rimraf');
+const rimraf = require('rimraf');
 
 /**
  * @param {Deploy} Deploy
@@ -17,11 +17,9 @@ module.exports = function(Deploy){
 
 		let vendorFolder = `${Deploy.opts.cwd}/vendor`;
 
-		return sp_rimraf(vendorFolder)
-			.then(() =>{
+		rimraf.sync(vendorFolder);
 
-				return Deploy.composer()
-			})
+		return Deploy.composer()
 			.then(() =>{
 				chai.expect(vendorFolder).to.be.a.directory().and.not.empty;
 			});
