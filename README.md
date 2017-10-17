@@ -1,4 +1,4 @@
-# @studyportals/product-deploy@v3.0.0-RC.7
+# @studyportals/product-deploy@v3.0.0-RC.8
 
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/v/@studyportals/product-deploy.svg?style=flat" alt="NPM version" /></a>
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/l/@studyportals/product-deploy.svg?style=flat" alt="NPM license" /></a>
@@ -96,4 +96,4 @@ Behaviour can be changed by changing these env vars:
 | gulp | <code>Gulp</code> | 
 
 
-_README.md generated at: Tue Oct 17 2017 12:40:40 GMT+0200 (CEST)_
+_README.md generated at: Tue Oct 17 2017 15:08:25 GMT+0200 (CEST)_
