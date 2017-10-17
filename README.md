@@ -35,7 +35,7 @@ Toolset to deploy StudyPortals products
 </ul>
 <p>Behaviour can be changed by changing these env vars:</p>
 <ul>
-<li>process.env.PRTL_ENV - Set the portal environment; @see lib/private/env</li>
+<li>process.env.PRTL_ENV - Set the portal environment; @see <a href="https://github.com/studyportals/product-deploy/blob/master/lib/private/env.js">./lib/private/env</a></li>
 <li>process.env.PRTL_DEPLOYLOG_ENDPOINT - The endpoint to which to send deploylogs.</li>
 </ul>
 </dd>
@@ -86,7 +86,7 @@ Tasks:
 - deploy.servicelayer
 
 Behaviour can be changed by changing these env vars:
-- process.env.PRTL_ENV - Set the portal environment; @see lib/private/env
+- process.env.PRTL_ENV - Set the portal environment; @see [./lib/private/env](https://github.com/studyportals/product-deploy/blob/master/lib/private/env.js)
 - process.env.PRTL_DEPLOYLOG_ENDPOINT - The endpoint to which to send deploylogs.
 
 **Kind**: global function  
@@ -96,4 +96,4 @@ Behaviour can be changed by changing these env vars:
 | gulp | <code>Gulp</code> | 
 
 
-_README.md generated at: Tue Oct 17 2017 10:15:09 GMT+0200 (CEST)_
+_README.md generated at: Tue Oct 17 2017 10:19:27 GMT+0200 (CEST)_
