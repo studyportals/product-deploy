@@ -31,6 +31,7 @@ Toolset to deploy StudyPortals products
 <ul>
 <li>watch.cms</li>
 <li>deploy.cms</li>
+<li>watch.servicelayer</li>
 <li>deploy.servicelayer</li>
 </ul>
 <p>Behaviour can be changed by changing these env vars:</p>
@@ -83,6 +84,7 @@ Attach the deploy tasks to gulp
 Tasks:
 - watch.cms
 - deploy.cms
+- watch.servicelayer
 - deploy.servicelayer
 
 Behaviour can be changed by changing these env vars:
@@ -96,4 +98,4 @@ Behaviour can be changed by changing these env vars:
 | gulp | <code>Gulp</code> | 
 
 
-_README.md generated at: Tue Oct 17 2017 15:08:25 GMT+0200 (CEST)_
+_README.md generated at: Thu Oct 19 2017 23:00:42 GMT+0200 (CEST)_

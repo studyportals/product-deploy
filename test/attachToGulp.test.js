@@ -24,5 +24,6 @@ describe('attachToGulp', function(){
 
 	testTask('watch.cms');
 	testTask('deploy.cms');
+	testTask('watch.servicelayer');
 	testTask('deploy.servicelayer');
 });
