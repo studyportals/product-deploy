@@ -56,7 +56,7 @@
     "request": "^2.83.0",
     "rimraf": "^2.6.2",
     "semver": "^5.4.1",
-    "shelljs": "~0.2.6"
+    "shelljs": "^0.7.8"
   },
   "false": {}
 }
