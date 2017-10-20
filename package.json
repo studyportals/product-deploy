@@ -1,6 +1,6 @@
 {
   "name": "@studyportals/product-deploy",
-  "version": "2.3.8",
+  "version": "3.0.0",
   "description": "Toolset to deploy StudyPortals products",
   "author": "StudyPortals B.V.",
   "scripts": {
@@ -36,7 +36,7 @@
   "dependencies": {
     "@studyportals/js": "^1.1.2",
     "@studyportals/node-log": "^1.1.2",
-    "autoprefixer": "^7.1.2",
+    "autoprefixer": "7.1.2",
     "chai": "^4.1.2",
     "chai-fs": "^1.0.0",
     "chai-http": "^3.0.0",
@@ -44,22 +44,19 @@
     "fs-extra": "^4.0.2",
     "globby": "^6.1.0",
     "gulp": "^3.9.1",
-    "gulp-composer": "^0.4.2",
-    "gulp-concat": "^2.6.1",
     "gulp-if": "^2.0.2",
-    "gulp-postcss": "^7.0.0",
-    "gulp-sass": "^3.1.0",
+    "gulp-postcss": "7.0.0",
+    "gulp-sass": "3.1.0",
     "gulp-util": "^3.0.8",
     "is-wsl": "^1.1.0",
-    "mkdirp": "^0.5.1",
-    "mocha": "^3.5.3",
-    "node-ask": "^1.0.1",
-    "node-sass": "^4.5.3",
-    "postcss-flexbugs-fixes": "^3.0.0",
+    "mocha": "^4.0.1",
+    "node-sass": "4.5.3",
+    "postcss-flexbugs-fixes": "3.0.0",
     "progress": "^2.0.0",
     "request": "^2.83.0",
     "rimraf": "^2.6.2",
-    "semver": "^5.4.1"
+    "semver": "^5.4.1",
+    "shelljs": "^0.7.8"
   },
   "false": {}
 }
