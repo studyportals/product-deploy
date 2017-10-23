@@ -15,12 +15,12 @@ module.exports = function(Deploy){
 
 		this.slow(1000);
 
-		process.env.PRTL_ENV = require('../../lib/private/env').DEV;
+		Deploy.opts.env = require('../../lib/private/env').DEV;
 
 		return Deploy.configure()
 			.then(() =>{
-				chai.expect(path.join(Deploy.opts.to, 'Production.conf')).to.be.a.file();
-				chai.expect(path.join(Deploy.opts.to, 'Development.conf')).to.be.a.file();
+				chai.expect(path.join(Deploy.opts.cwd, 'Base.conf')).to.be.a.file();
+				chai.expect(path.join(Deploy.opts.cwd, 'Development.conf')).to.be.a.file();
 			});
 	});
 };

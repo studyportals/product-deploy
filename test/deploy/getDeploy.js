@@ -1,12 +1,11 @@
 "use strict";
 
-const PD = require('../../index');
+const Deploy = require('../../lib/private/deploy');
 const path = require('path');
 
-const Deploy = new PD.Deploy({
-	from: path.resolve(__dirname, '..', '..', 'testcases', 'deploy', 'src'),
-	to: path.resolve(__dirname, '..', '..', 'testcases', 'deploy', 'dst'),
+const TestDeploy = new Deploy({
+	cwd: path.resolve(__dirname, '..', '..', 'testcases', 'deploy'),
 	gulp: require('gulp')
 });
 
-module.exports = Deploy;
+module.exports = TestDeploy;
