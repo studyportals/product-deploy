@@ -60,7 +60,7 @@ Toolset to deploy StudyPortals products
 
 | Param | Type | Description |
 | --- | --- | --- |
-| repo | <code>String</code> | Repository, not used anymore @deprecated |
+| repo | <code>String</code> | Name of the GitHub repository @deprecated |
 | url | <code>String</code> | The base url to test. |
 
 <a name="SimplePageTester+run"></a>
@@ -98,4 +98,4 @@ Behaviour can be changed by changing these env vars:
 | gulp | <code>Gulp</code> | 
 
 
-_README.md generated at: Wed Oct 25 2017 15:40:51 GMT+0200 (CEST)_
+_README.md generated at: Wed Oct 25 2017 15:45:41 GMT+0200 (CEST)_
