@@ -1,4 +1,4 @@
-# @studyportals/product-deploy@v3.0.2
+# @studyportals/product-deploy@v3.0.3
 
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/v/@studyportals/product-deploy.svg?style=flat" alt="NPM version" /></a>
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/l/@studyportals/product-deploy.svg?style=flat" alt="NPM license" /></a>
@@ -60,7 +60,7 @@ Toolset to deploy StudyPortals products
 
 | Param | Type | Description |
 | --- | --- | --- |
-| repo | <code>String</code> | Name of the GitHub repository |
+| repo | <code>String</code> | Name of the GitHub repository @deprecated |
 | url | <code>String</code> | The base url to test. |
 
 <a name="SimplePageTester+run"></a>
@@ -98,4 +98,4 @@ Behaviour can be changed by changing these env vars:
 | gulp | <code>Gulp</code> | 
 
 
-_README.md generated at: Mon Oct 23 2017 14:27:44 GMT+0200 (CEST)_
+_README.md generated at: Wed Oct 25 2017 17:05:29 GMT+0200 (CEST)_
