@@ -9,5 +9,5 @@ const pages = [
 
 let url = 'https://www.studyportals.com';
 
-let Tester = new SimplePageTester(url);
+let Tester = new SimplePageTester(null, url);
 Tester.run(pages);
