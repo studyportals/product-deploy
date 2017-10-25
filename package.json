@@ -6,7 +6,7 @@
   "scripts": {
     "docs": "jsdoc2md",
     "build": "npm --no-git-tag-version version prerelease",
-    "test": "mocha",
+    "test": "node ./bin/mocha",
     "preversion": "npm prune && npm install && npm test",
     "version": "npm run docs && git add -A"
   },
