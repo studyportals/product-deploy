@@ -1,6 +1,6 @@
 {
   "name": "@studyportals/product-deploy",
-  "version": "3.1.0-alpha.1",
+  "version": "3.1.0-alpha.2",
   "description": "Toolset to deploy StudyPortals products",
   "author": "StudyPortals B.V.",
   "scripts": {
@@ -15,7 +15,7 @@
     "lib": "./lib"
   },
   "bin": {
-    "preinstall": "./bin/preinstall.js",
+    "rm-package-lock": "./bin/rm-package-lock.js",
     "mocha": "./bin/mocha.js"
   },
   "repository": {

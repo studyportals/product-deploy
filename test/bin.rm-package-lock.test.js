@@ -12,12 +12,12 @@ describe('bin', function(){
 	it('the preinstall command should exist', function(){
 
 		expect(pjson).to.have.own.property('bin');
-		expect(pjson.bin).to.have.own.property('preinstall');
+		expect(pjson.bin).to.have.own.property('rm-package-lock');
 	});
 
 	it('should remove package-lock.json file', function(){
 
-		require(path.join(process.cwd(), pjson.bin.preinstall));
+		require(path.join(process.cwd(), pjson.bin['rm-package-lock']));
 		expect(path.join(process.cwd(), 'package-lock.json')).to.not.be.a.path();
 	});
 
