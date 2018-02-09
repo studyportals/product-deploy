@@ -9,6 +9,7 @@ const path = require('path');
  */
 module.exports = function(Deploy){
 
+	process.env.PRODUCT = 'Masters';
 	Deploy = Deploy || require('./getDeploy');
 
 	it('Should configure the project', function(){
