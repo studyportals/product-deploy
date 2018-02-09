@@ -36,6 +36,7 @@ Toolset to deploy StudyPortals products
 </ul>
 <p>Behaviour can be changed by changing these env vars:</p>
 <ul>
+<li>process.env.PRODUCT - Set the product (Masters|Bachelors|PhD|ShortCourses|DistanceLearning|PreparationCourses) you want to deploy; </li>
 <li>process.env.PRTL_ENV - Set the portal environment; @see <a href="https://github.com/studyportals/product-deploy/blob/master/lib/private/env.js">./lib/private/env</a></li>
 <li>process.env.PRTL_DEPLOYLOG_ENDPOINT - The endpoint to which to send deploylogs.</li>
 </ul>
