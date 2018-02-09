@@ -1,4 +1,4 @@
-# @studyportals/product-deploy@v3.2.0
+# @studyportals/product-deploy@v4.0.0-alpha.0
 
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/v/@studyportals/product-deploy.svg?style=flat" alt="NPM version" /></a>
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/l/@studyportals/product-deploy.svg?style=flat" alt="NPM license" /></a>
@@ -36,7 +36,6 @@ Toolset to deploy StudyPortals products
 </ul>
 <p>Behaviour can be changed by changing these env vars:</p>
 <ul>
-<li>process.env.PRODUCT - Set the product (Masters|Bachelors|PhD|ShortCourses|DistanceLearning|PreparationCourses) you want to deploy; </li>
 <li>process.env.PRTL_ENV - Set the portal environment; @see <a href="https://github.com/studyportals/product-deploy/blob/master/lib/private/env.js">./lib/private/env</a></li>
 <li>process.env.PRTL_DEPLOYLOG_ENDPOINT - The endpoint to which to send deploylogs.</li>
 </ul>
@@ -99,4 +98,4 @@ Behaviour can be changed by changing these env vars:
 | gulp | <code>Gulp</code> | 
 
 
-_README.md generated at: Thu Jan 18 2018 10:44:12 GMT+0100 (W. Europe Standard Time)_
+_README.md generated at: Fri Feb 09 2018 12:04:40 GMT+0100 (W. Europe Standard Time)_
