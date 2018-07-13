@@ -1,4 +1,4 @@
-# @studyportals/product-deploy@v3.2.0
+# @studyportals/product-deploy@v4.0.0
 
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/v/@studyportals/product-deploy.svg?style=flat" alt="NPM version" /></a>
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/l/@studyportals/product-deploy.svg?style=flat" alt="NPM license" /></a>
@@ -66,9 +66,7 @@ Toolset to deploy StudyPortals products
 <a name="SimplePageTester+run"></a>
 
 ### simplePageTester.run(pages)
-Executes simple accessibility tests to the specified pages.
-
-If the pages cannot be reached, the test will be marked as failed.
+Executes simple accessibility tests to the specified pages.If the pages cannot be reached, the test will be marked as failed.
 
 **Kind**: instance method of [<code>SimplePageTester</code>](#SimplePageTester)  
 
@@ -79,17 +77,7 @@ If the pages cannot be reached, the test will be marked as failed.
 <a name="attachToGulp"></a>
 
 ## attachToGulp(gulp)
-Attach the deploy tasks to gulp
-
-Tasks:
-- watch.cms
-- deploy.cms
-- watch.servicelayer
-- deploy.servicelayer
-
-Behaviour can be changed by changing these env vars:
-- process.env.PRTL_ENV - Set the portal environment; @see [./lib/private/env](https://github.com/studyportals/product-deploy/blob/master/lib/private/env.js)
-- process.env.PRTL_DEPLOYLOG_ENDPOINT - The endpoint to which to send deploylogs.
+Attach the deploy tasks to gulpTasks:- watch.cms- deploy.cms- watch.servicelayer- deploy.servicelayerBehaviour can be changed by changing these env vars:- process.env.PRTL_ENV - Set the portal environment; @see [./lib/private/env](https://github.com/studyportals/product-deploy/blob/master/lib/private/env.js)- process.env.PRTL_DEPLOYLOG_ENDPOINT - The endpoint to which to send deploylogs.
 
 **Kind**: global function  
 
@@ -98,4 +86,4 @@ Behaviour can be changed by changing these env vars:
 | gulp | <code>Gulp</code> | 
 
 
-_README.md generated at: Thu Jan 18 2018 10:44:12 GMT+0100 (W. Europe Standard Time)_
+_README.md generated at: Fri Jul 13 2018 11:51:29 GMT+0200 (W. Europe Summer Time)_
