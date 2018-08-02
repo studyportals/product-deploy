@@ -1,4 +1,4 @@
-# @studyportals/product-deploy@v4.0.0
+# @studyportals/product-deploy@v4.1.0
 
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/v/@studyportals/product-deploy.svg?style=flat" alt="NPM version" /></a>
 <a href="https://www.npmjs.com/package/@studyportals/product-deploy" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/l/@studyportals/product-deploy.svg?style=flat" alt="NPM license" /></a>
@@ -86,4 +86,4 @@ Attach the deploy tasks to gulpTasks:- watch.cms- deploy.cms- watch.service
 | gulp | <code>Gulp</code> | 
 
 
-_README.md generated at: Fri Jul 13 2018 11:53:35 GMT+0200 (W. Europe Summer Time)_
+_README.md generated at: Thu Aug 02 2018 17:31:55 GMT+0200 (W. Europe Summer Time)_
