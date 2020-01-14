@@ -22,13 +22,6 @@
     "type": "git",
     "url": "git+https://github.com/studyportals/product-deploy.git"
   },
-  "contributors": [
-    {
-      "name": "Danko Adamczyk",
-      "email": "danko@studyportals.com",
-      "url": "https://github.com/CZYK"
-    }
-  ],
   "license": "BSD-3-Clause",
   "bugs": {
     "url": "https://github.com/studyportals/product-deploy/issues"
